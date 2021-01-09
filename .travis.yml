@@ -1,0 +1,11 @@
+language: python
+branches:
+  only:
+    - master
+services:
+  - docker
+deploy:
+  edge: true  # use latest v2 deploy
+  provider: pypi
+  on:
+    branches: master
