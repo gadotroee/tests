@@ -1,4 +1,4 @@
-from example-utils import *
+from example_utils import *
 
 
 def test_answer():
