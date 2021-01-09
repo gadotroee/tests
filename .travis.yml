@@ -2,7 +2,8 @@ language: python
 branches:
   only:
     - master
-install: echo 'Install'
+install: pip install pytest
+sciprt: pytest
 deploy:
   edge: true  # use latest v2 deploy
   provider: pypi
