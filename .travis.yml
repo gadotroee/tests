@@ -2,8 +2,8 @@ language: python
 branches:
   only:
     - master
-services:
-  - docker
+intsatll: pip install pytest
+script: pytest
 deploy:
   edge: true  # use latest v2 deploy
   provider: pypi
