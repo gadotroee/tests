@@ -1,16 +1,13 @@
 
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-
 setuptools.setup(
     name="example-utils",
-    version="2.0.0",
+    version="3.0.0",
     author="",
     author_email="",
-    description="A package that makes it easy to create Pypi packages",
-    long_description=long_description,
+    description="Simple example",
+    long_description='',
     long_description_content_type="text/markdown",
     url="",
     packages=setuptools.find_packages(),

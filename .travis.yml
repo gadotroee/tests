@@ -2,8 +2,7 @@ language: python
 branches:
   only:
     - master
-intsatll: pip install pytest
-script: pytest
+install: echo 'Install'
 deploy:
   edge: true  # use latest v2 deploy
   provider: pypi
