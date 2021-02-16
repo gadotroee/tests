@@ -1,9 +1,6 @@
 {
- "TARGET_CARTS_SOCK_SHOP": "http://carts.sock-shop",
- "TARGET_CATALOGUE_SOCK_SHOP": "http://catalogue.sock-shop",
- "TARGET_FRONT_END_SOCK_SHOP": "http://front-end.sock-shop",
- "TARGET_ORDERS_SOCK_SHOP": "http://orders.sock-shop",
- "TARGET_PAYMENT_SOCK_SHOP": "http://payment.sock-shop",
- "TARGET_SHIPPING_SOCK_SHOP": "http://shipping.sock-shop",
- "TARGET_USER_SOCK_SHOP": "http://user.sock-shop"
+ "TARGET_TRDEMO_CLIENT_TRDEMO": "http://trdemo-client.trdemo",
+ "TARGET_TRDEMO_FLIGHTS_TRDEMO": "http://trdemo-flights.trdemo",
+ "TARGET_TRDEMO_SHOPPINGCART_TRDEMO": "http://trdemo-shoppingcart.trdemo",
+ "TARGET_TRDEMO_USERS_TRDEMO": "http://trdemo-users.trdemo"
 }
