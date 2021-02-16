@@ -1,0 +1,68 @@
+{
+ "mappings": [
+  {
+   "id": "14207724-5957-45d6-9a78-e19441c43cb1",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/carts/[^/]+/items"
+   },
+   "response": {
+    "body": "[]",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "f53c1e0f-110e-400e-a654-98bc07af4aa2",
+   "request": {
+    "method": "DELETE",
+    "urlPathPattern": "/carts/[^/]+"
+   },
+   "response": {
+    "body": "",
+    "headers": {},
+    "status": 202,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "e79c0849-ab72-46d8-8299-01af5c7c26e5",
+   "request": {
+    "method": "POST",
+    "urlPathPattern": "/carts/[^/]+/items"
+   },
+   "response": {
+    "body": "{\n \"id\": \"5ffaa495b5b62200068ad850\",\n \"itemId\": \"{{request.body}}\",\n \"quantity\": 1,\n \"unitPrice\": 15.0\n}",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 201,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "6982bff1-5ac9-44b2-8628-8a93e675c280",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/carts/[^/]+/merge"
+   },
+   "response": {
+    "body": "",
+    "headers": {},
+    "status": 202,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  }
+ ]
+}

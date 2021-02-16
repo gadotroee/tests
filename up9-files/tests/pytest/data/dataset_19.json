@@ -1,0 +1,30 @@
+{
+ "parameters": [
+  {
+   "name": "size",
+   "uuid": "6cfa1196-e23d-4e0c-adba-97a4124229a7"
+  },
+  {
+   "name": "tags",
+   "uuid": "f1c2242e-1b85-4f7e-8caa-12c2aa4f8815"
+  }
+ ],
+ "rows": [
+  {
+   "size": "5",
+   "tags": ""
+  },
+  {
+   "size": "5",
+   "tags": "formal"
+  },
+  {
+   "size": "3",
+   "tags": "magic"
+  },
+  {
+   "size": "6",
+   "tags": "blue"
+  }
+ ]
+}

@@ -1,0 +1,442 @@
+{
+ "mappings": [
+  {
+   "id": "8c38691a-0542-4288-8fa3-a4884b0832d7",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/"
+   },
+   "response": {
+    "bodyFileName": "resp_7.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "622b18b8-7dda-4b19-b285-332e72cfec7d",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/cart"
+   },
+   "response": {
+    "body": "[]",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "d1260879-cf69-41bc-921b-472079929aaf",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/catalogue"
+   },
+   "response": {
+    "bodyFileName": "resp_9.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "e9f399d0-6e50-4e0b-8540-fd5b539444ea",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/basket\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_11.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "02287e0e-2d97-4956-bae9-d52b38620f64",
+   "request": {
+    "method": "DELETE",
+    "urlPathPattern": "/cart"
+   },
+   "response": {
+    "body": "",
+    "headers": {},
+    "status": 202,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "735e06ca-bb6e-44c9-b6e5-c6abafc1fd8f",
+   "request": {
+    "method": "POST",
+    "urlPathPattern": "/cart"
+   },
+   "response": {
+    "body": "",
+    "headers": {},
+    "status": 201,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "64b07162-afe0-43d2-9a1d-1ae7a8a45100",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/category\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_15.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "e5da2883-2979-4504-ab2b-0ae40c0f62a1",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/detail\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_16.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "6d297e6f-82dd-473d-b108-321c476f9d2b",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/login"
+   },
+   "response": {
+    "body": "Cookie is set",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "974bc7bf-cea0-4e01-b324-be00949f0b2a",
+   "request": {
+    "method": "POST",
+    "urlPathPattern": "/orders"
+   },
+   "response": {
+    "bodyFileName": "resp_18.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 201,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "e2774432-9623-48d8-a50b-1397dff25918",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/address"
+   },
+   "response": {
+    "bodyFileName": "resp_36.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "39c4acb6-0435-4e7f-afd4-4f7ce943e400",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/card"
+   },
+   "response": {
+    "body": "{\"number\":\"5918\"}",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "0d430ad6-ffcc-431a-9a1f-f936038d5fef",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/catalogue/[^/]+"
+   },
+   "response": {
+    "bodyFileName": "resp_42.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "55f7bd49-f393-4d22-8e1f-362d6f951a99",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/catalogue/size"
+   },
+   "response": {
+    "body": "{\"size\":9,\"err\":null}\n",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "c8a5ac95-6a66-4620-8baf-8fad519d0ae0",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/customer\\-order\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_45.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "3d1553d8-a3f9-4b37-a07b-f3be73372e9f",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/customer\\-orders\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_46.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "a4a5d539-f44d-4fdf-a9c2-851afa9e0c55",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/customers/[^/]+"
+   },
+   "response": {
+    "bodyFileName": "resp_47.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "05329ba3-9b54-4d1f-8eed-d3a4aece7112",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/orders"
+   },
+   "response": {
+    "bodyFileName": "resp_49.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 201,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "c4295d2c-6f16-4ffd-9cdb-0d81c10b0669",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/orders/[^/]+"
+   },
+   "response": {
+    "bodyFileName": "resp_51.json",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "d9a88194-5ceb-47b8-ab6e-6c5228fbd3d2",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/tags"
+   },
+   "response": {
+    "body": "{\"tags\":[\"brown\",\"geek\",\"formal\",\"blue\",\"skin\",\"red\",\"action\",\"sport\",\"black\",\"magic\",\"green\"],\"err\":null}\n",
+    "headers": {
+     "Content-Type": "application/json"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "9e27171a-c561-410c-bdc7-2a8af6661ab2",
+   "request": {
+    "method": "HEAD",
+    "urlPathPattern": "/"
+   },
+   "response": {
+    "body": "",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "67c409bc-2526-4719-82ac-d10888f0a873",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/"
+   },
+   "response": {
+    "bodyFileName": "resp_57.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "131ae42a-52b9-4316-bc34-2daa17b4bb22",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/footer\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_60.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "4cb2069d-e85b-40ea-b667-6f49e731e509",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/navbar\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_61.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "20453788-9c21-4020-b879-6c149fb832de",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/topbar\\.html"
+   },
+   "response": {
+    "bodyFileName": "resp_62.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 200,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  },
+  {
+   "id": "3be51e9a-2c7b-4ff8-8382-216220e51a24",
+   "request": {
+    "method": "GET",
+    "urlPathPattern": "/"
+   },
+   "response": {
+    "bodyFileName": "resp_69.html",
+    "headers": {
+     "Content-Type": "text/html"
+    },
+    "status": 206,
+    "transformers": [
+     "response-template"
+    ]
+   }
+  }
+ ]
+}
