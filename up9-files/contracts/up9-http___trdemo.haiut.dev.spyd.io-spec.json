@@ -1,0 +1,36 @@
+{
+ "info": {
+  "title": "http://trdemo.haiut.dev.spyd.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "2d410c05-a149-4709-b51d-bfb8b2079109",
+    "parameters": [],
+    "responses": {
+     "307": {
+      "description": "307"
+     }
+    },
+    "summary": "Seen 2 requests"
+   },
+   "parameters": []
+  },
+  "/cart": {
+   "get": {
+    "operationId": "389dfb34-d8a4-4ea6-8713-3eb159c953ad",
+    "parameters": [],
+    "responses": {
+     "307": {
+      "description": "307"
+     }
+    },
+    "summary": "Seen 2 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

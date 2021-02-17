@@ -1,6 +1,3 @@
 {
- "TARGET_AUTH_STG_TESTR_IO": "https://auth.stg.testr.io",
- "TARGET_STG_TESTR_IO": "https://stg.testr.io",
- "TARGET_WWW_IL_KAYAK_COM": "https://www.il.kayak.com",
- "TARGET_WWW_KAYAK_COM": "https://www.kayak.com"
+ "TARGET_TRDEMO_HAIUT_DEV_SPYD_IO": "https://trdemo.haiut.dev.spyd.io"
 }

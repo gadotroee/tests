@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "product_id",
+   "uuid": "f730c2f8-7c8c-422b-871f-deb093180b1b"
+  }
+ ],
+ "rows": [
+  {
+   "product_id": "LY-001"
+  }
+ ]
+}
