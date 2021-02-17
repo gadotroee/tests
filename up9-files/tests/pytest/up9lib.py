@@ -688,27 +688,30 @@ try:
             self.consumer.subscribe(topics, on_assign=my_on_assign)
             self.consumer.poll(0.01)  # to trigger partition assignments
 
-        def get_watched_messages(self, interval=0.0):
+        def get_watched_messages(self, interval=0.0, predicate=lambda x: True):
             logging.debug("Checking messages that appeared on kafka topics: %r", self.watching_topics)
             res = []
 
+            start = time.time()
             while True:
                 message = self.consumer.poll(interval)
-                if message is None:
+                if message is None or time.time() - start > interval:
                     break  # done reading
 
                 if message.error():
                     raise KafkaException("kafka consumer error: {}".format(message.error()))
 
-                res.append(message)
+                logging.debug("Potential message: %r", message)
+                if predicate(message):
+                    res.append(message)
 
             # TODO: consumer.close()
             return res
 
-        def assert_seen_message(self, resp, delay=0):
+        def assert_seen_message(self, resp, delay=0, predicate=lambda x: True):
             @recorder.assertion_decorator
             def assert_seen_kafka_message(resp, topics, delay):
-                messages = self.get_watched_messages(delay)
+                messages = self.get_watched_messages(delay, filter)
                 messages = [(m.topic(), m.key(), m.value(), m.headers()) for m in messages]
                 if not messages:
                     raise AssertionError("No messages on Kafka topic %r" % topics)

@@ -7,7 +7,7 @@
  "paths": {
   "/": {
    "get": {
-    "operationId": "d21e3fcc-c68e-4843-90ca-fe67b2fe6b7b",
+    "operationId": "973d10ea-f276-4f39-9e91-fb401840dcb1",
     "parameters": [
      {
       "in": "query",
@@ -38,7 +38,7 @@
   "/s/horizon/common/ccpa/CCPAConsent": {
    "parameters": [],
    "post": {
-    "operationId": "8ff47a0f-c029-4c37-b4fc-56c1ef03217c",
+    "operationId": "ebc4584d-d140-4c1f-9005-92d0cabd9203",
     "parameters": [
      {
       "in": "header",
@@ -92,7 +92,7 @@
   "/s/horizon/common/core/AjaxMany": {
    "parameters": [],
    "post": {
-    "operationId": "1ebf78fb-1b46-483c-bb89-7f5b202e4a25",
+    "operationId": "a83b0c53-f038-4ed9-a4fe-ad84e59ae102",
     "parameters": [
      {
       "in": "header",
@@ -276,7 +276,7 @@
   "/s/horizon/compareTo/config": {
    "parameters": [],
    "post": {
-    "operationId": "5a3198e9-be98-473a-954d-58e304f6ffa4",
+    "operationId": "d2c0a6d9-d758-4c56-8fae-d7e0b66e709d",
     "parameters": [
      {
       "in": "header",
@@ -717,7 +717,7 @@
   },
   "/s/horizon/react/component/CurrencyPickerStateProviderAction": {
    "get": {
-    "operationId": "d386300a-c7cb-4850-b3fd-52b62145655a",
+    "operationId": "2cb27109-6bf9-4e14-95c1-e9d9439f9071",
     "parameters": [
      {
       "in": "header",
@@ -1692,7 +1692,7 @@
   },
   "/s/horizon/react/component/FooterSiteMapLinksProviderAction": {
    "get": {
-    "operationId": "62c056a8-23dd-4689-98ff-fd27d9367050",
+    "operationId": "55685f59-0aaa-4157-8466-8ff19e1f5c01",
     "parameters": [
      {
       "in": "header",
@@ -1844,7 +1844,7 @@
   },
   "/s/horizon/react/component/PrivacyMenuStateProviderAction": {
    "get": {
-    "operationId": "e697564f-e56e-4c2c-bc43-c7a5fe810892",
+    "operationId": "30a7de30-0cb0-4aca-81b2-e4b49c07a54b",
     "parameters": [
      {
       "in": "header",
@@ -1905,7 +1905,7 @@
   "/s/run/kmkid/set": {
    "parameters": [],
    "post": {
-    "operationId": "2dd4dbfc-2f26-4ad5-aa7d-64de712056ed",
+    "operationId": "022de739-c423-4f29-b076-83b370bde817",
     "parameters": [
      {
       "in": "header",
@@ -1951,7 +1951,7 @@
   "/s/vestigo/v1/measure": {
    "parameters": [],
    "post": {
-    "operationId": "d041563b-9d53-4fb5-b9e6-e9d146e382ee",
+    "operationId": "d7e3c6b3-6059-462f-ace7-77499d0779fc",
     "parameters": [
      {
       "in": "header",
@@ -2140,7 +2140,7 @@
   },
   "/ugtm/": {
    "get": {
-    "operationId": "0b08ca68-8abf-4360-b88d-fdc48c08e88a",
+    "operationId": "237b5909-429b-4603-b40f-774454b2c4c6",
     "parameters": [
      {
       "in": "query",
@@ -2171,7 +2171,7 @@
   "/vs/main/frontdoor/EmailSubscriptionPanel/show": {
    "parameters": [],
    "post": {
-    "operationId": "5967b926-2616-4b13-a494-25355ea30369",
+    "operationId": "0e48a881-f38c-4c72-bec0-6a8da6a073b4",
     "parameters": [
      {
       "in": "header",
@@ -2217,7 +2217,7 @@
   "/vs/main/frontdoor/saving/loaded/drawer": {
    "parameters": [],
    "post": {
-    "operationId": "d6fee0e2-6acf-4e82-840c-e91cf6a8358e",
+    "operationId": "c1f946d0-e668-47ff-a45d-0310cd0afe3f",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -2268,7 +2268,7 @@
     }
    ],
    "post": {
-    "operationId": "5a05553a-5c99-414a-a81a-f0282d26c5ea",
+    "operationId": "8fad3841-3a1d-406c-8999-9cb536869d08",
     "parameters": [
      {
       "in": "header",
@@ -2314,7 +2314,7 @@
   "/vs/page/main/frontdoor": {
    "parameters": [],
    "post": {
-    "operationId": "8fbb4d5c-361b-48d1-92d9-7df1a40a8f5c",
+    "operationId": "3bbf2872-e546-41e8-8c55-fa55017d7ae0",
     "parameters": [
      {
       "in": "header",

@@ -8,63 +8,162 @@
 # More information can be found here: https://github.com/up9inc/mockintosh
 
 ---
+management:
+  port: 8000
 services:
-- endpoints:
-  - path: /
-    response:
-      status: 307
-  - path: /cart
-    response:
-      status: 307
-  name: http://trdemo.haiut.dev.spyd.io
+- name: https://auth.stg.testr.io
   port: 8001
   ssl: false
-- endpoints:
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___auth.stg.testr.io-spec.json'
+  endpoints:
+  - path: /auth/realms/testr/protocol/openid-connect/auth
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_9.html'
+      useTemplating: false
+- name: https://stg.testr.io
+  port: 8002
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___stg.testr.io-spec.json'
+  endpoints:
   - path: /
     response:
-      body: '@mock-data/resp_1.html'
-      headers:
-        Content-Type: text/html
-      useTemplating: false
-  - path: /cart
-    response:
-      body: '@mock-data/resp_2.html'
-      headers:
-        Content-Type: text/html
-      useTemplating: false
-  - path: /cart/add
-    response:
-      headers:
-        Content-Type: text/html
       status: 302
-  - path: /cart/remove/{{flight_id}}
+      headers:
+        Content-Type: text/html
+- name: https://trdemo.stg.testr.io
+  port: 8003
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___trdemo.stg.testr.io-spec.json'
+  endpoints:
+  - path: /
     response:
       headers:
         Content-Type: text/html
-      status: 302
-  - path: /flight
-    response:
       body: '@mock-data/resp_5.html'
-      headers:
-        Content-Type: text/html
       useTemplating: false
   - path: /login
     response:
-      body: '@mock-data/resp_6.html'
       headers:
         Content-Type: text/html
+      body: '@mock-data/resp_6.html'
       useTemplating: false
-  - path: /logout
+  - path: /
     response:
       headers:
         Content-Type: text/html
+      body: '@mock-data/resp_35.html'
+      useTemplating: false
+  - path: /login
+    response:
       status: 302
+      headers:
+        Content-Type: text/html
+    method: post
   - path: /search
     response:
-      body: '@mock-data/resp_8.html'
       headers:
         Content-Type: text/html
+      body: '@mock-data/resp_38.html'
       useTemplating: false
-  name: https://trdemo.haiut.dev.spyd.io
-  port: 8002
+- name: https://www.il.kayak.com
+  port: 8004
   ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___www.il.kayak.com-spec.json'
+  endpoints:
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_14.html'
+      useTemplating: false
+  - path: /s/horizon/common/ccpa/CCPAConsent
+    response:
+      status: 204
+    method: post
+  - path: /s/horizon/common/core/AjaxMany
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_16.json'
+      useTemplating: false
+    method: post
+  - path: /s/horizon/compareTo/config
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_17.json'
+      useTemplating: false
+    method: post
+  - path: /s/horizon/react/component/CurrencyPickerStateProviderAction
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_18.json'
+      useTemplating: false
+  - path: /s/horizon/react/component/FooterSiteMapLinksProviderAction
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_19.json'
+      useTemplating: false
+  - path: /s/horizon/react/component/PrivacyMenuStateProviderAction
+    response:
+      headers:
+        Content-Type: application/json
+      body: '
+
+
+        [{"url":"/privacy","title":"Privacy"},{"url":"/terms-of-use","title":"Terms & Conditions"}]'
+      useTemplating: false
+  - path: /s/run/kmkid/set
+    response:
+      status: 204
+    method: post
+  - path: /s/vestigo/v1/measure
+    response:
+      status: 204
+    method: post
+  - path: /ugtm/
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_23.html'
+      useTemplating: false
+  - path: /vs/main/frontdoor/EmailSubscriptionPanel/show
+    response:
+      status: 204
+    method: post
+  - path: /vs/main/frontdoor/{{IsNi}}/covidExplore/shown
+    response:
+      status: 204
+    method: post
+  - path: /vs/main/frontdoor/saving/loaded/drawer
+    response:
+      status: 204
+    method: post
+  - path: /vs/page/main/frontdoor
+    response:
+      status: 204
+    method: post
+- name: https://www.kayak.com
+  port: 8005
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___www.kayak.com-spec.json'
+  endpoints:
+  - path: /
+    response:
+      status: 302
+  - path: /s/run/kmkid/sync
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"kmkid":"Az7Y9PDETKckDTcA2IJf7ZY"}'
+      useTemplating: false
+    method: post

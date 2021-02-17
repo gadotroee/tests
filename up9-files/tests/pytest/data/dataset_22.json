@@ -2,51 +2,51 @@
  "parameters": [
   {
    "name": "clientRequestTime",
-   "uuid": "23524293-ec46-43b5-b2d9-ef3b1e9f7601"
+   "uuid": "46b58857-6b9a-4ef7-ae79-ccbd650fcc9f"
   },
   {
    "name": "domain",
-   "uuid": "202aa625-8f28-414a-9b9a-58abe4ae37ea"
+   "uuid": "c8dda7b3-f8c1-4cd3-a953-eb7e17a87d08"
   },
   {
    "name": "eventName",
-   "uuid": "6f3bdb6e-1a66-4375-be3a-cfca76b7e533"
+   "uuid": "3c357426-690f-47ef-a59c-468b9551443f"
   },
   {
    "name": "eventObject",
-   "uuid": "fe12dcb1-c560-40f8-bf62-6a86768a31c3"
+   "uuid": "fa9492c0-5552-4c08-a38e-2a4e364c4f8a"
   },
   {
    "name": "eventType",
-   "uuid": "aa12b0f5-5d3e-4bca-a941-ddfee0b805a3"
+   "uuid": "a2cbbeb1-96b0-4c95-bedd-15c6d5544d25"
   },
   {
    "name": "height",
-   "uuid": "7296d9b9-99cc-4234-b79f-72eb71052043"
+   "uuid": "28d87bf8-c30c-434d-9288-4b2d8df3d5aa"
   },
   {
    "name": "npmPackageVersion",
-   "uuid": "6b5d436d-c44d-43ca-938c-ba771d54ab2d"
+   "uuid": "064c1415-3695-4955-a57b-5a8cbb1f994f"
   },
   {
    "name": "queryString",
-   "uuid": "4667beda-2326-477f-b804-f7ca47fc3c60"
+   "uuid": "3c750ba9-13b6-424b-9b9e-cbc6adbbc7da"
   },
   {
    "name": "subPageType",
-   "uuid": "24144d85-18e2-40a1-a90e-00d09b932e35"
+   "uuid": "7e31fb34-e58c-4347-abe6-f58868411833"
   },
   {
    "name": "timestamp",
-   "uuid": "739ea6df-866f-4cc0-96d6-97b453cf033c"
+   "uuid": "b811a68c-3998-4ca7-9107-2854f4832193"
   },
   {
    "name": "viewId",
-   "uuid": "5241c694-1ddc-47ac-8e42-47ddc6b66d41"
+   "uuid": "59c7e8ec-5a61-4db6-9812-826916dd21db"
   },
   {
    "name": "width",
-   "uuid": "f70db6ff-ea3d-4e08-aa5e-ef3baaa02c11"
+   "uuid": "f9a2c026-fb4d-4272-a07f-0fdb8768c17c"
   }
  ],
  "rows": [

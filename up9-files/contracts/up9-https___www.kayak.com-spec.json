@@ -7,7 +7,7 @@
  "paths": {
   "/": {
    "get": {
-    "operationId": "b64b9ea3-f43b-4b14-8146-1a1579e98792",
+    "operationId": "6326df90-6cd2-477b-b070-036192fa137d",
     "parameters": [],
     "responses": {
      "302": {
@@ -21,7 +21,7 @@
   "/s/run/kmkid/sync": {
    "parameters": [],
    "post": {
-    "operationId": "337bc1e6-f6e2-4637-9446-c37e81df1527",
+    "operationId": "4170b0c1-2a36-4ada-b0fa-fe3743f654ad",
     "parameters": [],
     "requestBody": {
      "content": {
