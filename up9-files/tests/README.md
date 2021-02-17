@@ -21,13 +21,13 @@ See [results](#junit-results) for more information about analyzing test results.
 
 ### Using Docker
 Build docker:
-`docker build -t up9-roee .`
+`docker build -t up9-example .`
 
 Run tests:
-`docker run -it up9-roee:latest`
+`docker run -it up9-example:latest`
 
 Run tests with service override:
-`docker run -it -e TARGET_CARTS=localhost:55000 up9-roee:latest`
+`docker run -it -e TARGET_CARTS=localhost:55000 up9-example:latest`
 
 ### Running locally
 Just install several dependencies from PyPi:
@@ -41,7 +41,7 @@ Locate the test you want to run, then specify its class name and test case name 
 
 ## Sample
 ```
->> docker run -it up9-roee:latest
+>> docker run -it up9-example:latest
 ============================= test session starts ==============================
 platform linux -- Python 3.8.7, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
 rootdir: /up9
