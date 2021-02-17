@@ -12,16 +12,59 @@ services:
 - endpoints:
   - path: /
     response:
+      status: 307
+  - path: /cart
+    response:
+      status: 307
+  name: http://trdemo.haiut.dev.spyd.io
+  port: 8001
+  ssl: false
+- endpoints:
+  - path: /
+    response:
       body: '@mock-data/resp_1.html'
       headers:
         Content-Type: text/html
       useTemplating: false
-  - path: /login
+  - path: /cart
     response:
       body: '@mock-data/resp_2.html'
       headers:
         Content-Type: text/html
       useTemplating: false
+  - path: /cart/add
+    response:
+      headers:
+        Content-Type: text/html
+      status: 302
+  - path: /cart/remove/{{flight_id}}
+    response:
+      headers:
+        Content-Type: text/html
+      status: 302
+  - path: /flight
+    response:
+      body: '@mock-data/resp_5.html'
+      headers:
+        Content-Type: text/html
+      useTemplating: false
+  - path: /login
+    response:
+      body: '@mock-data/resp_6.html'
+      headers:
+        Content-Type: text/html
+      useTemplating: false
+  - path: /logout
+    response:
+      headers:
+        Content-Type: text/html
+      status: 302
+  - path: /search
+    response:
+      body: '@mock-data/resp_8.html'
+      headers:
+        Content-Type: text/html
+      useTemplating: false
   name: https://trdemo.haiut.dev.spyd.io
-  port: 8001
+  port: 8002
   ssl: false
