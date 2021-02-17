@@ -1,0 +1,18 @@
+{
+ "parameters": [
+  {
+   "name": "redirect_uri",
+   "uuid": "e137f933-f007-424e-925e-7dcdb3a7ad34"
+  },
+  {
+   "name": "state",
+   "uuid": "c1151b3e-5bd1-4a40-9417-dc5be5cc200e"
+  }
+ ],
+ "rows": [
+  {
+   "redirect_uri": "https://stg.testr.io/oauth_cb",
+   "state": "c4soCT52bYM8D8csaYeCfypf92q0IV"
+  }
+ ]
+}

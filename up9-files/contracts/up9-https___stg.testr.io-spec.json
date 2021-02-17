@@ -1,0 +1,28 @@
+{
+ "info": {
+  "title": "https://stg.testr.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "db744f91-afc8-4008-bc53-566971409d05",
+    "parameters": [],
+    "responses": {
+     "302": {
+      "content": {
+       "text/html": {
+        "example": ""
+       }
+      },
+      "description": "Found"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

@@ -1,5 +1,5 @@
-# UP9 Artifacts for `example`
-This folder contains contract documentation, tests and mocks for `example`.
+# UP9 Artifacts for `roee`
+This folder contains contract documentation, tests and mocks for `roee`.
 
 
 

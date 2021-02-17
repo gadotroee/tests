@@ -1,0 +1,23 @@
+{
+ "info": {
+  "title": "https://www.kayak.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "12bcb0ef-ed3b-4a16-9f74-7dcc5862b024",
+    "parameters": [],
+    "responses": {
+     "302": {
+      "description": "Found"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

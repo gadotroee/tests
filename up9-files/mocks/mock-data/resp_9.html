@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="login-pf">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Log in to UP9</title>
+    <link rel="icon" href="/auth/resources/11ew5/login/testr/img/favicon.ico" />
+            <link href="/auth/resources/11ew5/login/testr/css/testr-general.css" rel="stylesheet" />
+            <link href="/auth/resources/11ew5/login/testr/css/testr-login.css" rel="stylesheet" />
+            <link href="/auth/resources/11ew5/login/testr/css/testr-register.css" rel="stylesheet" />
+            <link href="/auth/resources/11ew5/login/testr/css/testr-reset-pass.css" rel="stylesheet" />
+            <script src="/auth/resources/11ew5/login/testr/js/intercom.js" type="text/javascript"></script>
+</head>
+
+<body class="">
+  <div class="login-pf-page">
+    <div id="kc-header" class="login-pf-page-header">
+      <div id="kc-header-wrapper" class="">UP9</div>
+    </div>
+    <div class="card-pf login-pf-accounts">
+      <header class="login-pf-header">
+                <h1 id="kc-page-title">
+        <div id="loginMessage">Log In</div>
+
+</h1>
+      </header>
+      <div id="kc-content">
+        <div id="kc-content-wrapper">
+
+
+
+        <div id="loginPage" style="display: none;">
+            <div id="inviteMessage" style="margin-bottom:5%;display: none;"></div>
+            <div id="kc-form" class="row">
+            <div id="kc-form-wrapper" class="col-xs-12 col-sm-6 login-pf-social-section">
+                    <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="https://auth.stg.testr.io/auth/realms/testr/login-actions/authenticate?session_code=8ec6wShqUWeiAR2OpJhS2YRFpf-W7KdHcTs7-o1eD8U&amp;execution=71488a90-7a22-4909-8bd8-48ada2e2cb3b&amp;client_id=react-client&amp;tab_id=5eKfSKGXgyY" method="post">
+                        <div class="form-group">
+                                <input placeholder="User" tabindex="1" id="username" class="form-control login-field" name="username" value=""  type="text" autofocus autocomplete="off" />
+                        </div>
+
+                        <div class="form-group">
+                            <input placeholder="Password" tabindex="2" id="password" class="form-control login-field" name="password" type="password" autocomplete="off" />
+                        </div>
+
+                        <div class="form-group login-pf-settings login-form-settings">
+                            <div class="forgot-password-container">
+                                    <span><a tabindex="5" href="/auth/realms/testr/login-actions/reset-credentials?client_id=react-client&amp;tab_id=5eKfSKGXgyY">Forgot password</a></span>
+                            </div>
+
+                        </div>
+
+                        <div id="kc-form-buttons" class="form-group">
+                            <input tabindex="4" class="button-base button-primary button-large login-button" name="login" type="submit" value="LOG IN"/>
+                        </div>
+                    </form>
+            </div>
+                <div id="separator-container" class="separator-container">
+                    <div class="separator-line"></div>
+                    <p>OR</p>
+                    <div class="separator-line"></div>
+                </div>
+                <div id="kc-social-providers" class="col-xs-12 col-sm-6 login-pf-social-section">
+                    <ul class="login-pf-social list-unstyled login-pf-social-all ">
+                                <button onclick="window.location='/auth/realms/testr/broker/google/login?client_id=react-client&amp;tab_id=5eKfSKGXgyY&amp;session_code=8ec6wShqUWeiAR2OpJhS2YRFpf-W7KdHcTs7-o1eD8U'" class="button-base button-primary button-large google-login-button" id="zocial-google" >
+                                    LOG IN WITH GOOGLE
+                                    <span class="google-icon" />
+                                </button>
+                    </ul>
+                </div>
+            <p style="font-size: 0.9em; opacity: 0.8; margin: 24px 0;">By clicking "Log In" you agree to our <a target="_blank" href="https://up9.com/tos.html">Terms of Service</a>.</p>
+            <div id="kc-registration" class="login-signup-container">
+                <p>Don’t have an account yet?</p>
+                <span><a id="signupLink" tabindex="6" href="/auth/realms/testr/login-actions/registration?client_id=react-client&amp;tab_id=5eKfSKGXgyY">Sign Up</a></span>
+            </div>
+        </div>
+        </div>
+
+
+
+              <div id="kc-info" class="login-pf-signup">
+                  <div id="kc-info-wrapper" class="">
+
+
+            <script>
+                const urlSearchParams = new URLSearchParams(window.location.search);
+                const customAuthType = urlSearchParams.get("type");
+
+                if (customAuthType && customAuthType.toLowerCase() === "signup") {
+                    const redirectPath = document.getElementById("signupLink").getAttribute("href");
+                    window.location.replace(window.location.origin + redirectPath);
+                } else {
+                    document.getElementById("loginPage").style.display = "block";
+                }
+                
+                const inviteToken = urlSearchParams.get("inviteToken");
+                if (inviteToken) {
+                    document.cookie="inviteToken=" + inviteToken + "; path=/";
+                    const anchor = document.getElementById("signupLink");
+                    anchor.setAttribute("href", anchor.getAttribute("href") + "&inviteToken=" + inviteToken);
+                    document.getElementById("separator-container").style.display = "none";
+                    document.getElementById("kc-form-wrapper").style.display = "none";
+                    document.getElementById("inviteMessage").style.display = "block"
+                    document.getElementById("inviteMessage").innerText = "You have been invited to join " + urlSearchParams.get("groupName") + "'s workspace";
+
+                } else {
+                    document.cookie="inviteToken=; path=/";
+                }
+
+
+            </script>
+
+                  </div>
+              </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

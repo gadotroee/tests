@@ -15,19 +15,15 @@ def authenticate(target_key: str, target: TargetService):
     # authenticate_header(target)
     # authenticate_cookie(target)
     # authenticate_oauth(target)
-    if target_key == 'TARGET_CARTS_SOCK_SHOP':
+    if target_key == 'TARGET_AUTH_STG_TESTR_IO':
         pass
-    elif target_key == 'TARGET_CATALOGUE_SOCK_SHOP':
+    elif target_key == 'TARGET_HTTPBIN_ORG':
         pass
-    elif target_key == 'TARGET_FRONT_END_SOCK_SHOP':
+    elif target_key == 'TARGET_STG_TESTR_IO':
         pass
-    elif target_key == 'TARGET_ORDERS_SOCK_SHOP':
+    elif target_key == 'TARGET_TRDEMO_STG_TESTR_IO':
         pass
-    elif target_key == 'TARGET_PAYMENT_SOCK_SHOP':
-        pass
-    elif target_key == 'TARGET_SHIPPING_SOCK_SHOP':
-        pass
-    elif target_key == 'TARGET_USER_SOCK_SHOP':
+    elif target_key == 'TARGET_WWW_KAYAK_COM':
         pass
     else:
         pass

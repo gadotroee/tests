@@ -1,106 +1,76 @@
 services:
-  carts.sock-shop:
+  auth.stg.testr.io:
     cap_add:
     - NET_BIND_SERVICE
     cap_drop:
     - all
-    command: /config/mockintosh.yml 'http://carts.sock-shop'
+    command: /config/mockintosh.yml 'https://auth.stg.testr.io'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: auth
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  httpbin.org:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://httpbin.org'
     environment:
     - MOCKINTOSH_FORCE_PORT=80
-    hostname: carts
+    hostname: httpbin
     image: testrio/mockintosh:latest
     ports:
     - 80
     read_only: true
     volumes:
     - .:/config
-  catalogue.sock-shop:
+  stg.testr.io:
     cap_add:
     - NET_BIND_SERVICE
     cap_drop:
     - all
-    command: /config/mockintosh.yml 'http://catalogue.sock-shop'
+    command: /config/mockintosh.yml 'https://stg.testr.io'
     environment:
-    - MOCKINTOSH_FORCE_PORT=80
-    hostname: catalogue
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: stg
     image: testrio/mockintosh:latest
     ports:
-    - 80
+    - 443
     read_only: true
     volumes:
     - .:/config
-  front-end.sock-shop:
+  trdemo.stg.testr.io:
     cap_add:
     - NET_BIND_SERVICE
     cap_drop:
     - all
-    command: /config/mockintosh.yml 'http://front-end.sock-shop'
+    command: /config/mockintosh.yml 'https://trdemo.stg.testr.io'
     environment:
-    - MOCKINTOSH_FORCE_PORT=80
-    hostname: front-end
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: trdemo
     image: testrio/mockintosh:latest
     ports:
-    - 80
+    - 443
     read_only: true
     volumes:
     - .:/config
-  orders.sock-shop:
+  www.kayak.com:
     cap_add:
     - NET_BIND_SERVICE
     cap_drop:
     - all
-    command: /config/mockintosh.yml 'http://orders.sock-shop'
+    command: /config/mockintosh.yml 'https://www.kayak.com'
     environment:
-    - MOCKINTOSH_FORCE_PORT=80
-    hostname: orders
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: www
     image: testrio/mockintosh:latest
     ports:
-    - 80
-    read_only: true
-    volumes:
-    - .:/config
-  payment.sock-shop:
-    cap_add:
-    - NET_BIND_SERVICE
-    cap_drop:
-    - all
-    command: /config/mockintosh.yml 'http://payment.sock-shop'
-    environment:
-    - MOCKINTOSH_FORCE_PORT=80
-    hostname: payment
-    image: testrio/mockintosh:latest
-    ports:
-    - 80
-    read_only: true
-    volumes:
-    - .:/config
-  shipping.sock-shop:
-    cap_add:
-    - NET_BIND_SERVICE
-    cap_drop:
-    - all
-    command: /config/mockintosh.yml 'http://shipping.sock-shop'
-    environment:
-    - MOCKINTOSH_FORCE_PORT=80
-    hostname: shipping
-    image: testrio/mockintosh:latest
-    ports:
-    - 80
-    read_only: true
-    volumes:
-    - .:/config
-  user.sock-shop:
-    cap_add:
-    - NET_BIND_SERVICE
-    cap_drop:
-    - all
-    command: /config/mockintosh.yml 'http://user.sock-shop'
-    environment:
-    - MOCKINTOSH_FORCE_PORT=80
-    hostname: user
-    image: testrio/mockintosh:latest
-    ports:
-    - 80
+    - 443
     read_only: true
     volumes:
     - .:/config

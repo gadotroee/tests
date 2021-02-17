@@ -1,9 +1,7 @@
 {
- "TARGET_CARTS_SOCK_SHOP": "http://carts.sock-shop",
- "TARGET_CATALOGUE_SOCK_SHOP": "http://catalogue.sock-shop",
- "TARGET_FRONT_END_SOCK_SHOP": "http://front-end.sock-shop",
- "TARGET_ORDERS_SOCK_SHOP": "http://orders.sock-shop",
- "TARGET_PAYMENT_SOCK_SHOP": "http://payment.sock-shop",
- "TARGET_SHIPPING_SOCK_SHOP": "http://shipping.sock-shop",
- "TARGET_USER_SOCK_SHOP": "http://user.sock-shop"
+ "TARGET_AUTH_STG_TESTR_IO": "https://auth.stg.testr.io",
+ "TARGET_HTTPBIN_ORG": "http://httpbin.org",
+ "TARGET_STG_TESTR_IO": "https://stg.testr.io",
+ "TARGET_TRDEMO_STG_TESTR_IO": "https://trdemo.stg.testr.io",
+ "TARGET_WWW_KAYAK_COM": "https://www.kayak.com"
 }

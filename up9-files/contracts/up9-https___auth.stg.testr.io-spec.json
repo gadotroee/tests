@@ -1,0 +1,73 @@
+{
+ "info": {
+  "title": "https://auth.stg.testr.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/auth/realms/testr/protocol/openid-connect/auth": {
+   "get": {
+    "operationId": "99f932e3-4aa7-472e-86f0-f2af4ff88b63",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "client_id",
+      "required": true,
+      "schema": {
+       "enum": [
+        "react-client"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "redirect_uri",
+      "required": true,
+      "schema": {
+       "enum": [
+        "https://stg.testr.io/oauth_cb"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "response_type",
+      "required": true,
+      "schema": {
+       "enum": [
+        "code"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "state",
+      "required": true,
+      "schema": {
+       "enum": [
+        "c4soCT52bYM8D8csaYeCfypf92q0IV"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" class=\"login-pf\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta name=\"robots\" content=\"noindex, nofollow\">\n\n            <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/>\n    <title>Log in to UP9</title>\n    <link rel=\"icon\" href=\"/auth/resources/11ew5/login/testr/img/favicon.ico\" />\n            <link href=\"/auth/resources/11ew5/login/testr/css/testr-general.css\" rel=\"stylesheet\" />\n            <link href=\"/auth/resources/11ew5/login/testr/css/testr-login.css\" rel=\"stylesheet\" />\n            <link href=\"/auth/resources/11ew5/login/testr/css/testr-register.css\" rel=\"stylesheet\" />\n            <link href=\"/auth/resources/11ew5/login/testr/css/testr-reset-pass.css\" rel=\"stylesheet\" />\n            <script src=\"/auth/resources/11ew5/login/testr/js/intercom.js\" type=\"text/javascript\"></script>\n</head>\n\n<body class=\"\">\n  <div class=\"login-pf-page\">\n    <div id=\"kc-header\" class=\"login-pf-page-header\">\n      <div id=\"kc-header-wrapper\" class=\"\">UP9</div>\n    </div>\n    <div class=\"card-pf login-pf-accounts\">\n      <header class=\"login-pf-header\">\n                <h1 id=\"kc-page-title\">\n        <div id=\"loginMessage\">Log In</div>\n\n</h1>\n      </header>\n      <div id=\"kc-content\">\n        <div id=\"kc-content-wrapper\">\n\n\n\n        <div id=\"loginPage\" style=\"display: none;\">\n            <div id=\"inviteMessage\" style=\"margin-bottom:5%;display: none;\"></div>\n            <div id=\"kc-form\" class=\"row\">\n            <div id=\"kc-form-wrapper\" class=\"col-xs-12 col-sm-6 login-pf-social-section\">\n                    <form id=\"kc-form-login\" onsubmit=\"login.disabled = true; return true;\" action=\"https://auth.stg.testr.io/auth/realms/testr/login-actions/authenticate?session_code=8ec6wShqUWeiAR2OpJhS2YRFpf-W7KdHcTs7-o1eD8U&amp;execution=71488a90-7a22-4909-8bd8-48ada2e2cb3b&amp;client_id=react-client&amp;tab_id=5eKfSKGXgyY\" method=\"post\">\n                        <div class=\"form-group\">\n                                <input placeholder=\"User\" tabindex=\"1\" id=\"username\" class=\"form-control login-field\" name=\"username\" value=\"\"  type=\"text\" autofocus autocomplete=\"off\" />\n                        </div>\n\n                        <div class=\"form-group\">\n                            <input placeholder=\"Password\" tabindex=\"2\" id=\"password\" class=\"form-control login-field\" name=\"password\" type=\"password\" autocomplete=\"off\" />\n                        </div>\n\n                        <div class=\"form-group login-pf-settings login-form-settings\">\n                            <div class=\"forgot-password-container\">\n                                    <span><a tabindex=\"5\" href=\"/auth/realms/testr/login-actions/reset-credentials?client_id=react-client&amp;tab_id=5eKfSKGXgyY\">Forgot password</a></span>\n                            </div>\n\n                        </div>\n\n                        <div id=\"kc-form-buttons\" class=\"form-group\">\n                            <input tabindex=\"4\" class=\"button-base button-primary button-large login-button\" name=\"login\" type=\"submit\" value=\"LOG IN\"/>\n                        </div>\n                    </form>\n            </div>\n                <div id=\"separator-container\" class=\"separator-container\">\n                    <div class=\"separator-line\"></div>\n                    <p>OR</p>\n                    <div class=\"separator-line\"></div>\n                </div>\n                <div id=\"kc-social-providers\" class=\"col-xs-12 col-sm-6 login-pf-social-section\">\n                    <ul class=\"login-pf-social list-unstyled login-pf-social-all \">\n                                <button onclick=\"window.location='/auth/realms/testr/broker/google/login?client_id=react-client&amp;tab_id=5eKfSKGXgyY&amp;session_code=8ec6wShqUWeiAR2OpJhS2YRFpf-W7KdHcTs7-o1eD8U'\" class=\"button-base button-primary button-large google-login-button\" id=\"zocial-google\" >\n                                    LOG IN WITH GOOGLE\n                                    <span class=\"google-icon\" />\n                                </button>\n                    </ul>\n                </div>\n            <p style=\"font-size: 0.9em; opacity: 0.8; margin: 24px 0;\">By clicking \"Log In\" you agree to our <a target=\"_blank\" href=\"https://up9.com/tos.html\">Terms of Service</a>.</p>\n            <div id=\"kc-registration\" class=\"login-signup-container\">\n                <p>Don\u2019t have an account yet?</p>\n                <span><a id=\"signupLink\" tabindex=\"6\" href=\"/auth/realms/testr/login-actions/registration?client_id=react-client&amp;tab_id=5eKfSKGXgyY\">Sign Up</a></span>\n            </div>\n        </div>\n        </div>\n\n\n\n              <div id=\"kc-info\" class=\"login-pf-signup\">\n                  <div id=\"kc-info-wrapper\" class=\"\">\n\n\n            <script>\n                const urlSearchParams = new URLSearchParams(window.location.search);\n                const customAuthType = urlSearchParams.get(\"type\");\n\n                if (customAuthType && customAuthType.toLowerCase() === \"signup\") {\n                    const redirectPath = document.getElementById(\"signupLink\").getAttribute(\"href\");\n                    window.location.replace(window.location.origin + redirectPath);\n                } else {\n                    document.getElementById(\"loginPage\").style.display = \"block\";\n                }\n                \n                const inviteToken = urlSearchParams.get(\"inviteToken\");\n                if (inviteToken) {\n                    document.cookie=\"inviteToken=\" + inviteToken + \"; path=/\";\n                    const anchor = document.getElementById(\"signupLink\");\n                    anchor.setAttribute(\"href\", anchor.getAttribute(\"href\") + \"&inviteToken=\" + inviteToken);\n                    document.getElementById(\"separator-container\").style.display = \"none\";\n                    document.getElementById(\"kc-form-wrapper\").style.display = \"none\";\n                    document.getElementById(\"inviteMessage\").style.display = \"block\"\n                    document.getElementById(\"inviteMessage\").innerText = \"You have been invited to join \" + urlSearchParams.get(\"groupName\") + \"'s workspace\";\n\n                } else {\n                    document.cookie=\"inviteToken=; path=/\";\n                }\n\n\n            </script>\n\n                  </div>\n              </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</body>\n</html>\n"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}
