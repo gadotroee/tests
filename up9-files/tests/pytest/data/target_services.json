@@ -1,7 +1,6 @@
 {
  "TARGET_AUTH_STG_TESTR_IO": "https://auth.stg.testr.io",
- "TARGET_HTTPBIN_ORG": "http://httpbin.org",
  "TARGET_STG_TESTR_IO": "https://stg.testr.io",
- "TARGET_TRDEMO_STG_TESTR_IO": "https://trdemo.stg.testr.io",
+ "TARGET_WWW_IL_KAYAK_COM": "https://www.il.kayak.com",
  "TARGET_WWW_KAYAK_COM": "https://www.kayak.com"
 }

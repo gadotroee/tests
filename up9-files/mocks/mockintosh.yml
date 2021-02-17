@@ -11,20 +11,8 @@
 management:
   port: 8000
 services:
-- name: http://httpbin.org
-  port: 8001
-  ssl: false
-  managementRoot: __admin
-  oas: '@mock-data/up9-http___httpbin.org-spec.json'
-  endpoints:
-  - path: /
-    response:
-      headers:
-        Content-Type: text/html
-      body: '@mock-data/resp_7.html'
-      useTemplating: false
 - name: https://auth.stg.testr.io
-  port: 8002
+  port: 8001
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___auth.stg.testr.io-spec.json'
@@ -36,7 +24,7 @@ services:
       body: '@mock-data/resp_9.html'
       useTemplating: false
 - name: https://stg.testr.io
-  port: 8003
+  port: 8002
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___stg.testr.io-spec.json'
@@ -46,26 +34,89 @@ services:
       status: 302
       headers:
         Content-Type: text/html
-- name: https://trdemo.stg.testr.io
-  port: 8004
+- name: https://www.il.kayak.com
+  port: 8003
   ssl: false
   managementRoot: __admin
-  oas: '@mock-data/up9-https___trdemo.stg.testr.io-spec.json'
+  oas: '@mock-data/up9-https___www.il.kayak.com-spec.json'
   endpoints:
   - path: /
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_5.html'
+      body: '@mock-data/resp_14.html'
       useTemplating: false
-  - path: /login
+  - path: /s/horizon/common/ccpa/CCPAConsent
+    response:
+      status: 204
+    method: post
+  - path: /s/horizon/common/core/AjaxMany
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_16.json'
+      useTemplating: false
+    method: post
+  - path: /s/horizon/compareTo/config
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_17.json'
+      useTemplating: false
+    method: post
+  - path: /s/horizon/react/component/CurrencyPickerStateProviderAction
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_18.json'
+      useTemplating: false
+  - path: /s/horizon/react/component/FooterSiteMapLinksProviderAction
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_19.json'
+      useTemplating: false
+  - path: /s/horizon/react/component/PrivacyMenuStateProviderAction
+    response:
+      headers:
+        Content-Type: application/json
+      body: '
+
+
+        [{"url":"/privacy","title":"Privacy"},{"url":"/terms-of-use","title":"Terms & Conditions"}]'
+      useTemplating: false
+  - path: /s/run/kmkid/set
+    response:
+      status: 204
+    method: post
+  - path: /s/vestigo/v1/measure
+    response:
+      status: 204
+    method: post
+  - path: /ugtm/
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_6.html'
+      body: '@mock-data/resp_23.html'
       useTemplating: false
+  - path: /vs/main/frontdoor/EmailSubscriptionPanel/show
+    response:
+      status: 204
+    method: post
+  - path: /vs/main/frontdoor/{{IsNi}}/covidExplore/shown
+    response:
+      status: 204
+    method: post
+  - path: /vs/main/frontdoor/saving/loaded/drawer
+    response:
+      status: 204
+    method: post
+  - path: /vs/page/main/frontdoor
+    response:
+      status: 204
+    method: post
 - name: https://www.kayak.com
-  port: 8005
+  port: 8004
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___www.kayak.com-spec.json'
@@ -73,3 +124,10 @@ services:
   - path: /
     response:
       status: 302
+  - path: /s/run/kmkid/sync
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"kmkid":"Az7Y9PDETKckDTcA2IJf7ZY"}'
+      useTemplating: false
+    method: post

@@ -1,28 +1,68 @@
 {
  "parameters": [
   {
-   "name": "address",
-   "uuid": "29a3eed4-6edd-41c8-930b-fa9463f3d527"
+   "name": "clientRequestTime",
+   "uuid": "23524293-ec46-43b5-b2d9-ef3b1e9f7601"
   },
   {
-   "name": "card",
-   "uuid": "1cf7d9ee-3905-4d1a-8ad7-81991a2f2e31"
+   "name": "domain",
+   "uuid": "202aa625-8f28-414a-9b9a-58abe4ae37ea"
   },
   {
-   "name": "customer",
-   "uuid": "bb057cd1-7193-42e6-a2cb-66445260d5eb"
+   "name": "eventName",
+   "uuid": "6f3bdb6e-1a66-4375-be3a-cfca76b7e533"
   },
   {
-   "name": "items",
-   "uuid": "2b09cede-2849-46bc-a6f4-6ae288cafea6"
+   "name": "eventObject",
+   "uuid": "fe12dcb1-c560-40f8-bf62-6a86768a31c3"
+  },
+  {
+   "name": "eventType",
+   "uuid": "aa12b0f5-5d3e-4bca-a941-ddfee0b805a3"
+  },
+  {
+   "name": "height",
+   "uuid": "7296d9b9-99cc-4234-b79f-72eb71052043"
+  },
+  {
+   "name": "npmPackageVersion",
+   "uuid": "6b5d436d-c44d-43ca-938c-ba771d54ab2d"
+  },
+  {
+   "name": "queryString",
+   "uuid": "4667beda-2326-477f-b804-f7ca47fc3c60"
+  },
+  {
+   "name": "subPageType",
+   "uuid": "24144d85-18e2-40a1-a90e-00d09b932e35"
+  },
+  {
+   "name": "timestamp",
+   "uuid": "739ea6df-866f-4cc0-96d6-97b453cf033c"
+  },
+  {
+   "name": "viewId",
+   "uuid": "5241c694-1ddc-47ac-8e42-47ddc6b66d41"
+  },
+  {
+   "name": "width",
+   "uuid": "f70db6ff-ea3d-4e08-aa5e-ef3baaa02c11"
   }
  ],
  "rows": [
   {
-   "address": "http://user/addresses/57a98d98e4b00679b4a830b0",
-   "card": "http://user/cards/57a98d98e4b00679b4a830b1",
-   "customer": "http://user/customers/57a98d98e4b00679b4a830b2",
-   "items": "http://carts/carts/57a98d98e4b00679b4a830b2/items"
+   "clientRequestTime": "2021-02-17T09:07:29.129Z",
+   "domain": "www.il.kayak.com",
+   "eventName": "vs",
+   "eventObject": "/vs/main/frontdoor/saving/loaded/drawer",
+   "eventType": "action",
+   "height": 1248,
+   "npmPackageVersion": "6.2.1",
+   "queryString": "%3Fispredir%3Dtrue",
+   "subPageType": null,
+   "timestamp": "2021-02-17T09:07:28.708Z",
+   "viewId": "H_91613552847262",
+   "width": 1200
   }
  ]
 }

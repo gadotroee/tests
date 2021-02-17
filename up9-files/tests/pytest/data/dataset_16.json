@@ -1,0 +1,23 @@
+{
+ "parameters": [
+  {
+   "name": "components__",
+   "uuid": "27df09ed-fcc0-4f9b-af45-548299508c31"
+  },
+  {
+   "name": "formtoken",
+   "uuid": "ba56b4eb-222f-4494-935d-be8685974c04"
+  },
+  {
+   "name": "parameters__",
+   "uuid": "6d4e2bd5-a7b3-42a4-aa6f-2edaed50e25f"
+  }
+ ],
+ "rows": [
+  {
+   "components__": "common/personalization/HistoryRecommendations",
+   "formtoken": "Kria$1w1XCClIQW7L8bBIpWNMvQApFS4mAoEcMvL92U-eS1aTJ3A4zprGKvGfYCxXNy00$yeJXM3V$v_LTRh8ZE",
+   "parameters__": "{\"defaultFd\":true,\"originCode\":\"TLV\",\"vertical\":\"cars\",\"destinationId\":\"\"}"
+  }
+ ]
+}

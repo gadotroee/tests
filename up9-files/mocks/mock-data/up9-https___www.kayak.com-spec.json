@@ -7,7 +7,7 @@
  "paths": {
   "/": {
    "get": {
-    "operationId": "12bcb0ef-ed3b-4a16-9f74-7dcc5862b024",
+    "operationId": "b64b9ea3-f43b-4b14-8146-1a1579e98792",
     "parameters": [],
     "responses": {
      "302": {
@@ -17,6 +17,55 @@
     "summary": "Seen 1 requests"
    },
    "parameters": []
+  },
+  "/s/run/kmkid/sync": {
+   "parameters": [],
+   "post": {
+    "operationId": "337bc1e6-f6e2-4637-9446-c37e81df1527",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/x-www-form-urlencoded": {
+       "schema": {
+        "properties": {
+         "suggestedKmkid": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "suggestedKmkid"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": {
+         "kmkid": "Az7Y9PDETKckDTcA2IJf7ZY"
+        },
+        "schema": {
+         "properties": {
+          "kmkid": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "kmkid"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   }
   }
  },
  "tags": []

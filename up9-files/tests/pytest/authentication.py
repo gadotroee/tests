@@ -17,11 +17,9 @@ def authenticate(target_key: str, target: TargetService):
     # authenticate_oauth(target)
     if target_key == 'TARGET_AUTH_STG_TESTR_IO':
         pass
-    elif target_key == 'TARGET_HTTPBIN_ORG':
-        pass
     elif target_key == 'TARGET_STG_TESTR_IO':
         pass
-    elif target_key == 'TARGET_TRDEMO_STG_TESTR_IO':
+    elif target_key == 'TARGET_WWW_IL_KAYAK_COM':
         pass
     elif target_key == 'TARGET_WWW_KAYAK_COM':
         pass

@@ -1,0 +1,39 @@
+{
+ "events": [
+  {
+   "context": {
+    "client": {
+     "npmPackageVersion": "{{npmPackageVersion}}",
+     "type": "desktop",
+     "userInterfaceStyle": "dark",
+     "windowSize": {
+      "height": "{{height}}",
+      "width": "{{width}}"
+     }
+    },
+    "devicePixelRatio": 1,
+    "domain": "{{domain}}",
+    "location": {
+     "queryString": "{{queryString}}",
+     "referrer": "",
+     "uri": "/"
+    },
+    "viewCode": {
+     "pageType": "frontdoor",
+     "subPageType": null,
+     "vertical": "main"
+    },
+    "viewId": "{{viewId}}"
+   },
+   "eventName": "{{eventName}}",
+   "eventType": "{{eventType}}",
+   "payload": {
+    "eventObject": "{{eventObject}}"
+   },
+   "timestamp": "{{timestamp}}"
+  }
+ ],
+ "headers": {
+  "clientRequestTime": "{{clientRequestTime}}"
+ }
+}
