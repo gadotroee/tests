@@ -8,7 +8,7 @@ from authentication import authenticate
 class Tests__5142311_fls_doubleclick_net(unittest.TestCase):
 
     @clear_session({'spanId': 32})
-    def test_32_get_activityi(self):
+    def test_032_get_activityi(self):
         # GET https://5142311.fls.doubleclick.net/activityi (endp 32)
         _5142311_fls_doubleclick_net = get_http_target('TARGET__5142311_FLS_DOUBLECLICK_NET', authenticate)
         resp = _5142311_fls_doubleclick_net.get('/activityi')
@@ -20,7 +20,7 @@ class Tests__5142311_fls_doubleclick_net(unittest.TestCase):
 class Tests_adservice_google_com(unittest.TestCase):
 
     @clear_session({'spanId': 4})
-    def test_04_get_adsid_google_ui(self):
+    def test_004_get_adsid_google_ui(self):
         # GET https://adservice.google.com/adsid/google/ui (endp 4)
         adservice_google_com = get_http_target('TARGET_ADSERVICE_GOOGLE_COM', authenticate)
         resp = adservice_google_com.get('/adsid/google/ui')
@@ -33,7 +33,7 @@ class Tests_api_iam_intercom_io(unittest.TestCase):
 
     @json_dataset('data/dataset_11.json')
     @clear_session({'spanId': 11})
-    def test_11_post_messenger_web_ping(self, data_row):
+    def test_011_post_messenger_web_ping(self, data_row):
         Idempotency_Key, app_id, g, page_title, referer, s, v = data_row
 
         # POST https://api-iam.intercom.io/messenger/web/ping (endp 11)
@@ -50,7 +50,7 @@ class Tests_auth_stg_testr_io(unittest.TestCase):
     # authentication-related test
     @json_dataset('data/dataset_9.json')
     @clear_session({'spanId': 9})
-    def test_09_get_auth_realms_testr_protocol_openid_connect_auth(self, data_row):
+    def test_009_get_auth_realms_testr_protocol_openid_connect_auth(self, data_row):
         redirect_uri, state = data_row
 
         # GET https://auth.stg.testr.io/auth/realms/testr/protocol/openid-connect/auth (endp 9)
@@ -67,7 +67,7 @@ class Tests_bat_bing_com(unittest.TestCase):
 
     @json_dataset('data/dataset_29.json')
     @clear_session({'spanId': 29})
-    def test_29_get_action_0(self, data_row):
+    def test_029_get_action_0(self, data_row):
         ti, = data_row
 
         # GET https://bat.bing.com/action/0 (endp 29)
@@ -82,7 +82,7 @@ class Tests_bat_bing_com(unittest.TestCase):
 class Tests_httpbin_org(unittest.TestCase):
 
     @clear_session({'spanId': 7})
-    def test_07_get_(self):
+    def test_007_get_(self):
         # GET http://httpbin.org/ (endp 7)
         httpbin_org = get_http_target('TARGET_HTTPBIN_ORG', authenticate)
         resp = httpbin_org.get('/')
@@ -96,7 +96,7 @@ class Tests_httpbin_org(unittest.TestCase):
 class Tests_ib_adnxs_com(unittest.TestCase):
 
     @clear_session({'spanId': 30})
-    def test_30_get_bounce(self):
+    def test_030_get_bounce(self):
         # GET https://ib.adnxs.com/bounce (endp 30)
         ib_adnxs_com = get_http_target('TARGET_IB_ADNXS_COM', authenticate)
         qstr = '?' + urlencode([('/getuid?https://www.kayak.com/s/kayakpixel/lgbl/impevent?adnxs_uid=%24UID', '')])
@@ -106,7 +106,7 @@ class Tests_ib_adnxs_com(unittest.TestCase):
 
     @json_dataset('data/dataset_31.json')
     @clear_session({'spanId': 31})
-    def test_31_get_getuid(self, data_row):
+    def test_031_get_getuid(self, data_row):
         https___www_kayak_com_s_kayakpixel_lgbl_impevent_adnxs_uid, = data_row
 
         # GET https://ib.adnxs.com/getuid (endp 31)
@@ -122,7 +122,7 @@ class Tests_ogs_google_com(unittest.TestCase):
 
     @json_dataset('data/dataset_3.json')
     @clear_session({'spanId': 3})
-    def test_03_get_widget_app_so(self, data_row):
+    def test_003_get_widget_app_so(self, data_row):
         origin, = data_row
 
         # GET https://ogs.google.com/widget/app/so (endp 3)
@@ -138,7 +138,7 @@ class Tests_stats_g_doubleclick_net(unittest.TestCase):
 
     @json_dataset('data/dataset_33.json')
     @clear_session({'spanId': 33})
-    def test_33_post_j_collect(self, data_row):
+    def test_033_post_j_collect(self, data_row):
         _gid, _r, _u, _v, cid, gjid, jid, tid, z = data_row
 
         # POST https://stats.g.doubleclick.net/j/collect (endp 33)
@@ -153,7 +153,7 @@ class Tests_stats_g_doubleclick_net(unittest.TestCase):
 class Tests_stg_testr_io(unittest.TestCase):
 
     @clear_session({'spanId': 8})
-    def test_08_get_(self):
+    def test_008_get_(self):
         # GET https://stg.testr.io/ (endp 8)
         stg_testr_io = get_http_target('TARGET_STG_TESTR_IO', authenticate)
         resp = stg_testr_io.get('/')
@@ -166,7 +166,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_40.json')
     @clear_session({'spanId': 40})
-    def test_40_post_agents_agentId_verifyTargets(self, data_row):
+    def test_040_post_agents_agentId_verifyTargets(self, data_row):
         agentId, targetKey, value = data_row
 
         # POST http://trcc-api-service.tradmin/agents/{agentId}/verifyTargets (endp 40)
@@ -181,7 +181,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_jsonpath('$.status', expected_value='COMPLETED')
 
     @clear_session({'spanId': 41})
-    def test_41_post_models_modelSettings(self):
+    def test_041_post_models_modelSettings(self):
         # POST http://trcc-api-service.tradmin/models/modelSettings (endp 41)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         with open('data/payload_for_endp_41.json', 'r') as json_payload_file:
@@ -193,7 +193,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_42.json')
     @clear_session({'spanId': 42})
-    def test_42_get_models_roee_param_all(self, data_row):
+    def test_042_get_models_roee_param_all(self, data_row):
         param, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/{param}/all (endp 42)
@@ -205,7 +205,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_43.json')
     @clear_session({'spanId': 43})
-    def test_43_get_models_roee_param_all_dataDependency(self, data_row):
+    def test_043_get_models_roee_param_all_dataDependency(self, data_row):
         param, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/{param}/all/dataDependency (endp 43)
@@ -217,7 +217,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_44.json')
     @clear_session({'spanId': 44})
-    def test_44_get_models_roee_param_all_dataDependency_span(self, data_row):
+    def test_044_get_models_roee_param_all_dataDependency_span(self, data_row):
         param, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/{param}/all/dataDependency/span (endp 44)
@@ -228,7 +228,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_45.json')
     @clear_session({'spanId': 45})
-    def test_45_get_models_roee_har_entry_id(self, data_row):
+    def test_045_get_models_roee_har_entry_id(self, data_row):
         id_, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/har/entry/{id} (endp 45)
@@ -240,7 +240,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_46.json')
     @clear_session({'spanId': 46})
-    def test_46_get_models_roee_har(self, data_row):
+    def test_046_get_models_roee_har(self, data_row):
         maxRevisionId, selectedEndpoint, services = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/har (endp 46)
@@ -252,7 +252,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_47.json')
     @clear_session({'spanId': 47})
-    def test_47_post_models_roee_packs_testPackId(self, data_row):
+    def test_047_post_models_roee_packs_testPackId(self, data_row):
         revision, spanGuid, testPackId = data_row
 
         # POST http://trcc-api-service.tradmin/models/roee/packs/{testPackId} (endp 47)
@@ -268,7 +268,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_48.json')
     @clear_session({'spanId': 48})
-    def test_48_get_models_roee_packs_testPackId(self, data_row):
+    def test_048_get_models_roee_packs_testPackId(self, data_row):
         testPackId, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/packs/{testPackId} (endp 48)
@@ -280,7 +280,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_jsonpath('$.tests.[*].ctype', expected_value='text/html')
 
     @clear_session({'spanId': 49})
-    def test_49_get_models_roee_revisions(self):
+    def test_049_get_models_roee_revisions(self):
         # GET http://trcc-api-service.tradmin/models/roee/revisions (endp 49)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/revisions')
@@ -288,7 +288,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 50})
-    def test_50_get_models_roee_sources(self):
+    def test_050_get_models_roee_sources(self):
         # GET http://trcc-api-service.tradmin/models/roee/sources (endp 50)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/sources')
@@ -296,7 +296,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 51})
-    def test_51_get_models_roee_status(self):
+    def test_051_get_models_roee_status(self):
         # GET http://trcc-api-service.tradmin/models/roee/status (endp 51)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/status')
@@ -305,7 +305,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_52.json')
     @clear_session({'spanId': 52})
-    def test_52_get_models_roee_suites_all_param(self, data_row):
+    def test_052_get_models_roee_suites_all_param(self, data_row):
         param, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/{param} (endp 52)
@@ -316,7 +316,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_jsonpath('$.overrides.model.[*]', expected_value='drop_all_links')
 
     @clear_session({'spanId': 53})
-    def test_53_get_models_roee_suites_all_profiles(self):
+    def test_053_get_models_roee_suites_all_profiles(self):
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/profiles (endp 53)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/suites/all/profiles')
@@ -326,7 +326,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_54.json')
     @clear_session({'spanId': 54})
-    def test_54_post_models_roee_suites_all_runs(self, data_row):
+    def test_054_post_models_roee_suites_all_runs(self, data_row):
         agentId, testPackId = data_row
 
         # POST http://trcc-api-service.tradmin/models/roee/suites/all/runs (endp 54)
@@ -341,7 +341,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_55.json')
     @clear_session({'spanId': 55})
-    def test_55_get_models_roee_suites_all_runs_runId(self, data_row):
+    def test_055_get_models_roee_suites_all_runs_runId(self, data_row):
         runId, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId} (endp 55)
@@ -352,7 +352,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_jsonpath('$.model', expected_value='roee')
 
     @clear_session({'spanId': 56})
-    def test_56_get_models_roee_suites_all_runs_state(self):
+    def test_056_get_models_roee_suites_all_runs_state(self):
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/state (endp 56)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/suites/all/runs/state')
@@ -361,19 +361,19 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_57.json')
     @clear_session({'spanId': 57})
-    def test_57_get_models_roee_suites_all_runs(self, data_row):
-        amount, completedOnly = data_row
+    def test_057_get_models_roee_suites_all_runs(self, data_row):
+        amount, completedOnly, inclusive = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs (endp 57)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
-        qstr = '?' + urlencode([('amount', amount), ('completedOnly', completedOnly), ('inclusive', 'false'), ('reverse', 'false')])
+        qstr = '?' + urlencode([('amount', amount), ('completedOnly', completedOnly), ('inclusive', inclusive), ('reverse', 'false')])
         resp = trcc_api_service_tradmin.get('/models/roee/suites/all/runs' + qstr)
         resp.assert_ok()
         # resp.assert_status_code(200)
         # resp.assert_jsonpath('$.[*].model', expected_value='roee')
 
     @clear_session({'spanId': 58})
-    def test_58_get_users_current(self):
+    def test_058_get_users_current(self):
         # GET http://trcc-api-service.tradmin/users/current (endp 58)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/users/current')
@@ -381,7 +381,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 59})
-    def test_59_get_admin_config(self):
+    def test_059_get_admin_config(self):
         # GET http://trcc-api-service.tradmin/admin/config (endp 59)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/admin/config')
@@ -391,7 +391,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_60.json')
     @clear_session({'spanId': 60})
-    def test_60_post_models_roee_revisions(self, data_row):
+    def test_060_post_models_roee_revisions(self, data_row):
         creationReason, maxEntryId, sourceRevisionId = data_row
 
         # POST http://trcc-api-service.tradmin/models/roee/revisions (endp 60)
@@ -408,7 +408,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_cssselect('p', expected_value='Ok')
 
     @clear_session({'spanId': 61})
-    def test_61_get_models_roee_revisions_latest(self):
+    def test_061_get_models_roee_revisions_latest(self):
         # GET http://trcc-api-service.tradmin/models/roee/revisions/latest (endp 61)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/revisions/latest')
@@ -416,7 +416,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 62})
-    def test_62_get_models_roee_suites(self):
+    def test_062_get_models_roee_suites(self):
         # GET http://trcc-api-service.tradmin/models/roee/suites (endp 62)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/models/roee/suites')
@@ -425,7 +425,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_jsonpath('$.[*].lastEnvInfo.profileName', expected_value='cluster')
 
     @clear_session({'spanId': 63})
-    def test_63_get_tapping_state(self):
+    def test_063_get_tapping_state(self):
         # GET http://trcc-api-service.tradmin/tapping/state (endp 63)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/tapping/state')
@@ -435,7 +435,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_64.json')
     @clear_session({'spanId': 64})
-    def test_64_post_admin_imageVersion(self, data_row):
+    def test_064_post_admin_imageVersion(self, data_row):
         imagePath, = data_row
 
         # POST http://trcc-api-service.tradmin/admin/imageVersion (endp 64)
@@ -449,7 +449,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_65.json')
     @clear_session({'spanId': 65})
-    def test_65_get_agents_agentId_injectorConfig(self, data_row):
+    def test_065_get_agents_agentId_injectorConfig(self, data_row):
         agentId, = data_row
 
         # GET http://trcc-api-service.tradmin/agents/{agentId}/injectorConfig (endp 65)
@@ -460,7 +460,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_66.json')
     @clear_session({'spanId': 66})
-    def test_66_get_models_roee_suites_all_agents_agentId_profiles_cluster(self, data_row):
+    def test_066_get_models_roee_suites_all_agents_agentId_profiles_cluster(self, data_row):
         agentId, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/agents/{agentId}/profiles/cluster (endp 66)
@@ -472,8 +472,8 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_67.json')
     @clear_session({'spanId': 67})
-    def test_67_post_models_roee_suites_all_runs_runId(self, data_row):
-        endTime, rcaDataFileName, runId, startTime, status = data_row
+    def test_067_post_models_roee_suites_all_runs_runId(self, data_row):
+        collected, endTime, passed, rcaDataFileName, runId, startTime, status, total = data_row
 
         # POST http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId} (endp 67)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
@@ -481,6 +481,9 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
             json_payload = json.load(json_payload_file)
         apply_into_json(json_payload, '$.endTime', endTime)
         apply_into_json(json_payload, '$.rcaDataFileName', rcaDataFileName)
+        apply_into_json(json_payload, '$.results.collected', collected)
+        apply_into_json(json_payload, '$.results.passed', passed)
+        apply_into_json(json_payload, '$.results.total', total)
         apply_into_json(json_payload, '$.startTime', startTime)
         apply_into_json(json_payload, '$.status', status)
         resp = trcc_api_service_tradmin.post(f'/models/roee/suites/all/runs/{runId}', json=json_payload)
@@ -489,7 +492,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_cssselect('p', expected_value='Ok')
 
     @clear_session({'spanId': 68})
-    def test_68_get_admin_whoami(self):
+    def test_068_get_admin_whoami(self):
         # GET http://trcc-api-service.tradmin/admin/whoami (endp 68)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/admin/whoami')
@@ -499,7 +502,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_69.json')
     @clear_session({'spanId': 69})
-    def test_69_get_models_roee_suites_all_runs_runId_downloadTests(self, data_row):
+    def test_069_get_models_roee_suites_all_runs_runId_downloadTests(self, data_row):
         runId, = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/downloadTests (endp 69)
@@ -510,7 +513,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_70.json')
     @clear_session({'spanId': 70})
-    def test_70_get_models_roee_suites_all_runs_runId_uploadUrl(self, data_row):
+    def test_070_get_models_roee_suites_all_runs_runId_uploadUrl(self, data_row):
         fileName, runId = data_row
 
         # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/uploadUrl (endp 70)
@@ -520,45 +523,62 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_85.json')
-    @clear_session({'spanId': 85})
-    def test_85_get_models_roee_suites_all_runs_runId_log(self, data_row):
+    @json_dataset('data/dataset_90.json')
+    @clear_session({'spanId': 90})
+    def test_090_get_models_roee_suites_all_runs_runId_log(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/log (endp 85)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/log (endp 90)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/log')
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_86.json')
-    @clear_session({'spanId': 86})
-    def test_86_get_models_roee_suites_all_runs_runId_xml(self, data_row):
+    @json_dataset('data/dataset_91.json')
+    @clear_session({'spanId': 91})
+    def test_091_get_models_roee_suites_all_runs_runId_xml(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/xml (endp 86)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/xml (endp 91)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/xml')
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_87.json')
-    @clear_session({'spanId': 87})
-    def test_87_get_models_roee_suites_all_runs_runId_results(self, data_row):
+    @json_dataset('data/dataset_92.json')
+    @clear_session({'spanId': 92})
+    def test_092_get_models_roee_suites_all_runs_runId_results(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/results (endp 87)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/results (endp 92)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/results')
         resp.assert_ok()
         # resp.assert_status_code(200)
+
+    @json_dataset('data/dataset_104.json')
+    @clear_session({'spanId': 104})
+    def test_104_post_agents_agentId(self, data_row):
+        agentId, defaultWorkspace, name, version = data_row
+
+        # POST http://trcc-api-service.tradmin/agents/{agentId} (endp 104)
+        trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
+        with open('data/payload_for_endp_104.json', 'r') as json_payload_file:
+            json_payload = json.load(json_payload_file)
+        apply_into_json(json_payload, '$.defaultWorkspace', defaultWorkspace)
+        apply_into_json(json_payload, '$.name', name)
+        apply_into_json(json_payload, '$.version', version)
+        resp = trcc_api_service_tradmin.post(f'/agents/{agentId}', json=json_payload)
+        resp.assert_ok()
+        # resp.assert_status_code(200)
+        # resp.assert_cssselect('p', expected_value='Ok')
 
 
 @data_driven_tests
 class Tests_trdemo_stg_testr_io(unittest.TestCase):
 
     @clear_session({'spanId': 5})
-    def test_05_get_(self):
+    def test_005_get_(self):
         # GET https://trdemo.stg.testr.io/ (endp 5)
         trdemo_stg_testr_io = get_http_target('TARGET_TRDEMO_STG_TESTR_IO', authenticate)
         resp = trdemo_stg_testr_io.get('/')
@@ -569,7 +589,7 @@ class Tests_trdemo_stg_testr_io(unittest.TestCase):
 
     # authentication-related test
     @clear_session({'spanId': 6})
-    def test_06_get_login(self):
+    def test_006_get_login(self):
         # GET https://trdemo.stg.testr.io/login (endp 6)
         trdemo_stg_testr_io = get_http_target('TARGET_TRDEMO_STG_TESTR_IO', dummy_auth)
         resp = trdemo_stg_testr_io.get('/login')
@@ -579,7 +599,7 @@ class Tests_trdemo_stg_testr_io(unittest.TestCase):
         # resp.assert_cssselect('html head title', expected_value=' TestR Demo app ')
 
     @clear_session({'spanId': 35})
-    def test_35_get_(self):
+    def test_035_get_(self):
         # GET https://trdemo.stg.testr.io/ (endp 35)
         trdemo_stg_testr_io = get_http_target('TARGET_TRDEMO_STG_TESTR_IO', authenticate)
         resp = trdemo_stg_testr_io.get('/')
@@ -591,7 +611,7 @@ class Tests_trdemo_stg_testr_io(unittest.TestCase):
     # authentication-related test
     @json_dataset('data/dataset_37.json')
     @clear_session({'spanId': 37})
-    def test_37_post_login(self, data_row):
+    def test_037_post_login(self, data_row):
         user, = data_row
 
         # POST https://trdemo.stg.testr.io/login (endp 37)
@@ -602,7 +622,7 @@ class Tests_trdemo_stg_testr_io(unittest.TestCase):
 
     @json_dataset('data/dataset_38.json')
     @clear_session({'spanId': 38})
-    def test_38_get_search(self, data_row):
+    def test_038_get_search(self, data_row):
         startDate, = data_row
 
         # GET https://trdemo.stg.testr.io/search (endp 38)
@@ -615,7 +635,7 @@ class Tests_trdemo_stg_testr_io(unittest.TestCase):
         # resp.assert_cssselect('html head title', expected_value=' TestR Demo app ')
 
     @clear_session({'spanId': 39})
-    def test_39_get_(self):
+    def test_039_get_(self):
         # GET http://trdemo.stg.testr.io/ (endp 39)
         trdemo_stg_testr_io = get_http_target('TARGET_TRDEMO_STG_TESTR_IO', authenticate)
         resp = trdemo_stg_testr_io.get('/')
@@ -628,7 +648,7 @@ class Tests_widget_intercom_io(unittest.TestCase):
 
     @json_dataset('data/dataset_10.json')
     @clear_session({'spanId': 10})
-    def test_10_get_widget_param(self, data_row):
+    def test_010_get_widget_param(self, data_row):
         param, = data_row
 
         # GET https://widget.intercom.io/widget/{param} (endp 10)
@@ -643,7 +663,7 @@ class Tests_www_google_analytics_com(unittest.TestCase):
 
     @json_dataset('data/dataset_28.json')
     @clear_session({'spanId': 28})
-    def test_28_post_j_collect(self, data_row):
+    def test_028_post_j_collect(self, data_row):
         _gid, _u, _v, a, cd13, cid, de, gjid, gtm, jid, sd, sr, tid, z = data_row
 
         # POST https://www.google-analytics.com/j/collect (endp 28)
@@ -659,7 +679,7 @@ class Tests_www_google_com(unittest.TestCase):
 
     @json_dataset('data/dataset_1.json')
     @clear_session({'spanId': 1})
-    def test_01_post_param(self, data_row):
+    def test_001_post_param(self, data_row):
         aftp, atyp, ei, fld, m, me, mem, net, param, pv, rt, sys_, wh = data_row
 
         # POST https://www.google.com/{param} (endp 1)
@@ -671,7 +691,7 @@ class Tests_www_google_com(unittest.TestCase):
 
     @json_dataset('data/dataset_2.json')
     @clear_session({'spanId': 2})
-    def test_02_get_search(self, data_row):
+    def test_002_get_search(self, data_row):
         aqs, ie = data_row
 
         # GET https://www.google.com/search (endp 2)
@@ -688,7 +708,7 @@ class Tests_www_google_com(unittest.TestCase):
 class Tests_www_il_kayak_com(unittest.TestCase):
 
     @clear_session({'spanId': 14})
-    def test_14_get_(self):
+    def test_014_get_(self):
         # GET https://www.il.kayak.com/ (endp 14)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         qstr = '?' + urlencode([('ispredir', 'true')])
@@ -700,7 +720,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
 
     @json_dataset('data/dataset_15.json')
     @clear_session({'spanId': 15})
-    def test_15_post_s_horizon_common_ccpa_CCPAConsent(self, data_row):
+    def test_015_post_s_horizon_common_ccpa_CCPAConsent(self, data_row):
         r9version, scriptsMetadata, stylesMetadata = data_row
 
         # POST https://www.il.kayak.com/s/horizon/common/ccpa/CCPAConsent (endp 15)
@@ -711,7 +731,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
 
     @json_dataset('data/dataset_16.json')
     @clear_session({'spanId': 16})
-    def test_16_post_s_horizon_common_core_AjaxMany(self, data_row):
+    def test_016_post_s_horizon_common_core_AjaxMany(self, data_row):
         components__, formtoken, parameters__ = data_row
 
         # POST https://www.il.kayak.com/s/horizon/common/core/AjaxMany (endp 16)
@@ -721,7 +741,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 17})
-    def test_17_post_s_horizon_compareTo_config(self):
+    def test_017_post_s_horizon_compareTo_config(self):
         # POST https://www.il.kayak.com/s/horizon/compareTo/config (endp 17)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.post('/s/horizon/compareTo/config', headers=dict([('x-requested-with', 'XMLHttpRequest')]))
@@ -730,7 +750,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_jsonpath('$.content.workaround.name', expected_value='SwapperNoSpinner')
 
     @clear_session({'spanId': 18})
-    def test_18_get_s_horizon_react_component_CurrencyPickerStateProviderAction(self):
+    def test_018_get_s_horizon_react_component_CurrencyPickerStateProviderAction(self):
         # GET https://www.il.kayak.com/s/horizon/react/component/CurrencyPickerStateProviderAction (endp 18)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.get('/s/horizon/react/component/CurrencyPickerStateProviderAction', headers=dict([('x-requested-with', 'XMLHttpRequest')]))
@@ -739,7 +759,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_jsonpath('$.current.displayName', expected_value='Israeli New Shekels')
 
     @clear_session({'spanId': 19})
-    def test_19_get_s_horizon_react_component_FooterSiteMapLinksProviderAction(self):
+    def test_019_get_s_horizon_react_component_FooterSiteMapLinksProviderAction(self):
         # GET https://www.il.kayak.com/s/horizon/react/component/FooterSiteMapLinksProviderAction (endp 19)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.get('/s/horizon/react/component/FooterSiteMapLinksProviderAction', headers=dict([('x-requested-with', 'XMLHttpRequest')]))
@@ -747,7 +767,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 20})
-    def test_20_get_s_horizon_react_component_PrivacyMenuStateProviderAction(self):
+    def test_020_get_s_horizon_react_component_PrivacyMenuStateProviderAction(self):
         # GET https://www.il.kayak.com/s/horizon/react/component/PrivacyMenuStateProviderAction (endp 20)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.get('/s/horizon/react/component/PrivacyMenuStateProviderAction', headers=dict([('x-requested-with', 'XMLHttpRequest')]))
@@ -756,7 +776,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
 
     @json_dataset('data/dataset_21.json')
     @clear_session({'spanId': 21})
-    def test_21_post_s_run_kmkid_set(self, data_row):
+    def test_021_post_s_run_kmkid_set(self, data_row):
         kmkid, = data_row
 
         # POST https://www.il.kayak.com/s/run/kmkid/set (endp 21)
@@ -767,7 +787,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
 
     @json_dataset('data/dataset_22.json')
     @clear_session({'spanId': 22})
-    def test_22_post_s_vestigo_v1_measure(self, data_row):
+    def test_022_post_s_vestigo_v1_measure(self, data_row):
         clientRequestTime, domain, eventName, eventObject, eventType, height, npmPackageVersion, queryString, subPageType, timestamp, viewId, width = data_row
 
         # POST https://www.il.kayak.com/s/vestigo/v1/measure (endp 22)
@@ -791,7 +811,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_status_code(204)
 
     @clear_session({'spanId': 23})
-    def test_23_get_ugtm_(self):
+    def test_023_get_ugtm_(self):
         # GET https://www.il.kayak.com/ugtm/ (endp 23)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         qstr = '?' + urlencode([('ispredir', 'true')])
@@ -800,7 +820,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_status_code(200)
 
     @clear_session({'spanId': 24})
-    def test_24_post_vs_main_frontdoor_EmailSubscriptionPanel_show(self):
+    def test_024_post_vs_main_frontdoor_EmailSubscriptionPanel_show(self):
         # POST https://www.il.kayak.com/vs/main/frontdoor/EmailSubscriptionPanel/show (endp 24)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.post('/vs/main/frontdoor/EmailSubscriptionPanel/show', data=[('action', 'vs')], headers=dict([('x-requested-with', 'XMLHttpRequest')]))
@@ -809,7 +829,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
 
     @json_dataset('data/dataset_25.json')
     @clear_session({'spanId': 25})
-    def test_25_post_vs_main_frontdoor_IsNi_covidExplore_shown(self, data_row):
+    def test_025_post_vs_main_frontdoor_IsNi_covidExplore_shown(self, data_row):
         IsNi, = data_row
 
         # POST https://www.il.kayak.com/vs/main/frontdoor/{IsNi}/covidExplore/shown (endp 25)
@@ -819,7 +839,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_status_code(204)
 
     @clear_session({'spanId': 26})
-    def test_26_post_vs_main_frontdoor_saving_loaded_drawer(self):
+    def test_026_post_vs_main_frontdoor_saving_loaded_drawer(self):
         # POST https://www.il.kayak.com/vs/main/frontdoor/saving/loaded/drawer (endp 26)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.post('/vs/main/frontdoor/saving/loaded/drawer', data=[('action', 'vs'), ('searchid', 'undefined')])
@@ -827,7 +847,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
         # resp.assert_status_code(204)
 
     @clear_session({'spanId': 27})
-    def test_27_post_vs_page_main_frontdoor(self):
+    def test_027_post_vs_page_main_frontdoor(self):
         # POST https://www.il.kayak.com/vs/page/main/frontdoor (endp 27)
         www_il_kayak_com = get_http_target('TARGET_WWW_IL_KAYAK_COM', authenticate)
         resp = www_il_kayak_com.post('/vs/page/main/frontdoor', data=[('action', 'vs')], headers=dict([('x-requested-with', 'XMLHttpRequest')]))
@@ -839,7 +859,7 @@ class Tests_www_il_kayak_com(unittest.TestCase):
 class Tests_www_kayak_com(unittest.TestCase):
 
     @clear_session({'spanId': 12})
-    def test_12_get_(self):
+    def test_012_get_(self):
         # GET https://www.kayak.com/ (endp 12)
         www_kayak_com = get_http_target('TARGET_WWW_KAYAK_COM', authenticate)
         resp = www_kayak_com.get('/')
@@ -848,7 +868,7 @@ class Tests_www_kayak_com(unittest.TestCase):
 
     @json_dataset('data/dataset_13.json')
     @clear_session({'spanId': 13})
-    def test_13_post_s_run_kmkid_sync(self, data_row):
+    def test_013_post_s_run_kmkid_sync(self, data_row):
         suggestedKmkid, = data_row
 
         # POST https://www.kayak.com/s/run/kmkid/sync (endp 13)

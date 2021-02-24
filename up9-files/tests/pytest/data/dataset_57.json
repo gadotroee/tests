@@ -7,12 +7,17 @@
   {
    "name": "completedOnly",
    "uuid": "5bf78c82-e4ff-447f-908b-47e5cb1cacda"
+  },
+  {
+   "name": "inclusive",
+   "uuid": "af51aa09-896e-4e8e-adaa-1e3663612192"
   }
  ],
  "rows": [
   {
    "amount": "63",
-   "completedOnly": "false"
+   "completedOnly": "false",
+   "inclusive": "true"
   }
  ]
 }

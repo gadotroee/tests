@@ -45,7 +45,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 10 requests",
+    "summary": "Seen 14 requests",
     "tags": [
      "admin"
     ]
@@ -80,7 +80,7 @@
       "content": {
        "application/json": {
         "example": {
-         "sha": "sha256:538bd078e5a7885d1087b48e5640547272235886b31f2b234198eedfa9fd66b6"
+         "sha": "sha256:9ebcd2153cda528363cb78e59ac57427f21411a2a540a60da1f7fd2fb256ad95"
         },
         "schema": {
          "properties": {
@@ -98,7 +98,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 4 requests",
+    "summary": "Seen 7 requests",
     "tags": [
      "admin"
     ]
@@ -139,12 +139,79 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "admin"
     ]
    },
    "parameters": []
+  },
+  "/agents/{agentId}": {
+   "parameters": [
+    {
+     "in": "path",
+     "name": "agentId",
+     "required": true,
+     "schema": {
+      "enum": [
+       "369c3c70-3396-46ae-a1de-7d57b648a417",
+       "65c01cfcb6f62b251ff53ac80284451e"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ],
+   "post": {
+    "operationId": "8aade5db-51f3-4ac6-a353-6fe813ba6a54",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "properties": {
+         "defaultWorkspace": {},
+         "isAlive": {
+          "type": "boolean"
+         },
+         "name": {
+          "type": "string"
+         },
+         "nodeName": {
+          "type": "string"
+         },
+         "version": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "defaultWorkspace",
+         "isAlive",
+         "name",
+         "nodeName",
+         "version"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "Ok"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "agents"
+    ]
+   }
   },
   "/agents/{agentId}/injectorConfig": {
    "get": {
@@ -195,7 +262,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "agents"
     ]
@@ -207,7 +274,8 @@
      "required": true,
      "schema": {
       "enum": [
-       "369c3c70-3396-46ae-a1de-7d57b648a417"
+       "369c3c70-3396-46ae-a1de-7d57b648a417",
+       "65c01cfcb6f62b251ff53ac80284451e"
       ],
       "type": "string"
      },
@@ -223,7 +291,8 @@
      "required": true,
      "schema": {
       "enum": [
-       "369c3c70-3396-46ae-a1de-7d57b648a417"
+       "369c3c70-3396-46ae-a1de-7d57b648a417",
+       "65c01cfcb6f62b251ff53ac80284451e"
       ],
       "type": "string"
      },
@@ -422,7 +491,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 54 requests",
+    "summary": "Seen 69 requests",
     "tags": [
      "models"
     ]
@@ -1204,12 +1273,72 @@
        "application/json": {
         "example": [
          {
+          "creationTime": "2021-02-24 06:39:55",
+          "creationTimestamp": 1614148795.0,
+          "diffScore": 0.00037064492216456633,
+          "endpointAmount": 70,
+          "id": "18",
+          "isLatest": true,
+          "metadataDiff": {
+           "endpointAmount": 0,
+           "servicesAmount": 0,
+           "spansAmount": 0
+          },
+          "servicesAmount": 18,
+          "spansAmount": 71
+         },
+         {
+          "creationTime": "2021-02-24 06:38:40",
+          "creationTimestamp": 1614148720.0,
+          "diffScore": 0.04225352112676056,
+          "endpointAmount": 70,
+          "id": "17",
+          "isLatest": false,
+          "metadataDiff": {
+           "endpointAmount": 3,
+           "servicesAmount": 0,
+           "spansAmount": 3
+          },
+          "servicesAmount": 18,
+          "spansAmount": 71
+         },
+         {
+          "creationTime": "2021-02-24 06:37:25",
+          "creationTimestamp": 1614148645.0,
+          "diffScore": 0.018155410312273055,
+          "endpointAmount": 67,
+          "id": "16",
+          "isLatest": false,
+          "metadataDiff": {
+           "endpointAmount": 1,
+           "servicesAmount": 0,
+           "spansAmount": 1
+          },
+          "servicesAmount": 18,
+          "spansAmount": 68
+         },
+         {
+          "creationTime": "2021-02-24 06:35:57",
+          "creationTimestamp": 1614148557.0,
+          "diffScore": 0.001348371777476265,
+          "endpointAmount": 66,
+          "id": "15",
+          "isLatest": false,
+          "metadataDiff": {
+           "endpointAmount": 0,
+           "servicesAmount": 0,
+           "spansAmount": 0
+          },
+          "servicesAmount": 18,
+          "spansAmount": 67
+         },
+         {
           "creationTime": "2021-02-24 06:34:30",
           "creationTimestamp": 1614148470.0,
           "diffScore": 0.001348371777476265,
           "endpointAmount": 66,
           "id": "14",
-          "isLatest": true,
+          "isLatest": false,
           "metadataDiff": {
            "endpointAmount": 0,
            "servicesAmount": 0,
@@ -1475,7 +1604,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 230 requests",
+    "summary": "Seen 317 requests",
     "tags": [
      "models"
     ]
@@ -1524,7 +1653,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 10 requests",
+    "summary": "Seen 11 requests",
     "tags": [
      "models"
     ]
@@ -1539,7 +1668,7 @@
       "content": {
        "application/json": {
         "example": {
-         "revisionId": "10"
+         "revisionId": "18"
         },
         "schema": {
          "properties": {
@@ -1557,7 +1686,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 10 requests",
+    "summary": "Seen 15 requests",
     "tags": [
      "models"
     ]
@@ -1655,7 +1784,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 259 requests",
+    "summary": "Seen 346 requests",
     "tags": [
      "models"
     ]
@@ -1763,7 +1892,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 20 requests",
+    "summary": "Seen 25 requests",
     "tags": [
      "models"
     ]
@@ -1990,7 +2119,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 7 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "models"
     ]
@@ -2341,7 +2470,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 14 requests",
+    "summary": "Seen 16 requests",
     "tags": [
      "models"
     ]
@@ -2381,6 +2510,7 @@
       "required": false,
       "schema": {
        "enum": [
+        "true",
         "false"
        ],
        "type": "string"
@@ -4469,7 +4599,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 15 requests",
+    "summary": "Seen 26 requests",
     "tags": [
      "models"
     ]
@@ -4499,7 +4629,6 @@
         "required": [
          "agentId",
          "envProfileName",
-         "safeOnly",
          "testPackId"
         ],
         "type": "object"
@@ -4521,7 +4650,7 @@
       "description": "Created"
      }
     },
-    "summary": "Seen 4 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "models"
     ]
@@ -4564,7 +4693,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 259 requests",
+    "summary": "Seen 347 requests",
     "tags": [
      "models"
     ]
@@ -4582,148 +4711,19 @@
         "example": {
          "agent": "roee",
          "agentId": "369c3c70-3396-46ae-a1de-7d57b648a417",
-         "coverageInfo": {
-          "coveredEndpointsCount": 1,
-          "totalEndpointsCount": 23,
-          "value": 0.043478260869565216
-         },
-         "creationTime": "Wed, 24 Feb 2021 06:26:56 GMT",
+         "creationTime": "Wed, 24 Feb 2021 06:39:59 GMT",
          "detailedInfo": {
-          "authentication": {
-           "authFailuresCount": 0
-          },
-          "errorMessages": {},
-          "newSpanFailures": [],
-          "percentages": {
-           "F": 0.0,
-           "F2": 0.0,
-           "S": 1.0
-          },
-          "performance": {
-           "https://auth.stg.testr.io": {
-            "avgReqS": 0,
-            "avgResS": 0,
-            "avgRt": 145,
-            "endpoints": [
-             {
-              "avgReqS": 0,
-              "avgResS": 0,
-              "avgRt": 145,
-              "endpointId": "99f932e3-4aa7-472e-86f0-f2af4ff88b63",
-              "errRate": 0.0,
-              "method": "get",
-              "path": "/auth/realms/testr/protocol/openid-connect/auth",
-              "responseCode": 200,
-              "responseTime50": 145,
-              "responseTime90": 145,
-              "responseTime95": 145,
-              "responseTime99": 145,
-              "returnType": "text/html",
-              "totalErr": 0,
-              "totalRequests": 1
-             }
-            ],
-            "errRate": 0.0,
-            "responseCode": 200,
-            "responseTime50": 145,
-            "responseTime90": 145,
-            "responseTime95": 145,
-            "responseTime99": 145,
-            "totalErr": 0,
-            "totalRequests": 1
-           }
-          },
-          "reliability": 1.0,
-          "services": {
-           "https://auth.stg.testr.io": {
-            "endpoints": {
-             "9": {
-              "S": 1,
-              "method": "get",
-              "path": "/auth/realms/testr/protocol/openid-connect/auth",
-              "percentages": {
-               "F": 0.0,
-               "F2": 0.0,
-               "S": 1.0
-              },
-              "reliability": 1.0,
-              "uuid": "99f932e3-4aa7-472e-86f0-f2af4ff88b63"
-             }
-            },
-            "percentages": {
-             "F": 0.0,
-             "F2": 0.0,
-             "S": 1.0
-            },
-            "reliability": 1.0
-           }
-          },
-          "spans": {
-           "9": {
-            "S": 1,
-            "percentages": {
-             "F": 0.0,
-             "F2": 0.0,
-             "S": 1.0
-            },
-            "reliability": 1.0
-           }
-          },
-          "tests": {
-           "9": {
-            "temp/filtered_tests.py::Tests_Pack_filtered_tests::test_09_get_auth_realms_testr_protocol_openid_connect_auth_1": {
-             "custom": false,
-             "steps": [
-              {
-               "assertions": [
-                {
-                 "expected": null,
-                 "name": "assert_ok",
-                 "path": null,
-                 "skipped": false,
-                 "success": true
-                }
-               ],
-               "durationMs": 145.289,
-               "endpoint": {
-                "id": "9",
-                "method": "get",
-                "path": "/auth/realms/testr/protocol/openid-connect/auth",
-                "uuid": "99f932e3-4aa7-472e-86f0-f2af4ff88b63"
-               },
-               "extractions": [],
-               "requestType": "http",
-               "responseCode": 200,
-               "service": "https://auth.stg.testr.io",
-               "skipped": false,
-               "success": true,
-               "testStepHarUUID": "8fb9b62f-5e75-4727-acba-50ec0fd1a153"
-              }
-             ],
-             "success": true,
-             "testHash": "995925073e777cd947cab05d44123b89"
-            }
-           }
-          }
+          "authentication": {}
          },
-         "endTime": "Wed, 24 Feb 2021 06:27:04 GMT",
          "envProfile": "cluster",
-         "harUploadSuccess": true,
          "model": "roee",
          "organization": "07e636fe-6118-4764-912b-97cfdb641a20",
-         "results": {
-          "collected": 1,
-          "passed": 1,
-          "total": 1
-         },
-         "resultsPath": "trproxy/org/07e636fe-6118-4764-912b-97cfdb641a20/model/roee/all/edqgqeejzx/test_report.html",
-         "runId": "edqgqeejzx",
-         "startTime": "Wed, 24 Feb 2021 06:27:02 GMT",
-         "status": "COMPLETED",
+         "runId": "dhmurewhwn",
+         "status": "STARTED",
          "suiteName": "all",
          "testPackId": "60351b00539e59f3d55ab6b4",
          "ttlSeconds": 1800,
-         "updatedAt": "Wed, 24 Feb 2021 06:27:09 GMT",
+         "updatedAt": "Wed, 24 Feb 2021 06:39:59 GMT",
          "user": "roee.gadot@up9.com"
         },
         "schema": {
@@ -5032,8 +5032,7 @@
             }
            },
            "required": [
-            "authentication",
-            "newSpanFailures"
+            "authentication"
            ],
            "type": "object"
           },
@@ -5103,14 +5102,10 @@
           "agentId",
           "creationTime",
           "detailedInfo",
-          "endTime",
           "envProfile",
           "model",
           "organization",
-          "results",
-          "resultsPath",
           "runId",
-          "startTime",
           "status",
           "suiteName",
           "testPackId",
@@ -5125,7 +5120,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 19 requests",
     "tags": [
      "models"
     ]
@@ -5207,7 +5202,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 34 requests",
+    "summary": "Seen 55 requests",
     "tags": [
      "models"
     ]
@@ -5225,7 +5220,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "models"
     ]
@@ -5251,7 +5246,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/log": {
    "get": {
-    "operationId": "330007a4-2fc6-4609-9a64-e9f9ef079223",
+    "operationId": "e79c5eff-0b33-4687-8da9-0f0873e047d2",
     "parameters": [],
     "responses": {
      "200": {
@@ -5289,7 +5284,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/results": {
    "get": {
-    "operationId": "c2a99efd-78b0-430a-b292-14bd047281c5",
+    "operationId": "ce03aad8-0502-4b85-9521-e2fddc74d59c",
     "parameters": [],
     "responses": {
      "200": {
@@ -5354,7 +5349,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 12 requests",
+    "summary": "Seen 20 requests",
     "tags": [
      "models"
     ]
@@ -5380,7 +5375,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/xml": {
    "get": {
-    "operationId": "14d62e5f-fd48-423e-a67a-ad57af1311f5",
+    "operationId": "96b9b597-1a5a-4b8a-87c0-57bfdd79c712",
     "parameters": [],
     "responses": {
      "200": {
@@ -5512,7 +5507,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "models"
     ]
@@ -5806,7 +5801,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "models"
     ]
@@ -7423,7 +7418,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 4 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "models"
     ]
@@ -9163,7 +9158,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "models"
     ]
@@ -9276,7 +9271,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 51 requests"
+    "summary": "Seen 66 requests"
    },
    "parameters": []
   },
@@ -9344,13 +9339,13 @@
  },
  "tags": [
   {
-   "name": "admin"
+   "name": "models"
   },
   {
    "name": "agents"
   },
   {
-   "name": "models"
+   "name": "admin"
   }
  ]
 }

@@ -1,0 +1,28 @@
+{
+ "parameters": [
+  {
+   "name": "agentId",
+   "uuid": "5808c20e-dbd6-4fb8-a1b2-fc9045fa2db4"
+  },
+  {
+   "name": "defaultWorkspace",
+   "uuid": "93ad18c1-46a5-4d63-8900-c45916530a61"
+  },
+  {
+   "name": "name",
+   "uuid": "b72259c6-50bf-4011-a184-78e6755e1ff7"
+  },
+  {
+   "name": "version",
+   "uuid": "5c2bad95-1734-4eff-a5be-5ba57f603c72"
+  }
+ ],
+ "rows": [
+  {
+   "agentId": "369c3c70-3396-46ae-a1de-7d57b648a417",
+   "defaultWorkspace": null,
+   "name": "local-nimrod@up9.com",
+   "version": "541"
+  }
+ ]
+}

@@ -213,7 +213,7 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '{"sha":"sha256:538bd078e5a7885d1087b48e5640547272235886b31f2b234198eedfa9fd66b6"}'
+      body: '{"sha":"sha256:9ebcd2153cda528363cb78e59ac57427f21411a2a540a60da1f7fd2fb256ad95"}'
       useTemplating: false
     method: post
   - path: /agents/{{agentId}}/injectorConfig
@@ -255,20 +255,27 @@ services:
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_85.html'
+      body: '@mock-data/resp_90.html'
       useTemplating: false
   - path: /models/roee/suites/all/runs/{{runId}}/xml
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_86.html'
+      body: '@mock-data/resp_91.html'
       useTemplating: false
   - path: /models/roee/suites/all/runs/{{runId}}/results
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_87.html'
+      body: '@mock-data/resp_92.html'
       useTemplating: false
+  - path: /agents/{{agentId}}
+    response:
+      headers:
+        Content-Type: text/html
+      body: Ok
+      useTemplating: false
+    method: post
 - name: http://trdemo.stg.testr.io
   port: 8003
   ssl: false

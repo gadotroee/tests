@@ -1,0 +1,7 @@
+{
+ "defaultWorkspace": null,
+ "isAlive": true,
+ "name": "{{name}}",
+ "nodeName": "Unknown",
+ "version": "{{version}}"
+}

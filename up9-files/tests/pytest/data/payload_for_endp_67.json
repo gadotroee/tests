@@ -2,9 +2,9 @@
  "endTime": "{{endTime}}",
  "rcaDataFileName": "{{rcaDataFileName}}",
  "results": {
-  "collected": 1,
-  "passed": 1,
-  "total": 1
+  "collected": "{{collected}}",
+  "passed": "{{passed}}",
+  "total": "{{total}}"
  },
  "resultsFileName": "test_report.html",
  "startTime": "{{startTime}}",

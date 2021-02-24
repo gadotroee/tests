@@ -1,11 +1,71 @@
 [
 {
+"creationTime": "2021-02-24 06:39:55",
+"creationTimestamp": 1614148795.0,
+"diffScore": 0.00037064492216456633,
+"endpointAmount": 70,
+"id": "18",
+"isLatest": true,
+"metadataDiff": {
+"endpointAmount": 0,
+"servicesAmount": 0,
+"spansAmount": 0
+},
+"servicesAmount": 18,
+"spansAmount": 71
+},
+{
+"creationTime": "2021-02-24 06:38:40",
+"creationTimestamp": 1614148720.0,
+"diffScore": 0.04225352112676056,
+"endpointAmount": 70,
+"id": "17",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 3,
+"servicesAmount": 0,
+"spansAmount": 3
+},
+"servicesAmount": 18,
+"spansAmount": 71
+},
+{
+"creationTime": "2021-02-24 06:37:25",
+"creationTimestamp": 1614148645.0,
+"diffScore": 0.018155410312273055,
+"endpointAmount": 67,
+"id": "16",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 0,
+"spansAmount": 1
+},
+"servicesAmount": 18,
+"spansAmount": 68
+},
+{
+"creationTime": "2021-02-24 06:35:57",
+"creationTimestamp": 1614148557.0,
+"diffScore": 0.001348371777476265,
+"endpointAmount": 66,
+"id": "15",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 0,
+"servicesAmount": 0,
+"spansAmount": 0
+},
+"servicesAmount": 18,
+"spansAmount": 67
+},
+{
 "creationTime": "2021-02-24 06:34:30",
 "creationTimestamp": 1614148470.0,
 "diffScore": 0.001348371777476265,
 "endpointAmount": 66,
 "id": "14",
-"isLatest": true,
+"isLatest": false,
 "metadataDiff": {
 "endpointAmount": 0,
 "servicesAmount": 0,
