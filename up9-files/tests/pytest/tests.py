@@ -520,34 +520,34 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_81.json')
-    @clear_session({'spanId': 81})
-    def test_81_get_models_roee_suites_all_runs_runId_log(self, data_row):
+    @json_dataset('data/dataset_85.json')
+    @clear_session({'spanId': 85})
+    def test_85_get_models_roee_suites_all_runs_runId_log(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/log (endp 81)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/log (endp 85)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/log')
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_82.json')
-    @clear_session({'spanId': 82})
-    def test_82_get_models_roee_suites_all_runs_runId_xml(self, data_row):
+    @json_dataset('data/dataset_86.json')
+    @clear_session({'spanId': 86})
+    def test_86_get_models_roee_suites_all_runs_runId_xml(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/xml (endp 82)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/xml (endp 86)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/xml')
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_83.json')
-    @clear_session({'spanId': 83})
-    def test_83_get_models_roee_suites_all_runs_runId_results(self, data_row):
+    @json_dataset('data/dataset_87.json')
+    @clear_session({'spanId': 87})
+    def test_87_get_models_roee_suites_all_runs_runId_results(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/results (endp 83)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/results (endp 87)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/results')
         resp.assert_ok()

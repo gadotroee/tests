@@ -45,7 +45,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "admin"
     ]
@@ -299,7 +299,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "agents"
     ]
@@ -422,7 +422,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 47 requests",
+    "summary": "Seen 54 requests",
     "tags": [
      "models"
     ]
@@ -494,7 +494,8 @@
       "schema": {
        "enum": [
         "99f932e3-4aa7-472e-86f0-f2af4ff88b63",
-        ""
+        "",
+        "db744f91-afc8-4008-bc53-566971409d05"
        ],
        "type": "string"
       }
@@ -505,7 +506,8 @@
       "required": true,
       "schema": {
        "enum": [
-        "https://auth.stg.testr.io"
+        "https://auth.stg.testr.io",
+        "https://stg.testr.io"
        ],
        "type": "string"
       }
@@ -596,7 +598,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 4 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -875,6 +877,9 @@
             "cookies": {
              "items": {
               "properties": {
+               "expires": {
+                "type": "string"
+               },
                "httpOnly": {
                 "type": "boolean"
                },
@@ -899,8 +904,7 @@
                "name",
                "path",
                "secure",
-               "value",
-               "version"
+               "value"
               ],
               "type": "object"
              },
@@ -984,7 +988,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 4 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -996,7 +1000,8 @@
      "required": true,
      "schema": {
       "enum": [
-       "602cd634ca71eeee16afa676"
+       "602cd634ca71eeee16afa676",
+       "602cd634ca71eeee16afa675"
       ],
       "type": "string"
      },
@@ -1113,7 +1118,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 5 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -1183,7 +1188,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "models"
     ]
@@ -1470,7 +1475,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 205 requests",
+    "summary": "Seen 230 requests",
     "tags": [
      "models"
     ]
@@ -1519,7 +1524,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "models"
     ]
@@ -1552,7 +1557,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 10 requests",
     "tags": [
      "models"
     ]
@@ -1650,7 +1655,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 234 requests",
+    "summary": "Seen 259 requests",
     "tags": [
      "models"
     ]
@@ -1758,7 +1763,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 18 requests",
+    "summary": "Seen 20 requests",
     "tags": [
      "models"
     ]
@@ -1985,7 +1990,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 6 requests",
+    "summary": "Seen 7 requests",
     "tags": [
      "models"
     ]
@@ -2336,7 +2341,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 9 requests",
+    "summary": "Seen 14 requests",
     "tags": [
      "models"
     ]
@@ -4464,7 +4469,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 14 requests",
+    "summary": "Seen 15 requests",
     "tags": [
      "models"
     ]
@@ -4516,7 +4521,7 @@
       "description": "Created"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "models"
     ]
@@ -4559,7 +4564,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 234 requests",
+    "summary": "Seen 259 requests",
     "tags": [
      "models"
     ]
@@ -5135,7 +5140,8 @@
        "edqgqeejzx",
        "unswqesizi",
        "lbunlvekkv",
-       "cqyguqpusr"
+       "cqyguqpusr",
+       "rnwcoreosp"
       ],
       "type": "string"
      },
@@ -5201,7 +5207,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 33 requests",
+    "summary": "Seen 34 requests",
     "tags": [
      "models"
     ]
@@ -5234,7 +5240,8 @@
        "edqgqeejzx",
        "unswqesizi",
        "lbunlvekkv",
-       "cqyguqpusr"
+       "cqyguqpusr",
+       "rnwcoreosp"
       ],
       "type": "string"
      },
@@ -5244,7 +5251,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/log": {
    "get": {
-    "operationId": "9a0e8181-df36-43ae-b58f-e3389efd5c5d",
+    "operationId": "330007a4-2fc6-4609-9a64-e9f9ef079223",
     "parameters": [],
     "responses": {
      "200": {
@@ -5271,7 +5278,8 @@
        "edqgqeejzx",
        "unswqesizi",
        "lbunlvekkv",
-       "cqyguqpusr"
+       "cqyguqpusr",
+       "rnwcoreosp"
       ],
       "type": "string"
      },
@@ -5281,7 +5289,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/results": {
    "get": {
-    "operationId": "66ee4d67-c9b8-4205-8fa9-bf690c3a7802",
+    "operationId": "c2a99efd-78b0-430a-b292-14bd047281c5",
     "parameters": [],
     "responses": {
      "200": {
@@ -5308,7 +5316,8 @@
        "edqgqeejzx",
        "unswqesizi",
        "lbunlvekkv",
-       "cqyguqpusr"
+       "cqyguqpusr",
+       "rnwcoreosp"
       ],
       "type": "string"
      },
@@ -5360,7 +5369,8 @@
        "edqgqeejzx",
        "unswqesizi",
        "lbunlvekkv",
-       "cqyguqpusr"
+       "cqyguqpusr",
+       "rnwcoreosp"
       ],
       "type": "string"
      },
@@ -5370,7 +5380,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/xml": {
    "get": {
-    "operationId": "2bfbe850-ff58-4d76-8be3-d53bcbaa059c",
+    "operationId": "14d62e5f-fd48-423e-a67a-ad57af1311f5",
     "parameters": [],
     "responses": {
      "200": {
@@ -5397,7 +5407,8 @@
        "edqgqeejzx",
        "unswqesizi",
        "lbunlvekkv",
-       "cqyguqpusr"
+       "cqyguqpusr",
+       "rnwcoreosp"
       ],
       "type": "string"
      },
@@ -5501,7 +5512,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 6 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "models"
     ]
@@ -5795,7 +5806,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 6 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "models"
     ]
@@ -7412,7 +7423,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "models"
     ]
@@ -9152,7 +9163,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 6 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "models"
     ]
@@ -9265,7 +9276,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 46 requests"
+    "summary": "Seen 51 requests"
    },
    "parameters": []
   },
@@ -9326,20 +9337,20 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests"
+    "summary": "Seen 4 requests"
    },
    "parameters": []
   }
  },
  "tags": [
   {
-   "name": "models"
+   "name": "admin"
   },
   {
    "name": "agents"
   },
   {
-   "name": "admin"
+   "name": "models"
   }
  ]
 }

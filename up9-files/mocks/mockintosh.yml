@@ -255,19 +255,19 @@ services:
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_81.html'
+      body: '@mock-data/resp_85.html'
       useTemplating: false
   - path: /models/roee/suites/all/runs/{{runId}}/xml
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_82.html'
+      body: '@mock-data/resp_86.html'
       useTemplating: false
   - path: /models/roee/suites/all/runs/{{runId}}/results
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_83.html'
+      body: '@mock-data/resp_87.html'
       useTemplating: false
 - name: http://trdemo.stg.testr.io
   port: 8003
