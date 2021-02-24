@@ -1,0 +1,6 @@
+{
+ "agentId": "{{agentId}}",
+ "envProfileName": "cluster",
+ "safeOnly": false,
+ "testPackId": "{{testPackId}}"
+}

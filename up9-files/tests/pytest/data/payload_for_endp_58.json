@@ -1,6 +1,3 @@
-{
- "creationReason": "trafficNotPassedThreshold",
- "maxEntryId": "{{maxEntryId}}",
- "revisionId": "{{revisionId}}",
- "sourceRevisionId": "{{sourceRevisionId}}"
-}
+[
+ "roee"
+]

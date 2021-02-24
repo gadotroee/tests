@@ -1,1 +1,117 @@
-{"firstName":"User","lastName":"Name","username":"user","id":"57a98d98e4b00679b4a830b2","_links":{"addresses":{"href":"http://user/customers/57a98d98e4b00679b4a830b2/addresses"},"cards":{"href":"http://user/customers/57a98d98e4b00679b4a830b2/cards"},"customer":{"href":"http://user/customers/57a98d98e4b00679b4a830b2"},"self":{"href":"http://user/customers/57a98d98e4b00679b4a830b2"}}}
+[
+{
+"creationTime": "2021-02-24 06:27:14",
+"creationTimestamp": 1614148034.0,
+"diffScore": 0.05128205128205128,
+"endpointAmount": 24,
+"id": "8",
+"isLatest": true,
+"metadataDiff": {
+"endpointAmount": 2,
+"servicesAmount": 1,
+"spansAmount": 2
+},
+"servicesAmount": 6,
+"spansAmount": 25
+},
+{
+"creationTime": "2021-02-17 10:44:19",
+"creationTimestamp": 1613558659.0,
+"diffScore": 0.10810810810810811,
+"endpointAmount": 22,
+"id": "7",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 4,
+"servicesAmount": 1,
+"spansAmount": 5
+},
+"servicesAmount": 5,
+"spansAmount": 23
+},
+{
+"creationTime": "2021-02-17 09:09:20",
+"creationTimestamp": 1613552960.0,
+"diffScore": 0.6363636363636364,
+"endpointAmount": 18,
+"id": "6",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 12,
+"servicesAmount": -1,
+"spansAmount": 12
+},
+"servicesAmount": 4,
+"spansAmount": 18
+},
+{
+"creationTime": "2021-02-17 09:08:31",
+"creationTimestamp": 1613552911.0,
+"diffScore": 0.08333333333333333,
+"endpointAmount": 6,
+"id": "5",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 1,
+"spansAmount": 1
+},
+"servicesAmount": 5,
+"spansAmount": 6
+},
+{
+"creationTime": "2021-02-17 08:39:16",
+"creationTimestamp": 1613551156.0,
+"diffScore": 0.36363636363636365,
+"endpointAmount": 5,
+"id": "4",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": -2,
+"servicesAmount": -1,
+"spansAmount": -2
+},
+"servicesAmount": 4,
+"spansAmount": 5
+},
+{
+"creationTime": "2021-02-17 08:31:43",
+"creationTimestamp": 1613550703.0,
+"diffScore": 0.14285714285714285,
+"endpointAmount": 7,
+"id": "3",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 1,
+"spansAmount": 1
+},
+"servicesAmount": 5,
+"spansAmount": 7
+},
+{
+"creationTime": "2021-02-17 08:28:56",
+"creationTimestamp": 1613550536.0,
+"diffScore": 0.3602150537634408,
+"endpointAmount": 6,
+"id": "2",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 2,
+"servicesAmount": 1,
+"spansAmount": 2
+},
+"servicesAmount": 4,
+"spansAmount": 6
+},
+{
+"creationTime": "2021-02-17 08:28:09",
+"creationTimestamp": 1613550489.0,
+"diffScore": 1,
+"endpointAmount": 4,
+"id": "1",
+"isLatest": false,
+"servicesAmount": 3,
+"spansAmount": 4
+}
+]

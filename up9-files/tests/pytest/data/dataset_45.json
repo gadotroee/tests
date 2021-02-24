@@ -2,15 +2,15 @@
  "parameters": [
   {
    "name": "maxRevisionId",
-   "uuid": "928b2e91-d03a-4822-be16-4093ea504cc4"
+   "uuid": "43e27d0a-263f-4c22-8a9d-9aaa5d2a904d"
   },
   {
    "name": "selectedEndpoint",
-   "uuid": "5a431aa6-b6b4-4026-b6b8-a02d7babeb2c"
+   "uuid": "60bc963d-09bf-4563-bff4-cff4426c3839"
   },
   {
    "name": "services",
-   "uuid": "43e297a7-32a3-4ec2-ba28-934b812aed63"
+   "uuid": "4604e7c0-cf37-4ada-b5f2-355ede1af63f"
   }
  ],
  "rows": [

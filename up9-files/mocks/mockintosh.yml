@@ -67,6 +67,11 @@ services:
       headers:
         Content-Type: application/json
       body: '@mock-data/resp_46.json'
+  - path: /models/roee/revisions
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_47.json'
   - path: /models/roee/sources
     response:
       headers:
@@ -85,20 +90,20 @@ services:
          "generatingSince": -1.0,
          "lastMajorGeneration": 1613558659.196,
          "lastSuccessfulGeneration": 1613559157.358,
-         "messageCount": {{random.int 54 234}},
+         "messageCount": {{random.int 54 345}},
          "regenerationMark": false
         }
   - path: /models/roee/suites/all/{{param}}
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_49.json'
+      body: '@mock-data/resp_50.json'
       useTemplating: false
   - path: /models/roee/suites/all/profiles
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_50.json'
+      body: '@mock-data/resp_51.json'
   - path: /models/roee/suites/all/runs
     response:
       status: 201
@@ -111,18 +116,18 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_52.json'
+      body: '@mock-data/resp_53.json'
   - path: /models/roee/suites/all/runs/state
     response:
       headers:
         Content-Type: application/json
-      body: '{"runId":"unswqesizi","status":"COMPLETED","updatedAt":"Wed, 24 Feb 2021 06:20:35 GMT"}'
+      body: '{"runId":"edqgqeejzx","status":"COMPLETED","updatedAt":"Wed, 24 Feb 2021 06:27:09 GMT"}'
       useTemplating: false
   - path: /models/roee/suites/all/runs
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_54.json'
+      body: '@mock-data/resp_55.json'
   - path: /users/current
     response:
       headers:
@@ -188,12 +193,12 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_60.json'
+      body: '@mock-data/resp_61.json'
   - path: /tapping/state
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_61.json'
+      body: '@mock-data/resp_62.json'
       useTemplating: false
   - path: /agents/{{agentId}}/injectorConfig
     response:
@@ -205,7 +210,7 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_63.json'
+      body: '@mock-data/resp_64.json'
   - path: /models/roee/suites/all/runs/{{runId}}
     response:
       headers:
@@ -223,12 +228,12 @@ services:
     response:
       headers:
         Content-Type: application/zip
-      body: '@mock-data/resp_66.bin'
+      body: '@mock-data/resp_67.bin'
   - path: /models/roee/suites/all/runs/{{runId}}/uploadUrl
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_67.html'
+      body: '@mock-data/resp_68.html'
       useTemplating: false
 - name: http://trdemo.stg.testr.io
   port: 8003
