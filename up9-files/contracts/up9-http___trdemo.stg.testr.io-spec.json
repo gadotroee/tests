@@ -1,0 +1,23 @@
+{
+ "info": {
+  "title": "http://trdemo.stg.testr.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "ae75bbce-131a-437c-a9dc-300a35417804",
+    "parameters": [],
+    "responses": {
+     "307": {
+      "description": "Temporary Redirect"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

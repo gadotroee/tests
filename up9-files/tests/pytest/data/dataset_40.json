@@ -1,0 +1,23 @@
+{
+ "parameters": [
+  {
+   "name": "agentId",
+   "uuid": "6e7fae68-1c5d-4b8f-8860-6b7b0dfcf8a7"
+  },
+  {
+   "name": "targetKey",
+   "uuid": "57164228-3f7c-489f-8d05-6865cddb6d90"
+  },
+  {
+   "name": "value",
+   "uuid": "401c9855-4b96-4d4c-b541-54bea85f8015"
+  }
+ ],
+ "rows": [
+  {
+   "agentId": "369c3c70-3396-46ae-a1de-7d57b648a417",
+   "targetKey": "TARGET_AUTH_STG_TESTR_IO",
+   "value": "https://auth.stg.testr.io"
+  }
+ ]
+}

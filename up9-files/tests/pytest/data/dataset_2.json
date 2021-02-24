@@ -1,0 +1,18 @@
+{
+ "parameters": [
+  {
+   "name": "aqs",
+   "uuid": "1dc8ff45-5d6b-43e8-8968-7c54a9809163"
+  },
+  {
+   "name": "ie",
+   "uuid": "09dcc106-9603-4188-b9b1-adffc1635443"
+  }
+ ],
+ "rows": [
+  {
+   "aqs": "chrome..69i57j69i58.1096j0j2",
+   "ie": "UTF-8"
+  }
+ ]
+}

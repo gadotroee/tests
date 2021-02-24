@@ -11,26 +11,269 @@
 management:
   port: 8000
 services:
-- name: http://trcc-api-service.tradmin
+- name: http://httpbin.org
   port: 8001
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___httpbin.org-spec.json'
+  endpoints:
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_7.html'
+      useTemplating: false
+- name: http://trcc-api-service.tradmin
+  port: 8002
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-http___trcc-api-service.tradmin-spec.json'
   endpoints:
+  - path: /agents/{{agentId}}/verifyTargets
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"failedTargets":[],"status":"COMPLETED"}'
+      useTemplating: false
+    method: post
+  - path: /models/roee/{{param}}/all
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_41.json'
+  - path: /models/roee/{{param}}/all/dataDependency
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_42.json'
+  - path: /models/roee/{{param}}/all/dataDependency/span
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_43.json'
+  - path: /models/roee/har/entry/{{id}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_44.json'
+  - path: /models/roee/har
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_45.json'
+      useTemplating: false
+  - path: /models/roee/packs/{{testPackId}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_46.json'
+  - path: /models/roee/sources
+    response:
+      headers:
+        Content-Type: application/json
+      body: '["_BROWSER_"]'
+      useTemplating: false
   - path: /models/roee/status
     response:
       headers:
         Content-Type: application/json
-      body: '{"canProcessNewTraffic":true,"continueNewTrafficProcessTimestamp":-1,"errorCount":0,"generatingSince":-1.0,"lastMajorGeneration":1613558659.196,"lastSuccessfulGeneration":1613559157.358,"messageCount":54,"regenerationMark":false}'
+      body: |-
+        {
+         "canProcessNewTraffic": true,
+         "continueNewTrafficProcessTimestamp": -1,
+         "errorCount": 0,
+         "generatingSince": -1.0,
+         "lastMajorGeneration": 1613558659.196,
+         "lastSuccessfulGeneration": 1613559157.358,
+         "messageCount": {{random.int 54 234}},
+         "regenerationMark": false
+        }
+  - path: /models/roee/suites/all/{{param}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_49.json'
       useTemplating: false
+  - path: /models/roee/suites/all/profiles
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_50.json'
+  - path: /models/roee/suites/all/runs
+    response:
+      status: 201
+      headers:
+        Content-Type: application/json
+      body: '"edqgqeejzx"'
+      useTemplating: false
+    method: post
+  - path: /models/roee/suites/all/runs/{{runId}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_52.json'
   - path: /models/roee/suites/all/runs/state
     response:
       headers:
         Content-Type: application/json
       body: '{"runId":"unswqesizi","status":"COMPLETED","updatedAt":"Wed, 24 Feb 2021 06:20:35 GMT"}'
       useTemplating: false
+  - path: /models/roee/suites/all/runs
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_54.json'
+  - path: /users/current
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"email":"roee.gadot@up9.com","insertionTime":"Thu, 04 Feb 2021 17:39:30 GMT","organization":"07e636fe-6118-4764-912b-97cfdb641a20","popupViewed":{"contracts":true,"services":true}}'
+      useTemplating: false
+  - path: /admin/config
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "logsToken": "HTwowKxveOayvJPfaXygEgDyzXPsMETb",
+         "organization": "{{request.body}}",
+         "organizationName": "roee",
+         "user": null
+        }
+  - path: /models/modelSettings
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        [
+         {
+          "model": "roee",
+          "settings": {
+           "git": {
+            "pushType": 1,
+            "repository": "gadotroee/tests",
+            "scheduling": {
+             "days": [
+              {{random.int 0 6}},
+              {{random.int 0 6}},
+              {{random.int 0 6}},
+              {{random.int 0 6}},
+              {{random.int 0 6}},
+              {{random.int 0 6}},
+              {{random.int 0 6}}
+             ],
+             "hourFrequency": 24,
+             "minute": 0
+            }
+           },
+           "setupStep": 4
+          }
+         }
+        ]
+    method: post
+  - path: /models/roee/revisions
+    response:
+      headers:
+        Content-Type: text/html
+      body: Ok
+      useTemplating: false
+    method: post
+  - path: /models/roee/revisions/latest
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"revisionId":"7"}'
+      useTemplating: false
+  - path: /models/roee/suites
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_60.json'
+  - path: /tapping/state
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_61.json'
+      useTemplating: false
+  - path: /agents/{{agentId}}/injectorConfig
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"includedNamespaces":[],"injectAll":false,"injectLabel":false,"name":"up9-injector-config","services":[]}'
+      useTemplating: false
+  - path: /models/roee/suites/all/agents/{{agentId}}/profiles/cluster
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_63.json'
+  - path: /models/roee/suites/all/runs/{{runId}}
+    response:
+      headers:
+        Content-Type: text/html
+      body: Ok
+      useTemplating: false
+    method: post
+  - path: /admin/whoami
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"organization":"07e636fe-6118-4764-912b-97cfdb641a20","organizationName":"roee","user":null}'
+      useTemplating: false
+  - path: /models/roee/suites/all/runs/{{runId}}/downloadTests
+    response:
+      headers:
+        Content-Type: application/zip
+      body: '@mock-data/resp_66.bin'
+  - path: /models/roee/suites/all/runs/{{runId}}/uploadUrl
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_67.html'
+      useTemplating: false
+- name: http://trdemo.stg.testr.io
+  port: 8003
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___trdemo.stg.testr.io-spec.json'
+  endpoints:
+  - path: /
+    response:
+      status: 307
+- name: https://5142311.fls.doubleclick.net
+  port: 8004
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___5142311.fls.doubleclick.net-spec.json'
+  endpoints:
+  - path: /activityi
+    response:
+      status: 302
+      headers:
+        Content-Type: text/html
+- name: https://adservice.google.com
+  port: 8005
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___adservice.google.com-spec.json'
+  endpoints:
+  - path: /adsid/google/ui
+    response:
+      status: 204
+- name: https://api-iam.intercom.io
+  port: 8006
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___api-iam.intercom.io-spec.json'
+  endpoints:
+  - path: /messenger/web/ping
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_11.json'
+      useTemplating: false
+    method: post
 - name: https://auth.stg.testr.io
-  port: 8002
+  port: 8007
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___auth.stg.testr.io-spec.json'
@@ -41,8 +284,56 @@ services:
         Content-Type: text/html
       body: '@mock-data/resp_9.html'
       useTemplating: false
+- name: https://bat.bing.com
+  port: 8008
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___bat.bing.com-spec.json'
+  endpoints:
+  - path: /action/0
+    response:
+      status: 204
+- name: https://ib.adnxs.com
+  port: 8009
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___ib.adnxs.com-spec.json'
+  endpoints:
+  - path: /bounce
+    response:
+      status: 302
+      headers:
+        Content-Type: text/html
+  - path: /getuid
+    response:
+      status: 307
+      headers:
+        Content-Type: text/html
+- name: https://ogs.google.com
+  port: 8010
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___ogs.google.com-spec.json'
+  endpoints:
+  - path: /widget/app/so
+    response:
+      headers:
+        Content-Type: text/html
+- name: https://stats.g.doubleclick.net
+  port: 8011
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___stats.g.doubleclick.net-spec.json'
+  endpoints:
+  - path: /j/collect
+    response:
+      headers:
+        Content-Type: text/plain
+      body: 1gco.il
+      useTemplating: false
+    method: post
 - name: https://stg.testr.io
-  port: 8003
+  port: 8012
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___stg.testr.io-spec.json'
@@ -53,7 +344,7 @@ services:
       headers:
         Content-Type: text/html
 - name: https://trdemo.stg.testr.io
-  port: 8004
+  port: 8013
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___trdemo.stg.testr.io-spec.json'
@@ -88,8 +379,48 @@ services:
         Content-Type: text/html
       body: '@mock-data/resp_38.html'
       useTemplating: false
+- name: https://widget.intercom.io
+  port: 8014
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___widget.intercom.io-spec.json'
+  endpoints:
+  - path: /widget/{{param}}
+    response:
+      status: 302
+- name: https://www.google-analytics.com
+  port: 8015
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___www.google-analytics.com-spec.json'
+  endpoints:
+  - path: /j/collect
+    response:
+      headers:
+        Content-Type: text/plain
+      body: 1d
+      useTemplating: false
+    method: post
+- name: https://www.google.com
+  port: 8016
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___www.google.com-spec.json'
+  endpoints:
+  - path: /{{param}}
+    response:
+      status: 204
+      headers:
+        Content-Type: text/html
+    method: post
+  - path: /search
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_2.html'
+      useTemplating: false
 - name: https://www.il.kayak.com
-  port: 8005
+  port: 8017
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___www.il.kayak.com-spec.json'
@@ -170,7 +501,7 @@ services:
       status: 204
     method: post
 - name: https://www.kayak.com
-  port: 8006
+  port: 8018
   ssl: false
   managementRoot: __admin
   oas: '@mock-data/up9-https___www.kayak.com-spec.json'

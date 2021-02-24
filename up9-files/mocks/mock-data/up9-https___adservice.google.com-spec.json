@@ -1,0 +1,23 @@
+{
+ "info": {
+  "title": "https://adservice.google.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/adsid/google/ui": {
+   "get": {
+    "operationId": "3ab17539-663a-4972-8bb6-8c4b64fbced2",
+    "parameters": [],
+    "responses": {
+     "204": {
+      "description": "No Content"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

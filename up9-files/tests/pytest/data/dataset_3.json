@@ -1,13 +1,13 @@
 {
  "parameters": [
   {
-   "name": "product_id",
-   "uuid": "f730c2f8-7c8c-422b-871f-deb093180b1b"
+   "name": "origin",
+   "uuid": "3d00a4cd-ca18-4933-8164-b74c8bea683a"
   }
  ],
  "rows": [
   {
-   "product_id": "LY-001"
+   "origin": "https://www.google.com"
   }
  ]
 }

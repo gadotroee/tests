@@ -1,0 +1,78 @@
+{
+ "parameters": [
+  {
+   "name": "_gid",
+   "uuid": "90c68d27-f1e8-4414-ae43-b6af62fde1b6"
+  },
+  {
+   "name": "_u",
+   "uuid": "77e3fbf3-a187-4d6a-92f2-e98d43ed1719"
+  },
+  {
+   "name": "_v",
+   "uuid": "e2274fe0-dbaa-4c68-bbeb-197c74236492"
+  },
+  {
+   "name": "a",
+   "uuid": "a0dfb612-0ec4-44f9-acb6-976358317521"
+  },
+  {
+   "name": "cd13",
+   "uuid": "9875ad45-84b3-4fd1-94eb-6d1278591239"
+  },
+  {
+   "name": "cid",
+   "uuid": "f9179997-2131-40dd-a475-20317730c805"
+  },
+  {
+   "name": "de",
+   "uuid": "7d1285f4-3877-4be7-8b2f-5da23451a25c"
+  },
+  {
+   "name": "gjid",
+   "uuid": "5327e5ce-2db8-4b40-b675-67927a528fe3"
+  },
+  {
+   "name": "gtm",
+   "uuid": "16e7dbc7-cc2e-4076-b982-e9cd48be6620"
+  },
+  {
+   "name": "jid",
+   "uuid": "028c3484-861a-44ad-b5a4-32ea2beb9255"
+  },
+  {
+   "name": "sd",
+   "uuid": "a9ef830b-20cb-42ce-885f-544c3350c870"
+  },
+  {
+   "name": "sr",
+   "uuid": "f62146cc-d3dc-443e-a138-c68e985947eb"
+  },
+  {
+   "name": "tid",
+   "uuid": "15b63c6c-88a2-4a1e-a0c8-cec2c2f1d422"
+  },
+  {
+   "name": "z",
+   "uuid": "0a994a8a-769e-4e2f-81cf-6010370a972d"
+  }
+ ],
+ "rows": [
+  {
+   "_gid": "1456995457.1613552849",
+   "_u": "YEDAAEABAAAAAC~",
+   "_v": "j88",
+   "a": "1546843061",
+   "cd13": "LtDzEbgBFtXhfQwhLEsA0s2NgCY",
+   "cid": "1344583654.1613552849",
+   "de": "UTF-8",
+   "gjid": "1543326634",
+   "gtm": "2wg230PSCCSHQ",
+   "jid": "1384518584",
+   "sd": "24-bit",
+   "sr": "2560x1440",
+   "tid": "UA-42209185-8",
+   "z": "66598281"
+  }
+ ]
+}

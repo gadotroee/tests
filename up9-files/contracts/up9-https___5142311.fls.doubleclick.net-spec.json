@@ -1,0 +1,28 @@
+{
+ "info": {
+  "title": "https://5142311.fls.doubleclick.net",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/activityi": {
+   "get": {
+    "operationId": "fefb0b19-1f56-4fad-a37f-840dd61ef741",
+    "parameters": [],
+    "responses": {
+     "302": {
+      "content": {
+       "text/html": {
+        "example": ""
+       }
+      },
+      "description": "Found"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

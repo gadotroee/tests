@@ -1,0 +1,73 @@
+{
+ "parameters": [
+  {
+   "name": "aftp",
+   "uuid": "8e28a671-4a12-4d75-9043-7ca186b273f2"
+  },
+  {
+   "name": "atyp",
+   "uuid": "4220945f-54eb-4419-a52e-f150cd5d70ee"
+  },
+  {
+   "name": "ei",
+   "uuid": "7acef94a-fc00-42ed-bdb2-721a5c5456f9"
+  },
+  {
+   "name": "fld",
+   "uuid": "e80d9d81-2c6b-4c35-b9cd-a0bcc9c4a87a"
+  },
+  {
+   "name": "m",
+   "uuid": "05ed0441-b655-4898-9e0d-a1e20ae2a615"
+  },
+  {
+   "name": "me",
+   "uuid": "be7fea6a-2787-4174-8380-fbe5d4453d5d"
+  },
+  {
+   "name": "mem",
+   "uuid": "ee99d4d4-b409-48eb-8642-9f78ccba8194"
+  },
+  {
+   "name": "net",
+   "uuid": "a9fc3383-2551-484b-b70e-21c6336729bd"
+  },
+  {
+   "name": "param",
+   "uuid": "2109f79c-1afa-4c21-a49b-651def699e39"
+  },
+  {
+   "name": "pv",
+   "uuid": "d42092b1-4581-42b1-a94a-f240db830ce0"
+  },
+  {
+   "name": "rt",
+   "uuid": "71c7f9e0-3d88-4234-bdda-78713bf8ad98"
+  },
+  {
+   "name": "sys",
+   "uuid": "9aa3fd3a-8271-4be6-b211-2a374be5b481"
+  },
+  {
+   "name": "wh",
+   "uuid": "41a4ac95-5d00-4e46-94ba-419073420318"
+  }
+ ],
+ "rows": [
+  {
+   "aftp": "-1",
+   "atyp": "i",
+   "ei": "R9MsYIvSOvCL1fAPppOO-Ag",
+   "fld": "975",
+   "m": "HV",
+   "me": "1:1613550408629,x:1,V,0,0,1200,1248:0,N,1,R9MsYIvSOvCL1fAPppOO-Ag:0,R,1,8,1084,28,92,33:0,R,1,CAYQOQ,368,172,652,1400:0,R,1,CAcQAA,368,172,652,166:0,R,1,CAEQAA,420,350,600,97:0,R,1,CAQQAA,420,475,600,97:0,R,1,CAIQAA,420,600,600,97:0,R,1,CAMQAA,420,725,600,97:0,R,1,CAUQAA,420,850,600,97:0,R,1,CAsQAA,420,975,600,97:0,R,1,CAgQAA,420,1100,600,97:0,R,1,CAoQAA,420,1225,600,97:2,B,1770:5527,e,U",
+   "mem": "ujhs.9,tjhs.12,jhsl.4295,dm.8",
+   "net": "dl.5300,ect.4g,rtt.100",
+   "param": "gen_204",
+   "pv": "0.5454867905450616",
+   "rt": "sct.254,aft.290,prt.290,iml.290,xjsls.320,dcl.321,xjses.516,xjsee.553,xjs.553,ol.1408,wsrt.204,cst.0,dnst.0,rqst.494,rspt.314,rqstt.24,unt.17,cstt.17,dit.525",
+   "sys": "hc.16",
+   "wh": "1248"
+  }
+ ]
+}

@@ -15,13 +15,35 @@ def authenticate(target_key: str, target: TargetService):
     # authenticate_header(target)
     # authenticate_cookie(target)
     # authenticate_oauth(target)
-    if target_key == 'TARGET_AUTH_STG_TESTR_IO':
+    if target_key == 'TARGET__5142311_FLS_DOUBLECLICK_NET':
+        pass
+    elif target_key == 'TARGET_ADSERVICE_GOOGLE_COM':
+        pass
+    elif target_key == 'TARGET_API_IAM_INTERCOM_IO':
+        pass
+    elif target_key == 'TARGET_AUTH_STG_TESTR_IO':
+        pass
+    elif target_key == 'TARGET_BAT_BING_COM':
+        pass
+    elif target_key == 'TARGET_HTTPBIN_ORG':
+        pass
+    elif target_key == 'TARGET_IB_ADNXS_COM':
+        pass
+    elif target_key == 'TARGET_OGS_GOOGLE_COM':
+        pass
+    elif target_key == 'TARGET_STATS_G_DOUBLECLICK_NET':
         pass
     elif target_key == 'TARGET_STG_TESTR_IO':
         pass
     elif target_key == 'TARGET_TRCC_API_SERVICE_TRADMIN':
         pass
     elif target_key == 'TARGET_TRDEMO_STG_TESTR_IO':
+        pass
+    elif target_key == 'TARGET_WIDGET_INTERCOM_IO':
+        pass
+    elif target_key == 'TARGET_WWW_GOOGLE_ANALYTICS_COM':
+        pass
+    elif target_key == 'TARGET_WWW_GOOGLE_COM':
         pass
     elif target_key == 'TARGET_WWW_IL_KAYAK_COM':
         pass

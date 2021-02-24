@@ -1,8 +1,19 @@
 {
+ "TARGET_ADSERVICE_GOOGLE_COM": "https://adservice.google.com",
+ "TARGET_API_IAM_INTERCOM_IO": "https://api-iam.intercom.io",
  "TARGET_AUTH_STG_TESTR_IO": "https://auth.stg.testr.io",
+ "TARGET_BAT_BING_COM": "https://bat.bing.com",
+ "TARGET_HTTPBIN_ORG": "http://httpbin.org",
+ "TARGET_IB_ADNXS_COM": "https://ib.adnxs.com",
+ "TARGET_OGS_GOOGLE_COM": "https://ogs.google.com",
+ "TARGET_STATS_G_DOUBLECLICK_NET": "https://stats.g.doubleclick.net",
  "TARGET_STG_TESTR_IO": "https://stg.testr.io",
  "TARGET_TRCC_API_SERVICE_TRADMIN": "http://trcc-api-service.tradmin",
  "TARGET_TRDEMO_STG_TESTR_IO": "https://trdemo.stg.testr.io",
+ "TARGET_WIDGET_INTERCOM_IO": "https://widget.intercom.io",
+ "TARGET_WWW_GOOGLE_ANALYTICS_COM": "https://www.google-analytics.com",
+ "TARGET_WWW_GOOGLE_COM": "https://www.google.com",
  "TARGET_WWW_IL_KAYAK_COM": "https://www.il.kayak.com",
- "TARGET_WWW_KAYAK_COM": "https://www.kayak.com"
+ "TARGET_WWW_KAYAK_COM": "https://www.kayak.com",
+ "TARGET__5142311_FLS_DOUBLECLICK_NET": "https://5142311.fls.doubleclick.net"
 }

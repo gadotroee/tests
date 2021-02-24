@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "https___www_kayak_com_s_kayakpixel_lgbl_impevent_adnxs_uid",
+   "uuid": "69dd5f75-2a20-4f10-83d8-8b50410bc670"
+  }
+ ],
+ "rows": [
+  {
+   "https___www_kayak_com_s_kayakpixel_lgbl_impevent_adnxs_uid": "$UID"
+  }
+ ]
+}

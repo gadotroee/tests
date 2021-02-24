@@ -1,0 +1,9 @@
+{
+ "targetMapping": [
+  {
+   "targetKey": "{{targetKey}}",
+   "type": "HTTP",
+   "value": "{{value}}"
+  }
+ ]
+}

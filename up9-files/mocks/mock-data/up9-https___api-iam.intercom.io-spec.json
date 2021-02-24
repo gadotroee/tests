@@ -1,0 +1,671 @@
+{
+ "info": {
+  "title": "https://api-iam.intercom.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/messenger/web/ping": {
+   "parameters": [],
+   "post": {
+    "operationId": "ee36efe6-2808-40fc-9fa6-cc099b7263e0",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/x-www-form-urlencoded": {
+       "schema": {
+        "properties": {
+         "Idempotency-Key": {
+          "type": "string"
+         },
+         "app_id": {
+          "type": "string"
+         },
+         "g": {
+          "type": "string"
+         },
+         "internal": {
+          "type": "string"
+         },
+         "page_title": {
+          "type": "string"
+         },
+         "platform": {
+          "type": "string"
+         },
+         "r": {
+          "type": "string"
+         },
+         "referer": {
+          "type": "string"
+         },
+         "s": {
+          "type": "string"
+         },
+         "sampling": {
+          "type": "string"
+         },
+         "source": {
+          "type": "string"
+         },
+         "user_active_company_id": {
+          "type": "string"
+         },
+         "user_data": {
+          "type": "string"
+         },
+         "v": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "Idempotency-Key",
+         "app_id",
+         "g",
+         "internal",
+         "page_title",
+         "platform",
+         "r",
+         "referer",
+         "s",
+         "sampling",
+         "source",
+         "user_active_company_id",
+         "user_data",
+         "v"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": {
+         "anonymous_session": "",
+         "app": {
+          "access_to_teammate_enabled": true,
+          "active_admins": [
+           {
+            "avatar": {
+             "color": "ffb3c6",
+             "image_url": "https://static.intercomassets.com/avatars/4312315/square_128/8889_CA_Technologies_Santa_Clara_Headshot_Photography-1611250263.jpg?1611250263",
+             "image_urls": {
+              "square_128": "https://static.intercomassets.com/avatars/4312315/square_128/8889_CA_Technologies_Santa_Clara_Headshot_Photography-1611250263.jpg?1611250263",
+              "square_25": "https://static.intercomassets.com/avatars/4312315/square_25/8889_CA_Technologies_Santa_Clara_Headshot_Photography-1611250263.jpg?1611250263",
+              "square_50": "https://static.intercomassets.com/avatars/4312315/square_50/8889_CA_Technologies_Santa_Clara_Headshot_Photography-1611250263.jpg?1611250263"
+             },
+             "initials": "R"
+            },
+            "first_name": "Refael",
+            "has_photo_avatar": true,
+            "id": "4312315",
+            "name": "Refael"
+           }
+          ],
+          "audio_enabled": true,
+          "developer_workspace": false,
+          "expected_response_delay_translation_key": "a_few_minutes",
+          "help_center_site_url": null,
+          "inbound_conversations_disabled": false,
+          "launcher_expected_response_delay_translation_key": "the_team_typically_replies_in_minutes",
+          "launcher_logo_url": null,
+          "messenger_background": null,
+          "messenger_logo_url": "https://downloads.intercomcdn.com/i/o/203877/2516b2492fbc331d651bb8c3/a710d5276f58b3d4c46ee560423257ce.png",
+          "name": "UP9",
+          "office_hours_response": null,
+          "self_serve_suggestions_match": true,
+          "show_powered_by": false,
+          "sms_notifications_enabled": false,
+          "team_greeting": "Hi there \ud83d\udc4b",
+          "team_intro": "Thanks for visiting our new website. We&#39;d appreciate your feedback.",
+          "temporary_expectations_message": null,
+          "upfront_email_collection_setting": "never",
+          "use_cache_for": [],
+          "user_conversation_attachments_enabled": false,
+          "user_conversation_gifs_enabled": true
+         },
+         "cdas_breaching_limit": [],
+         "client_matches": [],
+         "client_messages": [],
+         "composer_state": {
+          "self_serve_suggestions_enabled": false,
+          "version": 0,
+          "visible": true
+         },
+         "identity_verification_ready": false,
+         "modules": {
+          "customization": {
+           "alignment": "right",
+           "brand_name": "UP9",
+           "horizontal_padding": 20,
+           "launcher_logo_url": null,
+           "messenger_logo_url": "https://downloads.intercomcdn.com/i/o/203877/2516b2492fbc331d651bb8c3/a710d5276f58b3d4c46ee560423257ce.png",
+           "messenger_wallpaper": null,
+           "vertical_padding": 20,
+           "vertical_padding_android": 16,
+           "vertical_padding_ios": 20
+          },
+          "error_reporting": {
+           "disabled": false
+          },
+          "messages": {
+           "activator": "#IntercomDefaultWidget",
+           "can_use_messenger": true,
+           "colors": {
+            "base": "#627ef7",
+            "secondary": "#ffffff"
+           },
+           "features": {
+            "client_matching_refresh_active_match": true,
+            "cross_site_cookies": false,
+            "disable_long_polling": true,
+            "google_analytics": true,
+            "hubspot_installed": false,
+            "inbound_lead_messaging": true,
+            "inbound_lead_messaging_docs_site": true,
+            "inbound_messages": true,
+            "launcher_discovery_mode": true,
+            "marketo_enrichment_installed": false,
+            "outbound_messages": true,
+            "periodic_evaluator": false,
+            "persist_across_pages": true,
+            "render_attachments_as_plain_text": false,
+            "render_native_picker_in_mobile": false,
+            "rtm": true,
+            "search_browse": false,
+            "search_browse_enforced": false,
+            "single_page_app_rate_limiting": false
+           },
+           "google_analytics_tracking_id": null,
+           "instant_boot_enabled": true,
+           "show_launcher": true,
+           "use_activator": true
+          },
+          "metrics": {
+           "enabled": false
+          },
+          "rtm": {
+           "endpoints": [
+            "https://nexus-websocket-a.intercom.io/pubsub/5-KEj6kV3wYxjIAXq8bI7z4lA5kudYOJhvP05D4GcWBQZZc4jp2f0vjQQWWjECLtpppBqJCVSo1qjWbCkG00hXoPKO-sfugDz6h4RJ"
+           ]
+          }
+         },
+         "origin_cookie_domain": "testr.io",
+         "unread_conversation_ids": [],
+         "unread_dismissed_conversation_ids": [],
+         "user": {
+          "anonymous_id": "b260214d-b8ef-4eeb-b98b-0adb6edff66b",
+          "country_code": "il",
+          "has_conversations": false,
+          "home_screen_slots": [],
+          "id": "602cd608ed92b08a54e56d06",
+          "locale": "en",
+          "new_session": true,
+          "role": "visitor_role",
+          "type": "user"
+         }
+        },
+        "schema": {
+         "additionalProperties": {
+          "items": {},
+          "type": "array"
+         },
+         "properties": {
+          "anonymous_session": {
+           "type": "string"
+          },
+          "app": {
+           "additionalProperties": {
+            "type": [
+             "boolean",
+             "null",
+             "string"
+            ]
+           },
+           "properties": {
+            "access_to_teammate_enabled": {
+             "type": "boolean"
+            },
+            "active_admins": {
+             "items": {
+              "properties": {
+               "avatar": {
+                "properties": {
+                 "color": {
+                  "type": "string"
+                 },
+                 "image_url": {
+                  "type": "string"
+                 },
+                 "image_urls": {
+                  "additionalProperties": {
+                   "type": "string"
+                  },
+                  "type": "object"
+                 },
+                 "initials": {
+                  "type": "string"
+                 }
+                },
+                "required": [
+                 "color",
+                 "image_url",
+                 "image_urls",
+                 "initials"
+                ],
+                "type": "object"
+               },
+               "first_name": {
+                "type": "string"
+               },
+               "has_photo_avatar": {
+                "type": "boolean"
+               },
+               "id": {
+                "type": "string"
+               },
+               "name": {
+                "type": "string"
+               }
+              },
+              "required": [
+               "avatar",
+               "first_name",
+               "has_photo_avatar",
+               "id",
+               "name"
+              ],
+              "type": "object"
+             },
+             "type": "array"
+            },
+            "audio_enabled": {
+             "type": "boolean"
+            },
+            "developer_workspace": {
+             "type": "boolean"
+            },
+            "expected_response_delay_translation_key": {
+             "type": "string"
+            },
+            "help_center_site_url": {},
+            "inbound_conversations_disabled": {
+             "type": "boolean"
+            },
+            "launcher_logo_url": {},
+            "messenger_background": {},
+            "messenger_logo_url": {
+             "type": "string"
+            },
+            "name": {
+             "type": "string"
+            },
+            "office_hours_response": {},
+            "self_serve_suggestions_match": {
+             "type": "boolean"
+            },
+            "show_powered_by": {
+             "type": "boolean"
+            },
+            "sms_notifications_enabled": {
+             "type": "boolean"
+            },
+            "team_greeting": {
+             "type": "string"
+            },
+            "team_intro": {
+             "type": "string"
+            },
+            "use_cache_for": {
+             "items": {},
+             "type": "array"
+            },
+            "user_conversation_gifs_enabled": {
+             "type": "boolean"
+            }
+           },
+           "required": [
+            "access_to_teammate_enabled",
+            "active_admins",
+            "audio_enabled",
+            "developer_workspace",
+            "expected_response_delay_translation_key",
+            "help_center_site_url",
+            "inbound_conversations_disabled",
+            "launcher_logo_url",
+            "messenger_background",
+            "messenger_logo_url",
+            "name",
+            "office_hours_response",
+            "self_serve_suggestions_match",
+            "show_powered_by",
+            "sms_notifications_enabled",
+            "team_greeting",
+            "team_intro",
+            "use_cache_for",
+            "user_conversation_gifs_enabled"
+           ],
+           "type": "object"
+          },
+          "cdas_breaching_limit": {
+           "items": {},
+           "type": "array"
+          },
+          "client_matches": {
+           "items": {},
+           "type": "array"
+          },
+          "client_messages": {
+           "items": {},
+           "type": "array"
+          },
+          "composer_state": {
+           "additionalProperties": {
+            "type": "boolean"
+           },
+           "properties": {
+            "version": {
+             "type": "integer"
+            },
+            "visible": {
+             "type": "boolean"
+            }
+           },
+           "required": [
+            "version",
+            "visible"
+           ],
+           "type": "object"
+          },
+          "identity_verification_ready": {
+           "type": "boolean"
+          },
+          "modules": {
+           "properties": {
+            "customization": {
+             "properties": {
+              "alignment": {
+               "type": "string"
+              },
+              "brand_name": {
+               "type": "string"
+              },
+              "horizontal_padding": {
+               "type": "integer"
+              },
+              "launcher_logo_url": {},
+              "messenger_logo_url": {
+               "type": "string"
+              },
+              "messenger_wallpaper": {},
+              "vertical_padding": {
+               "type": "integer"
+              },
+              "vertical_padding_android": {
+               "type": "integer"
+              },
+              "vertical_padding_ios": {
+               "type": "integer"
+              }
+             },
+             "required": [
+              "alignment",
+              "brand_name",
+              "horizontal_padding",
+              "launcher_logo_url",
+              "messenger_logo_url",
+              "messenger_wallpaper",
+              "vertical_padding",
+              "vertical_padding_android",
+              "vertical_padding_ios"
+             ],
+             "type": "object"
+            },
+            "error_reporting": {
+             "properties": {
+              "disabled": {
+               "type": "boolean"
+              }
+             },
+             "required": [
+              "disabled"
+             ],
+             "type": "object"
+            },
+            "messages": {
+             "properties": {
+              "activator": {
+               "type": "string"
+              },
+              "can_use_messenger": {
+               "type": "boolean"
+              },
+              "colors": {
+               "properties": {
+                "base": {
+                 "type": "string"
+                },
+                "secondary": {
+                 "type": "string"
+                }
+               },
+               "required": [
+                "base",
+                "secondary"
+               ],
+               "type": "object"
+              },
+              "features": {
+               "additionalProperties": {
+                "type": "boolean"
+               },
+               "properties": {
+                "client_matching_refresh_active_match": {
+                 "type": "boolean"
+                },
+                "cross_site_cookies": {
+                 "type": "boolean"
+                },
+                "disable_long_polling": {
+                 "type": "boolean"
+                },
+                "google_analytics": {
+                 "type": "boolean"
+                },
+                "hubspot_installed": {
+                 "type": "boolean"
+                },
+                "inbound_lead_messaging": {
+                 "type": "boolean"
+                },
+                "inbound_lead_messaging_docs_site": {
+                 "type": "boolean"
+                },
+                "inbound_messages": {
+                 "type": "boolean"
+                },
+                "launcher_discovery_mode": {
+                 "type": "boolean"
+                },
+                "marketo_enrichment_installed": {
+                 "type": "boolean"
+                },
+                "outbound_messages": {
+                 "type": "boolean"
+                },
+                "periodic_evaluator": {
+                 "type": "boolean"
+                },
+                "persist_across_pages": {
+                 "type": "boolean"
+                },
+                "rtm": {
+                 "type": "boolean"
+                },
+                "search_browse": {
+                 "type": "boolean"
+                },
+                "search_browse_enforced": {
+                 "type": "boolean"
+                }
+               },
+               "required": [
+                "client_matching_refresh_active_match",
+                "cross_site_cookies",
+                "disable_long_polling",
+                "google_analytics",
+                "hubspot_installed",
+                "inbound_lead_messaging",
+                "inbound_lead_messaging_docs_site",
+                "inbound_messages",
+                "launcher_discovery_mode",
+                "marketo_enrichment_installed",
+                "outbound_messages",
+                "periodic_evaluator",
+                "persist_across_pages",
+                "rtm",
+                "search_browse",
+                "search_browse_enforced"
+               ],
+               "type": "object"
+              },
+              "google_analytics_tracking_id": {},
+              "instant_boot_enabled": {
+               "type": "boolean"
+              },
+              "show_launcher": {
+               "type": "boolean"
+              },
+              "use_activator": {
+               "type": "boolean"
+              }
+             },
+             "required": [
+              "activator",
+              "can_use_messenger",
+              "colors",
+              "features",
+              "google_analytics_tracking_id",
+              "instant_boot_enabled",
+              "show_launcher",
+              "use_activator"
+             ],
+             "type": "object"
+            },
+            "metrics": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              }
+             },
+             "required": [
+              "enabled"
+             ],
+             "type": "object"
+            },
+            "rtm": {
+             "properties": {
+              "endpoints": {
+               "items": {
+                "type": "string"
+               },
+               "type": "array"
+              }
+             },
+             "required": [
+              "endpoints"
+             ],
+             "type": "object"
+            }
+           },
+           "required": [
+            "customization",
+            "error_reporting",
+            "messages",
+            "metrics",
+            "rtm"
+           ],
+           "type": "object"
+          },
+          "origin_cookie_domain": {
+           "type": "string"
+          },
+          "unread_conversation_ids": {
+           "items": {},
+           "type": "array"
+          },
+          "user": {
+           "properties": {
+            "anonymous_id": {
+             "type": "string"
+            },
+            "country_code": {
+             "type": "string"
+            },
+            "has_conversations": {
+             "type": "boolean"
+            },
+            "home_screen_slots": {
+             "items": {},
+             "type": "array"
+            },
+            "id": {
+             "type": "string"
+            },
+            "locale": {
+             "type": "string"
+            },
+            "new_session": {
+             "type": "boolean"
+            },
+            "role": {
+             "type": "string"
+            },
+            "type": {
+             "type": "string"
+            }
+           },
+           "required": [
+            "anonymous_id",
+            "country_code",
+            "has_conversations",
+            "home_screen_slots",
+            "id",
+            "locale",
+            "new_session",
+            "role",
+            "type"
+           ],
+           "type": "object"
+          }
+         },
+         "required": [
+          "anonymous_session",
+          "app",
+          "cdas_breaching_limit",
+          "client_matches",
+          "client_messages",
+          "composer_state",
+          "identity_verification_ready",
+          "modules",
+          "origin_cookie_domain",
+          "unread_conversation_ids",
+          "user"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   }
+  }
+ },
+ "tags": []
+}

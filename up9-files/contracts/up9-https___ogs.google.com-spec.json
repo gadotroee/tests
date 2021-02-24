@@ -1,0 +1,84 @@
+{
+ "info": {
+  "title": "https://ogs.google.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/widget/app/so": {
+   "get": {
+    "operationId": "b8c16f08-eb91-4c44-aa75-f63c7a3b1478",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "cn",
+      "required": true,
+      "schema": {
+       "enum": [
+        "app"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "hl",
+      "required": true,
+      "schema": {
+       "enum": [
+        "iw"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "origin",
+      "required": true,
+      "schema": {
+       "enum": [
+        "https://www.google.com"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "pid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "spid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": ""
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

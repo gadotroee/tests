@@ -1,28 +1,18 @@
 {
  "parameters": [
   {
-   "name": "address",
-   "uuid": "29a3eed4-6edd-41c8-930b-fa9463f3d527"
+   "name": "amount",
+   "uuid": "c8ecd2bb-b64f-47fa-a915-21b075ff8eb1"
   },
   {
-   "name": "card",
-   "uuid": "1cf7d9ee-3905-4d1a-8ad7-81991a2f2e31"
-  },
-  {
-   "name": "customer",
-   "uuid": "bb057cd1-7193-42e6-a2cb-66445260d5eb"
-  },
-  {
-   "name": "items",
-   "uuid": "2b09cede-2849-46bc-a6f4-6ae288cafea6"
+   "name": "completedOnly",
+   "uuid": "531b4c29-5e17-4761-8a0e-a8a7078b6be8"
   }
  ],
  "rows": [
   {
-   "address": "http://user/addresses/57a98d98e4b00679b4a830b0",
-   "card": "http://user/cards/57a98d98e4b00679b4a830b1",
-   "customer": "http://user/customers/57a98d98e4b00679b4a830b2",
-   "items": "http://carts/carts/57a98d98e4b00679b4a830b2/items"
+   "amount": "63",
+   "completedOnly": "false"
   }
  ]
 }

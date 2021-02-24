@@ -1,4 +1,49 @@
 services:
+  5142311.fls.doubleclick.net:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://5142311.fls.doubleclick.net'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: '5142311'
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  adservice.google.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://adservice.google.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: adservice
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  api-iam.intercom.io:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://api-iam.intercom.io'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: api-iam
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
   auth.stg.testr.io:
     cap_add:
     - NET_BIND_SERVICE
@@ -8,6 +53,81 @@ services:
     environment:
     - MOCKINTOSH_FORCE_PORT=443
     hostname: auth
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  bat.bing.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://bat.bing.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: bat
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  httpbin.org:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://httpbin.org'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: httpbin
+    image: testrio/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  ib.adnxs.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://ib.adnxs.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: ib
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  ogs.google.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://ogs.google.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: ogs
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  stats.g.doubleclick.net:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://stats.g.doubleclick.net'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: stats
     image: testrio/mockintosh:latest
     ports:
     - 443
@@ -53,6 +173,51 @@ services:
     environment:
     - MOCKINTOSH_FORCE_PORT=443
     hostname: trdemo
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  widget.intercom.io:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://widget.intercom.io'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: widget
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  www.google-analytics.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://www.google-analytics.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: www
+    image: testrio/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  www.google.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://www.google.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: www
     image: testrio/mockintosh:latest
     ports:
     - 443

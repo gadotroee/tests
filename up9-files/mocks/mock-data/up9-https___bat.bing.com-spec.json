@@ -1,0 +1,48 @@
+{
+ "info": {
+  "title": "https://bat.bing.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/action/0": {
+   "get": {
+    "operationId": "2f674204-8155-48d6-8827-9f16dc593f10",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "Ver",
+      "required": true,
+      "schema": {
+       "enum": [
+        "2"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "ti",
+      "required": true,
+      "schema": {
+       "enum": [
+        "5625892",
+        "4030466",
+        "5117764"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "No Content"
+     }
+    },
+    "summary": "Seen 3 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

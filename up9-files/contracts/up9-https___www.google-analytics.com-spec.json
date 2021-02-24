@@ -1,0 +1,313 @@
+{
+ "info": {
+  "title": "https://www.google-analytics.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/j/collect": {
+   "parameters": [],
+   "post": {
+    "operationId": "0cddb78c-73dc-4cf6-90e8-76cc4b4d0c94",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "_gid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1456995457.1613552849"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "_r",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "_s",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "_u",
+      "required": true,
+      "schema": {
+       "enum": [
+        "YEBAAEABAAAAAC~",
+        "YEDAAEABAAAAAC~"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "_v",
+      "required": true,
+      "schema": {
+       "enum": [
+        "j88"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "a",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1546843061"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "aip",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "cd13",
+      "required": true,
+      "schema": {
+       "enum": [
+        "LtDzEbgBFtXhfQwhLEsA0s2NgCY"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "cid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1344583654.1613552849"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "de",
+      "required": true,
+      "schema": {
+       "enum": [
+        "UTF-8"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dl",
+      "required": true,
+      "schema": {
+       "enum": [
+        "/"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dr",
+      "required": true,
+      "schema": {
+       "enum": [
+        ""
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dt",
+      "required": true,
+      "schema": {
+       "enum": [
+        "-"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "gjid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1543326634",
+        "711335919",
+        "730168590"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "gtm",
+      "required": true,
+      "schema": {
+       "enum": [
+        "2wg230PSCCSHQ"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "je",
+      "required": true,
+      "schema": {
+       "enum": [
+        "0"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "jid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1384518584",
+        "1838933768",
+        "1944049386"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "sd",
+      "required": true,
+      "schema": {
+       "enum": [
+        "24-bit"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "sr",
+      "required": true,
+      "schema": {
+       "enum": [
+        "2560x1440"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "t",
+      "required": true,
+      "schema": {
+       "enum": [
+        "pageview"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "tid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "UA-42209185-8",
+        "UA-42209185-42",
+        "UA-42209185-41"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "ul",
+      "required": true,
+      "schema": {
+       "enum": [
+        "en-us"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "v",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "vp",
+      "required": true,
+      "schema": {
+       "enum": [
+        ""
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "z",
+      "required": true,
+      "schema": {
+       "enum": [
+        "66598281",
+        "263542884",
+        "1111224558"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "text/plain": {
+        "example": "1d"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests"
+   }
+  }
+ },
+ "tags": []
+}
