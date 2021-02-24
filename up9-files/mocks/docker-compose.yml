@@ -29,6 +29,21 @@ services:
     read_only: true
     volumes:
     - .:/config
+  trcc-api-service.tradmin:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://trcc-api-service.tradmin'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: trcc-api-service
+    image: testrio/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
   trdemo.stg.testr.io:
     cap_add:
     - NET_BIND_SERVICE

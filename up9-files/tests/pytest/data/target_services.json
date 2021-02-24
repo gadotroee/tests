@@ -1,6 +1,8 @@
 {
- "TARGET_TRDEMO_CLIENT_TRDEMO": "http://trdemo-client.trdemo",
- "TARGET_TRDEMO_FLIGHTS_TRDEMO": "http://trdemo-flights.trdemo",
- "TARGET_TRDEMO_SHOPPINGCART_TRDEMO": "http://trdemo-shoppingcart.trdemo",
- "TARGET_TRDEMO_USERS_TRDEMO": "http://trdemo-users.trdemo"
+ "TARGET_AUTH_STG_TESTR_IO": "https://auth.stg.testr.io",
+ "TARGET_STG_TESTR_IO": "https://stg.testr.io",
+ "TARGET_TRCC_API_SERVICE_TRADMIN": "http://trcc-api-service.tradmin",
+ "TARGET_TRDEMO_STG_TESTR_IO": "https://trdemo.stg.testr.io",
+ "TARGET_WWW_IL_KAYAK_COM": "https://www.il.kayak.com",
+ "TARGET_WWW_KAYAK_COM": "https://www.kayak.com"
 }

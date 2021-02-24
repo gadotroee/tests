@@ -44,7 +44,7 @@
    },
    "parameters": [],
    "post": {
-    "operationId": "e15707dc-8575-41be-b82e-0f4103896ffb",
+    "operationId": "ffcb4f59-9ea4-4af1-af2f-de6701183f7f",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -82,7 +82,7 @@
   },
   "/search": {
    "get": {
-    "operationId": "f3fc48dc-07b2-4a02-9024-f9922cd098b4",
+    "operationId": "d0d4600e-421b-417e-8ca0-36fecb4ba853",
     "parameters": [
      {
       "in": "query",
