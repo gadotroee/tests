@@ -1,11 +1,26 @@
 [
 {
+"creationTime": "2021-02-24 06:31:54",
+"creationTimestamp": 1614148314.0,
+"diffScore": 0.014925373134328358,
+"endpointAmount": 66,
+"id": "12",
+"isLatest": true,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 0,
+"spansAmount": 1
+},
+"servicesAmount": 18,
+"spansAmount": 67
+},
+{
 "creationTime": "2021-02-24 06:30:40",
 "creationTimestamp": 1614148240.0,
 "diffScore": 0.0006714876033058204,
 "endpointAmount": 65,
 "id": "11",
-"isLatest": true,
+"isLatest": false,
 "metadataDiff": {
 "endpointAmount": 0,
 "servicesAmount": 0,
