@@ -1,13 +1,13 @@
 {
  "parameters": [
   {
-   "name": "id",
-   "uuid": "007c939b-8a8c-46a1-b28f-6b00d20e88a6"
+   "name": "param",
+   "uuid": "0cd24847-f376-4e41-8597-29a1c6d7e5ed"
   }
  ],
  "rows": [
   {
-   "id": "602cd634ca71eeee16afa676"
+   "param": "7"
   }
  ]
 }

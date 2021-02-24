@@ -1,1 +1,207 @@
-{"lastEnvInfo":{"agentId":"369c3c70-3396-46ae-a1de-7d57b648a417","profileName":"cluster"},"model":"roee","name":"all","organization":"07e636fe-6118-4764-912b-97cfdb641a20","overrides":{"env":{"UP9_ASSERTIONS_SIMPLE":true,"UP9_MAX_DATASET_LEN":1},"model":["drop_all_links"]},"previousOverrides":{}}
+[
+{
+"creationTime": "2021-02-24 06:34:30",
+"creationTimestamp": 1614148470.0,
+"diffScore": 0.001348371777476265,
+"endpointAmount": 66,
+"id": "14",
+"isLatest": true,
+"metadataDiff": {
+"endpointAmount": 0,
+"servicesAmount": 0,
+"spansAmount": 0
+},
+"servicesAmount": 18,
+"spansAmount": 67
+},
+{
+"creationTime": "2021-02-24 06:33:12",
+"creationTimestamp": 1614148392.0,
+"diffScore": 0.0015773405698776832,
+"endpointAmount": 66,
+"id": "13",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 0,
+"servicesAmount": 0,
+"spansAmount": 0
+},
+"servicesAmount": 18,
+"spansAmount": 67
+},
+{
+"creationTime": "2021-02-24 06:31:54",
+"creationTimestamp": 1614148314.0,
+"diffScore": 0.014925373134328358,
+"endpointAmount": 66,
+"id": "12",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 0,
+"spansAmount": 1
+},
+"servicesAmount": 18,
+"spansAmount": 67
+},
+{
+"creationTime": "2021-02-24 06:30:40",
+"creationTimestamp": 1614148240.0,
+"diffScore": 0.0006714876033058204,
+"endpointAmount": 65,
+"id": "11",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 0,
+"servicesAmount": 0,
+"spansAmount": 0
+},
+"servicesAmount": 18,
+"spansAmount": 66
+},
+{
+"creationTime": "2021-02-24 06:29:31",
+"creationTimestamp": 1614148171.0,
+"diffScore": 0.015151515151515152,
+"endpointAmount": 65,
+"id": "10",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 0,
+"spansAmount": 1
+},
+"servicesAmount": 18,
+"spansAmount": 66
+},
+{
+"creationTime": "2021-02-24 06:28:21",
+"creationTimestamp": 1614148101.0,
+"diffScore": 0.4,
+"endpointAmount": 64,
+"id": "9",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 40,
+"servicesAmount": 12,
+"spansAmount": 40
+},
+"servicesAmount": 18,
+"spansAmount": 65
+},
+{
+"creationTime": "2021-02-24 06:27:14",
+"creationTimestamp": 1614148034.0,
+"diffScore": 0.05128205128205128,
+"endpointAmount": 24,
+"id": "8",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 2,
+"servicesAmount": 1,
+"spansAmount": 2
+},
+"servicesAmount": 6,
+"spansAmount": 25
+},
+{
+"creationTime": "2021-02-17 10:44:19",
+"creationTimestamp": 1613558659.0,
+"diffScore": 0.10810810810810811,
+"endpointAmount": 22,
+"id": "7",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 4,
+"servicesAmount": 1,
+"spansAmount": 5
+},
+"servicesAmount": 5,
+"spansAmount": 23
+},
+{
+"creationTime": "2021-02-17 09:09:20",
+"creationTimestamp": 1613552960.0,
+"diffScore": 0.6363636363636364,
+"endpointAmount": 18,
+"id": "6",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 12,
+"servicesAmount": -1,
+"spansAmount": 12
+},
+"servicesAmount": 4,
+"spansAmount": 18
+},
+{
+"creationTime": "2021-02-17 09:08:31",
+"creationTimestamp": 1613552911.0,
+"diffScore": 0.08333333333333333,
+"endpointAmount": 6,
+"id": "5",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 1,
+"spansAmount": 1
+},
+"servicesAmount": 5,
+"spansAmount": 6
+},
+{
+"creationTime": "2021-02-17 08:39:16",
+"creationTimestamp": 1613551156.0,
+"diffScore": 0.36363636363636365,
+"endpointAmount": 5,
+"id": "4",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": -2,
+"servicesAmount": -1,
+"spansAmount": -2
+},
+"servicesAmount": 4,
+"spansAmount": 5
+},
+{
+"creationTime": "2021-02-17 08:31:43",
+"creationTimestamp": 1613550703.0,
+"diffScore": 0.14285714285714285,
+"endpointAmount": 7,
+"id": "3",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 1,
+"spansAmount": 1
+},
+"servicesAmount": 5,
+"spansAmount": 7
+},
+{
+"creationTime": "2021-02-17 08:28:56",
+"creationTimestamp": 1613550536.0,
+"diffScore": 0.3602150537634408,
+"endpointAmount": 6,
+"id": "2",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 2,
+"servicesAmount": 1,
+"spansAmount": 2
+},
+"servicesAmount": 4,
+"spansAmount": 6
+},
+{
+"creationTime": "2021-02-17 08:28:09",
+"creationTimestamp": 1613550489.0,
+"diffScore": 1,
+"endpointAmount": 4,
+"id": "1",
+"isLatest": false,
+"servicesAmount": 3,
+"spansAmount": 4
+}
+]

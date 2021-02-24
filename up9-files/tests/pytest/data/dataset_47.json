@@ -1,13 +1,23 @@
 {
  "parameters": [
   {
-   "name": "customerId",
-   "uuid": "683dc737-799b-46c0-a00b-78350b6b14a1"
+   "name": "revision",
+   "uuid": "0538b5e6-3a99-47c1-a17d-a237458e5239"
+  },
+  {
+   "name": "spanGuid",
+   "uuid": "8cf4188c-abf2-4218-84a4-f680f866f815"
+  },
+  {
+   "name": "testPackId",
+   "uuid": "547b0a6d-99fb-4127-96af-9ee7fc761b49"
   }
  ],
  "rows": [
   {
-   "customerId": "0xCeMvsOwJQhavSE_KCuVPw5go0fkCtc"
+   "revision": "7",
+   "spanGuid": "99f932e3-4aa7-472e-86f0-f2af4ff88b63",
+   "testPackId": "60351b00539e59f3d55ab6b4"
   }
  ]
 }

@@ -1,13 +1,13 @@
 {
  "parameters": [
   {
-   "name": "agentId",
-   "uuid": "bb904abd-9bc8-4c0a-8ef0-c6ee99efd7af"
+   "name": "imagePath",
+   "uuid": "cc06122a-eb1b-4e70-96f1-8aa3402f9c55"
   }
  ],
  "rows": [
   {
-   "agentId": "369c3c70-3396-46ae-a1de-7d57b648a417"
+   "imagePath": "gcr.io/up9-docker-hub/trcc-agent/master"
   }
  ]
 }

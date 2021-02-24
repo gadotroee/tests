@@ -1,13 +1,23 @@
 {
  "parameters": [
   {
-   "name": "testPackId",
-   "uuid": "134bec00-f689-475b-a8a9-bb1a62cd68ef"
+   "name": "maxRevisionId",
+   "uuid": "8dadcfbd-211e-49a7-b381-22e8bffb693a"
+  },
+  {
+   "name": "selectedEndpoint",
+   "uuid": "27ecdfc2-e082-480a-a9a0-ba48444b79c2"
+  },
+  {
+   "name": "services",
+   "uuid": "47ed81a9-d0f1-4b89-8a8e-6baf1c01184f"
   }
  ],
  "rows": [
   {
-   "testPackId": "60351b00539e59f3d55ab6b4"
+   "maxRevisionId": "7",
+   "selectedEndpoint": "99f932e3-4aa7-472e-86f0-f2af4ff88b63",
+   "services": "https://auth.stg.testr.io"
   }
  ]
 }

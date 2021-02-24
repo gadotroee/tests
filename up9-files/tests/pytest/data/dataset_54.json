@@ -1,18 +1,18 @@
 {
  "parameters": [
   {
-   "name": "amount",
-   "uuid": "c8ecd2bb-b64f-47fa-a915-21b075ff8eb1"
+   "name": "agentId",
+   "uuid": "87b64b6e-dcc4-4a0b-a2fe-4a9c65d3afe1"
   },
   {
-   "name": "completedOnly",
-   "uuid": "531b4c29-5e17-4761-8a0e-a8a7078b6be8"
+   "name": "testPackId",
+   "uuid": "ae2ba5d5-42ee-4445-b37e-865215661872"
   }
  ],
  "rows": [
   {
-   "amount": "63",
-   "completedOnly": "false"
+   "agentId": "369c3c70-3396-46ae-a1de-7d57b648a417",
+   "testPackId": "60351b00539e59f3d55ab6b4"
   }
  ]
 }

@@ -7,7 +7,7 @@
  "paths": {
   "/admin/config": {
    "get": {
-    "operationId": "465b22d5-c4d9-4a1c-aca6-470dc7a81eac",
+    "operationId": "df0fd6c6-061c-4c13-ae58-9f04c2b58838",
     "parameters": [],
     "responses": {
      "200": {
@@ -45,7 +45,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 7 requests",
+    "summary": "Seen 8 requests",
     "tags": [
      "admin"
     ]
@@ -55,7 +55,7 @@
   "/admin/imageVersion": {
    "parameters": [],
    "post": {
-    "operationId": "44632761-0893-4854-8c30-14747cead896",
+    "operationId": "809053cc-3b53-417b-a02f-0e5d35253940",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -80,7 +80,7 @@
       "content": {
        "application/json": {
         "example": {
-         "sha": "sha256:9ebcd2153cda528363cb78e59ac57427f21411a2a540a60da1f7fd2fb256ad95"
+         "sha": "sha256:538bd078e5a7885d1087b48e5640547272235886b31f2b234198eedfa9fd66b6"
         },
         "schema": {
          "properties": {
@@ -98,7 +98,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "admin"
     ]
@@ -106,7 +106,7 @@
   },
   "/admin/whoami": {
    "get": {
-    "operationId": "044eb433-0e94-4949-aab9-c8753eabe2a1",
+    "operationId": "96ea9a2f-7a97-4225-95a3-0870ce895e74",
     "parameters": [],
     "responses": {
      "200": {
@@ -148,7 +148,7 @@
   },
   "/agents/{agentId}/injectorConfig": {
    "get": {
-    "operationId": "33fa6dcc-088f-409c-ad38-782da8eed0df",
+    "operationId": "483d7275-1827-4e68-a49b-75cb5b343bb1",
     "parameters": [],
     "responses": {
      "200": {
@@ -231,7 +231,7 @@
     }
    ],
    "post": {
-    "operationId": "2af776ab-997f-4d84-9b7f-7f1f4d5d9862",
+    "operationId": "d728341a-b4cf-43c3-99b6-12b0b853f44c",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -299,7 +299,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 1 requests",
+    "summary": "Seen 2 requests",
     "tags": [
      "agents"
     ]
@@ -308,7 +308,7 @@
   "/models/modelSettings": {
    "parameters": [],
    "post": {
-    "operationId": "68d1508c-6941-4c70-b94c-609070f47383",
+    "operationId": "34e41dfd-655d-41f2-82cd-635cfceaa616",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -422,7 +422,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 35 requests",
+    "summary": "Seen 41 requests",
     "tags": [
      "models"
     ]
@@ -430,7 +430,7 @@
   },
   "/models/roee/har": {
    "get": {
-    "operationId": "0907c216-b8c7-4e09-8014-6b9bfd113bd1",
+    "operationId": "295d5b96-809a-4e99-861d-89c764ba07a7",
     "parameters": [
      {
       "in": "query",
@@ -596,7 +596,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "models"
     ]
@@ -605,7 +605,7 @@
   },
   "/models/roee/har/entry/{id}": {
    "get": {
-    "operationId": "58fa7a8c-80ae-4fca-8b72-928c2550a28a",
+    "operationId": "02584b2e-6fe8-421e-b733-4d8e23f20a8e",
     "parameters": [
      {
       "in": "query",
@@ -984,7 +984,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 4 requests",
     "tags": [
      "models"
     ]
@@ -1006,7 +1006,7 @@
   },
   "/models/roee/packs/{testPackId}": {
    "get": {
-    "operationId": "c6558979-d7ae-4b75-8c6e-ebffb10e9206",
+    "operationId": "138751cb-7af4-439c-bc53-fa58b9a13547",
     "parameters": [
      {
       "in": "query",
@@ -1113,7 +1113,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "models"
     ]
@@ -1131,11 +1131,67 @@
      },
      "style": "simple"
     }
-   ]
+   ],
+   "post": {
+    "operationId": "cb73fa21-c50b-4fb9-9d2e-98ce9b4ea976",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "properties": {
+         "addedTests": {
+          "items": {
+           "properties": {
+            "revision": {
+             "type": "string"
+            },
+            "spanGuid": {
+             "type": "string"
+            }
+           },
+           "required": [
+            "revision",
+            "spanGuid"
+           ],
+           "type": "object"
+          },
+          "type": "array"
+         },
+         "removedIncludedTestGuids": {
+          "items": {},
+          "type": "array"
+         }
+        },
+        "required": [
+         "addedTests",
+         "removedIncludedTestGuids"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "Ok"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests",
+    "tags": [
+     "models"
+    ]
+   }
   },
   "/models/roee/revisions": {
    "get": {
-    "operationId": "de2fd0f2-6d17-4ec5-a927-047f8d8674d2",
+    "operationId": "0bce65dd-d0c3-4f49-8177-d15b8a8f5be0",
     "parameters": [],
     "responses": {
      "200": {
@@ -1143,12 +1199,42 @@
        "application/json": {
         "example": [
          {
+          "creationTime": "2021-02-24 06:34:30",
+          "creationTimestamp": 1614148470.0,
+          "diffScore": 0.001348371777476265,
+          "endpointAmount": 66,
+          "id": "14",
+          "isLatest": true,
+          "metadataDiff": {
+           "endpointAmount": 0,
+           "servicesAmount": 0,
+           "spansAmount": 0
+          },
+          "servicesAmount": 18,
+          "spansAmount": 67
+         },
+         {
+          "creationTime": "2021-02-24 06:33:12",
+          "creationTimestamp": 1614148392.0,
+          "diffScore": 0.0015773405698776832,
+          "endpointAmount": 66,
+          "id": "13",
+          "isLatest": false,
+          "metadataDiff": {
+           "endpointAmount": 0,
+           "servicesAmount": 0,
+           "spansAmount": 0
+          },
+          "servicesAmount": 18,
+          "spansAmount": 67
+         },
+         {
           "creationTime": "2021-02-24 06:31:54",
           "creationTimestamp": 1614148314.0,
           "diffScore": 0.014925373134328358,
           "endpointAmount": 66,
           "id": "12",
-          "isLatest": true,
+          "isLatest": false,
           "metadataDiff": {
            "endpointAmount": 1,
            "servicesAmount": 0,
@@ -1384,14 +1470,14 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 147 requests",
+    "summary": "Seen 172 requests",
     "tags": [
      "models"
     ]
    },
    "parameters": [],
    "post": {
-    "operationId": "193e8bfd-0e4b-4e3e-a2f3-a80706b709b4",
+    "operationId": "6ff6da66-038f-4bad-9a8f-36105ee763b3",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -1441,7 +1527,7 @@
   },
   "/models/roee/revisions/latest": {
    "get": {
-    "operationId": "b28d16f0-d3f9-480b-8339-0c0cddc43673",
+    "operationId": "e850603c-5069-4530-8b21-14d2e3ea4d59",
     "parameters": [],
     "responses": {
      "200": {
@@ -1466,7 +1552,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 7 requests",
+    "summary": "Seen 8 requests",
     "tags": [
      "models"
     ]
@@ -1475,7 +1561,7 @@
   },
   "/models/roee/sources": {
    "get": {
-    "operationId": "8bac9c9f-b4b9-4b2d-9c10-b122e0a3cddd",
+    "operationId": "91b8ff80-5dc6-4609-8e35-8b1455773265",
     "parameters": [],
     "responses": {
      "200": {
@@ -1504,7 +1590,7 @@
   },
   "/models/roee/status": {
    "get": {
-    "operationId": "96a6d7aa-e741-49bd-9292-147ba22f90f1",
+    "operationId": "282117b1-f4dc-4e91-8b92-3cc262607dc8",
     "parameters": [],
     "responses": {
      "200": {
@@ -1564,7 +1650,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 177 requests",
+    "summary": "Seen 201 requests",
     "tags": [
      "models"
     ]
@@ -1573,7 +1659,7 @@
   },
   "/models/roee/suites": {
    "get": {
-    "operationId": "44ec1b2c-4ddf-4f2f-9e13-0bc65152a737",
+    "operationId": "a8d8eb24-9904-4d90-b703-be3a619fce81",
     "parameters": [],
     "responses": {
      "200": {
@@ -1672,7 +1758,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 14 requests",
+    "summary": "Seen 16 requests",
     "tags": [
      "models"
     ]
@@ -1681,7 +1767,7 @@
   },
   "/models/roee/suites/all/agents/{agentId}/profiles/cluster": {
    "get": {
-    "operationId": "e40964c1-8733-4e6c-9381-d183dcb21dd0",
+    "operationId": "628c6e44-18fb-40bb-b03e-7806ae440049",
     "parameters": [],
     "responses": {
      "200": {
@@ -1873,7 +1959,7 @@
   },
   "/models/roee/suites/all/profiles": {
    "get": {
-    "operationId": "0334febc-e05b-4a72-8e81-b11585038c97",
+    "operationId": "c223be74-92b6-47cd-a806-cb1dde86e403",
     "parameters": [],
     "responses": {
      "200": {
@@ -2106,7 +2192,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "models"
     ]
@@ -2115,7 +2201,7 @@
   },
   "/models/roee/suites/all/runs": {
    "get": {
-    "operationId": "4a52bdb4-b178-437e-b3c7-bc37977d9cfc",
+    "operationId": "21d01d06-65c3-4043-a5f9-8df77f7ed0a5",
     "parameters": [
      {
       "in": "query",
@@ -4241,7 +4327,7 @@
    },
    "parameters": [],
    "post": {
-    "operationId": "e55e0ed3-b0ee-40f9-8af8-a85a29dcd666",
+    "operationId": "e5960146-fbbe-4247-8cde-8cd625158577",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -4294,7 +4380,7 @@
   },
   "/models/roee/suites/all/runs/state": {
    "get": {
-    "operationId": "566cbf7b-9921-49e5-8046-457673f3c3fd",
+    "operationId": "b3776eb6-e55f-4afe-b77d-f57b83d8c546",
     "parameters": [],
     "responses": {
      "200": {
@@ -4329,7 +4415,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 177 requests",
+    "summary": "Seen 201 requests",
     "tags": [
      "models"
     ]
@@ -4338,7 +4424,7 @@
   },
   "/models/roee/suites/all/runs/{runId}": {
    "get": {
-    "operationId": "6c27d5e4-1c13-4352-a42f-0823f7c7b82e",
+    "operationId": "cecc4e72-fd84-4c29-8d87-9b87a7a57080",
     "parameters": [],
     "responses": {
      "200": {
@@ -4911,7 +4997,7 @@
     }
    ],
    "post": {
-    "operationId": "8d374a30-d10d-4c04-82a3-42fe92e2dcb8",
+    "operationId": "5e52fd0d-bfb8-4597-82d5-6523a52de334",
     "parameters": [],
     "requestBody": {
      "content": {
@@ -4977,7 +5063,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/downloadTests": {
    "get": {
-    "operationId": "4a34a9bf-2b23-4d60-858c-5578c2dff089",
+    "operationId": "7dab7f3e-d398-4950-954f-95262518d030",
     "parameters": [],
     "responses": {
      "200": {
@@ -5010,7 +5096,7 @@
   },
   "/models/roee/suites/all/runs/{runId}/uploadUrl": {
    "get": {
-    "operationId": "34459568-06c7-4403-aba7-b07e3396ee9f",
+    "operationId": "7a919e01-7f42-4bcd-824d-90f54e9408d5",
     "parameters": [
      {
       "in": "query",
@@ -5060,7 +5146,7 @@
   },
   "/models/roee/suites/all/{param}": {
    "get": {
-    "operationId": "e29c9bd2-53d5-4aaa-9026-cf58efd33483",
+    "operationId": "8b4259ae-6c6a-4dbc-8125-424132eb6aec",
     "parameters": [],
     "responses": {
      "200": {
@@ -5154,7 +5240,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "models"
     ]
@@ -5176,7 +5262,7 @@
   },
   "/models/roee/{param}/all": {
    "get": {
-    "operationId": "0acf8216-ade4-4900-aecc-9407c6515d03",
+    "operationId": "52835910-2acf-4eea-a389-15032d10f786",
     "parameters": [],
     "responses": {
      "200": {
@@ -5448,7 +5534,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "models"
     ]
@@ -5470,7 +5556,7 @@
   },
   "/models/roee/{param}/all/dataDependency": {
    "get": {
-    "operationId": "8de792ed-eef5-4a77-80af-4b305c653d5c",
+    "operationId": "e4208a76-2f77-4598-83c1-58db7e0880fb",
     "parameters": [],
     "responses": {
      "200": {
@@ -7087,7 +7173,7 @@
   },
   "/models/roee/{param}/all/dataDependency/span": {
    "get": {
-    "operationId": "59205627-382c-4368-b57e-c93f896138bb",
+    "operationId": "a9b36569-b806-4f1c-9d0b-ee374f72f360",
     "parameters": [],
     "responses": {
      "200": {
@@ -8805,7 +8891,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "models"
     ]
@@ -8827,7 +8913,7 @@
   },
   "/tapping/state": {
    "get": {
-    "operationId": "c6c54a29-bc67-4a2f-9cc4-520388e6e5be",
+    "operationId": "e9c0af3c-462b-469a-a1bb-6ddd86efedf9",
     "parameters": [],
     "responses": {
      "200": {
@@ -8918,13 +9004,13 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 35 requests"
+    "summary": "Seen 40 requests"
    },
    "parameters": []
   },
   "/users/current": {
    "get": {
-    "operationId": "10eb9253-c313-4036-a194-776399970dad",
+    "operationId": "fbb2d573-25d7-4f79-9856-b69cc42e09e2",
     "parameters": [],
     "responses": {
      "200": {
@@ -8979,7 +9065,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests"
+    "summary": "Seen 3 requests"
    },
    "parameters": []
   }

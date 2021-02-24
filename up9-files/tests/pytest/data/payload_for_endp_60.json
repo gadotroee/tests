@@ -1,0 +1,6 @@
+{
+ "creationReason": "trafficNotPassedThreshold",
+ "maxEntryId": "{{maxEntryId}}",
+ "revisionId": "10",
+ "sourceRevisionId": "{{sourceRevisionId}}"
+}

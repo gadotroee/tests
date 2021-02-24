@@ -1,13 +1,18 @@
 {
  "parameters": [
   {
-   "name": "content",
-   "uuid": "0b5bc8e1-bb4d-441a-bc79-26d633bd662d"
+   "name": "amount",
+   "uuid": "e79fcae6-0c9a-4d06-90fd-7479b831216a"
+  },
+  {
+   "name": "completedOnly",
+   "uuid": "5bf78c82-e4ff-447f-908b-47e5cb1cacda"
   }
  ],
  "rows": [
   {
-   "content": "<php>die(@md5(HelloThinkCMF))</php>"
+   "amount": "63",
+   "completedOnly": "false"
   }
  ]
 }

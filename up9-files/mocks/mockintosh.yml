@@ -36,115 +36,6 @@ services:
       body: '{"failedTargets":[],"status":"COMPLETED"}'
       useTemplating: false
     method: post
-  - path: /models/roee/{{param}}/all
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_41.json'
-  - path: /models/roee/{{param}}/all/dataDependency
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_42.json'
-  - path: /models/roee/{{param}}/all/dataDependency/span
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_43.json'
-  - path: /models/roee/har/entry/{{id}}
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_44.json'
-  - path: /models/roee/har
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_45.json'
-      useTemplating: false
-  - path: /models/roee/packs/{{testPackId}}
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_46.json'
-  - path: /models/roee/revisions
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_47.json'
-  - path: /models/roee/sources
-    response:
-      headers:
-        Content-Type: application/json
-      body: '["_BROWSER_"]'
-      useTemplating: false
-  - path: /models/roee/status
-    response:
-      headers:
-        Content-Type: application/json
-      body: |-
-        {
-         "canProcessNewTraffic": true,
-         "continueNewTrafficProcessTimestamp": -1,
-         "errorCount": 0,
-         "generatingSince": {{random.float -1.0 1614148395.1818736 2}},
-         "lastMajorGeneration": {{random.float 1613558659.196 1614148470.66 2}},
-         "lastSuccessfulGeneration": {{random.float 1613559157.358 1614148470.66 2}},
-         "messageCount": {{random.int 54 593}},
-         "regenerationMark": false
-        }
-  - path: /models/roee/suites/all/{{param}}
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_50.json'
-      useTemplating: false
-  - path: /models/roee/suites/all/profiles
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_51.json'
-  - path: /models/roee/suites/all/runs
-    response:
-      status: 201
-      headers:
-        Content-Type: application/json
-      body: '"edqgqeejzx"'
-      useTemplating: false
-    method: post
-  - path: /models/roee/suites/all/runs/{{runId}}
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_53.json'
-  - path: /models/roee/suites/all/runs/state
-    response:
-      headers:
-        Content-Type: application/json
-      body: '{"runId":"edqgqeejzx","status":"COMPLETED","updatedAt":"Wed, 24 Feb 2021 06:27:09 GMT"}'
-      useTemplating: false
-  - path: /models/roee/suites/all/runs
-    response:
-      headers:
-        Content-Type: application/json
-      body: '@mock-data/resp_55.json'
-  - path: /users/current
-    response:
-      headers:
-        Content-Type: application/json
-      body: '{"email":"roee.gadot@up9.com","insertionTime":"Thu, 04 Feb 2021 17:39:30 GMT","organization":"07e636fe-6118-4764-912b-97cfdb641a20","popupViewed":{"contracts":true,"services":true}}'
-      useTemplating: false
-  - path: /admin/config
-    response:
-      headers:
-        Content-Type: application/json
-      body: |-
-        {
-         "logsToken": "HTwowKxveOayvJPfaXygEgDyzXPsMETb",
-         "organization": "{{request.body}}",
-         "organizationName": "roee",
-         "user": null
-        }
   - path: /models/modelSettings
     response:
       headers:
@@ -176,6 +67,122 @@ services:
          }
         ]
     method: post
+  - path: /models/roee/{{param}}/all
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_42.json'
+  - path: /models/roee/{{param}}/all/dataDependency
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_43.json'
+  - path: /models/roee/{{param}}/all/dataDependency/span
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_44.json'
+  - path: /models/roee/har/entry/{{id}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_45.json'
+  - path: /models/roee/har
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_46.json'
+      useTemplating: false
+  - path: /models/roee/packs/{{testPackId}}
+    response:
+      headers:
+        Content-Type: text/html
+      body: Ok
+      useTemplating: false
+    method: post
+  - path: /models/roee/packs/{{testPackId}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_48.json'
+  - path: /models/roee/revisions
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_49.json'
+  - path: /models/roee/sources
+    response:
+      headers:
+        Content-Type: application/json
+      body: '["_BROWSER_"]'
+      useTemplating: false
+  - path: /models/roee/status
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "canProcessNewTraffic": true,
+         "continueNewTrafficProcessTimestamp": -1,
+         "errorCount": 0,
+         "generatingSince": {{random.float -1.0 1614148475.7434883 2}},
+         "lastMajorGeneration": {{random.float 1613558659.196 1614148470.66 2}},
+         "lastSuccessfulGeneration": {{random.float 1613559157.358 1614148470.66 2}},
+         "messageCount": {{random.int 54 593}},
+         "regenerationMark": false
+        }
+  - path: /models/roee/suites/all/{{param}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_52.json'
+      useTemplating: false
+  - path: /models/roee/suites/all/profiles
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_53.json'
+  - path: /models/roee/suites/all/runs
+    response:
+      status: 201
+      headers:
+        Content-Type: application/json
+      body: '"edqgqeejzx"'
+      useTemplating: false
+    method: post
+  - path: /models/roee/suites/all/runs/{{runId}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_55.json'
+  - path: /models/roee/suites/all/runs/state
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"runId":"edqgqeejzx","status":"COMPLETED","updatedAt":"Wed, 24 Feb 2021 06:27:09 GMT"}'
+      useTemplating: false
+  - path: /models/roee/suites/all/runs
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_57.json'
+  - path: /users/current
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"email":"roee.gadot@up9.com","insertionTime":"Thu, 04 Feb 2021 17:39:30 GMT","organization":"07e636fe-6118-4764-912b-97cfdb641a20","popupViewed":{"contracts":true,"services":true}}'
+      useTemplating: false
+  - path: /admin/config
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "logsToken": "HTwowKxveOayvJPfaXygEgDyzXPsMETb",
+         "organization": "{{request.body}}",
+         "organizationName": "roee",
+         "user": null
+        }
   - path: /models/roee/revisions
     response:
       headers:
@@ -189,24 +196,24 @@ services:
         Content-Type: application/json
       body: |-
         {
-         "revisionId": "{{random.int 7 13}}"
+         "revisionId": "{{random.int 7 14}}"
         }
   - path: /models/roee/suites
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_61.json'
+      body: '@mock-data/resp_62.json'
   - path: /tapping/state
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_62.json'
+      body: '@mock-data/resp_63.json'
       useTemplating: false
   - path: /admin/imageVersion
     response:
       headers:
         Content-Type: application/json
-      body: '{"sha":"sha256:9ebcd2153cda528363cb78e59ac57427f21411a2a540a60da1f7fd2fb256ad95"}'
+      body: '{"sha":"sha256:538bd078e5a7885d1087b48e5640547272235886b31f2b234198eedfa9fd66b6"}'
       useTemplating: false
     method: post
   - path: /agents/{{agentId}}/injectorConfig
@@ -219,7 +226,7 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_65.json'
+      body: '@mock-data/resp_66.json'
   - path: /models/roee/suites/all/runs/{{runId}}
     response:
       headers:
@@ -237,12 +244,12 @@ services:
     response:
       headers:
         Content-Type: application/zip
-      body: '@mock-data/resp_68.bin'
+      body: '@mock-data/resp_69.bin'
   - path: /models/roee/suites/all/runs/{{runId}}/uploadUrl
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_69.html'
+      body: '@mock-data/resp_70.html'
       useTemplating: false
 - name: http://trdemo.stg.testr.io
   port: 8003

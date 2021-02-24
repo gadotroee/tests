@@ -1,13 +1,33 @@
 {
  "parameters": [
   {
+   "name": "endTime",
+   "uuid": "aa612ae4-3a8b-4f41-b8eb-00750b570b31"
+  },
+  {
+   "name": "rcaDataFileName",
+   "uuid": "03a14c55-2880-4d87-936c-6a03c90df6b2"
+  },
+  {
    "name": "runId",
-   "uuid": "a9113062-c47f-4dd3-86dc-88a3830cebce"
+   "uuid": "2679e07f-0506-4ff5-8ec9-baede15ea35f"
+  },
+  {
+   "name": "startTime",
+   "uuid": "48d8f467-9c4a-49c0-9d1e-5365c99ff3e1"
+  },
+  {
+   "name": "status",
+   "uuid": "f2364869-5016-444d-82bd-5b17a9e0fa05"
   }
  ],
  "rows": [
   {
-   "runId": "edqgqeejzx"
+   "endTime": "2021-02-24T06:27:04.496986",
+   "rcaDataFileName": "rca_data.json",
+   "runId": "edqgqeejzx",
+   "startTime": "2021-02-24T06:27:02.117126",
+   "status": "RUNNING"
   }
  ]
 }
