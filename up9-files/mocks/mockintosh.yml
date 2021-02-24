@@ -90,7 +90,7 @@ services:
          "generatingSince": -1.0,
          "lastMajorGeneration": 1613558659.196,
          "lastSuccessfulGeneration": 1613559157.358,
-         "messageCount": {{random.int 54 345}},
+         "messageCount": {{random.int 54 468}},
          "regenerationMark": false
         }
   - path: /models/roee/suites/all/{{param}}
