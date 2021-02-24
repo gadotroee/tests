@@ -383,7 +383,7 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         with open('data/payload_for_endp_59.json', 'r') as json_payload_file:
             json_payload = json.load(json_payload_file)
         apply_into_json(json_payload, '$.maxEntryId', maxEntryId)
-        apply_into_json(json_payload, '$.revisionId', str(random.randint(8, 13)))
+        apply_into_json(json_payload, '$.revisionId', str(random.randint(8, 14)))
         apply_into_json(json_payload, '$.sourceRevisionId', sourceRevisionId)
         resp = trcc_api_service_tradmin.post('/models/roee/revisions', json=json_payload)
         resp.assert_ok()

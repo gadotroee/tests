@@ -87,9 +87,9 @@ services:
          "canProcessNewTraffic": true,
          "continueNewTrafficProcessTimestamp": -1,
          "errorCount": 0,
-         "generatingSince": {{random.float -1.0 1614148319.7067525 2}},
-         "lastMajorGeneration": {{random.float 1613558659.196 1614148392.158 2}},
-         "lastSuccessfulGeneration": {{random.float 1613559157.358 1614148392.158 2}},
+         "generatingSince": {{random.float -1.0 1614148395.1818736 2}},
+         "lastMajorGeneration": {{random.float 1613558659.196 1614148470.66 2}},
+         "lastSuccessfulGeneration": {{random.float 1613559157.358 1614148470.66 2}},
          "messageCount": {{random.int 54 593}},
          "regenerationMark": false
         }
@@ -189,7 +189,7 @@ services:
         Content-Type: application/json
       body: |-
         {
-         "revisionId": "{{random.int 7 12}}"
+         "revisionId": "{{random.int 7 13}}"
         }
   - path: /models/roee/suites
     response:
