@@ -2,21 +2,16 @@
  "parameters": [
   {
    "name": "maxEntryId",
-   "uuid": "5e9becfc-7946-4812-8d87-17fa7821235e"
-  },
-  {
-   "name": "revisionId",
-   "uuid": "2a420f03-c74e-42dc-97f7-7f6498bdea3f"
+   "uuid": "fd06c64d-5d3d-475b-9c79-0fac1763243f"
   },
   {
    "name": "sourceRevisionId",
-   "uuid": "4a22effe-e969-4742-ab6b-a02e2196401b"
+   "uuid": "e1d72e3c-f29d-4084-8f94-97e23887428a"
   }
  ],
  "rows": [
   {
    "maxEntryId": "6035f1c2ca71eeee16550e54",
-   "revisionId": "8",
    "sourceRevisionId": "8_bd69f311-951e-426b-a794-697ed31f431f"
   }
  ]

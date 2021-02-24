@@ -1,11 +1,41 @@
 [
 {
+"creationTime": "2021-02-24 06:30:40",
+"creationTimestamp": 1614148240.0,
+"diffScore": 0.0006714876033058204,
+"endpointAmount": 65,
+"id": "11",
+"isLatest": true,
+"metadataDiff": {
+"endpointAmount": 0,
+"servicesAmount": 0,
+"spansAmount": 0
+},
+"servicesAmount": 18,
+"spansAmount": 66
+},
+{
+"creationTime": "2021-02-24 06:29:31",
+"creationTimestamp": 1614148171.0,
+"diffScore": 0.015151515151515152,
+"endpointAmount": 65,
+"id": "10",
+"isLatest": false,
+"metadataDiff": {
+"endpointAmount": 1,
+"servicesAmount": 0,
+"spansAmount": 1
+},
+"servicesAmount": 18,
+"spansAmount": 66
+},
+{
 "creationTime": "2021-02-24 06:28:21",
 "creationTimestamp": 1614148101.0,
 "diffScore": 0.4,
 "endpointAmount": 64,
 "id": "9",
-"isLatest": true,
+"isLatest": false,
 "metadataDiff": {
 "endpointAmount": 40,
 "servicesAmount": 12,

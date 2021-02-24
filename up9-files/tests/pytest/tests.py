@@ -376,14 +376,14 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
     @json_dataset('data/dataset_59.json')
     @clear_session({'spanId': 59})
     def test_59_post_models_roee_revisions(self, data_row):
-        maxEntryId, revisionId, sourceRevisionId = data_row
+        maxEntryId, sourceRevisionId = data_row
 
         # POST http://trcc-api-service.tradmin/models/roee/revisions (endp 59)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         with open('data/payload_for_endp_59.json', 'r') as json_payload_file:
             json_payload = json.load(json_payload_file)
         apply_into_json(json_payload, '$.maxEntryId', maxEntryId)
-        apply_into_json(json_payload, '$.revisionId', revisionId)
+        apply_into_json(json_payload, '$.revisionId', str(random.randint(8, 12)))
         apply_into_json(json_payload, '$.sourceRevisionId', sourceRevisionId)
         resp = trcc_api_service_tradmin.post('/models/roee/revisions', json=json_payload)
         resp.assert_ok()
