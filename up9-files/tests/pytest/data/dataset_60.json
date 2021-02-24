@@ -1,6 +1,10 @@
 {
  "parameters": [
   {
+   "name": "creationReason",
+   "uuid": "e579d6f1-6d86-47ca-9a2e-80a96f3d3cd2"
+  },
+  {
    "name": "maxEntryId",
    "uuid": "42694327-f9d8-46b9-9f3e-d733c68bcb06"
   },
@@ -11,7 +15,8 @@
  ],
  "rows": [
   {
-   "maxEntryId": "6035f1c2ca71eeee16550e54",
+   "creationReason": "trafficPassedThreshold",
+   "maxEntryId": "6035f3cdca71eeee165668eb",
    "sourceRevisionId": "8_bd69f311-951e-426b-a794-697ed31f431f"
   }
  ]

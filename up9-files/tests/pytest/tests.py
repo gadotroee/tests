@@ -392,12 +392,13 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
     @json_dataset('data/dataset_60.json')
     @clear_session({'spanId': 60})
     def test_60_post_models_roee_revisions(self, data_row):
-        maxEntryId, sourceRevisionId = data_row
+        creationReason, maxEntryId, sourceRevisionId = data_row
 
         # POST http://trcc-api-service.tradmin/models/roee/revisions (endp 60)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         with open('data/payload_for_endp_60.json', 'r') as json_payload_file:
             json_payload = json.load(json_payload_file)
+        apply_into_json(json_payload, '$.creationReason', creationReason)
         apply_into_json(json_payload, '$.maxEntryId', maxEntryId)
         apply_into_json(json_payload, '$.revisionId', str(random.randint(8, 14)))
         apply_into_json(json_payload, '$.sourceRevisionId', sourceRevisionId)
@@ -516,6 +517,39 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         qstr = '?' + urlencode([('fileName', fileName)])
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/uploadUrl' + qstr)
+        resp.assert_ok()
+        # resp.assert_status_code(200)
+
+    @json_dataset('data/dataset_81.json')
+    @clear_session({'spanId': 81})
+    def test_81_get_models_roee_suites_all_runs_runId_log(self, data_row):
+        runId, = data_row
+
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/log (endp 81)
+        trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
+        resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/log')
+        resp.assert_ok()
+        # resp.assert_status_code(200)
+
+    @json_dataset('data/dataset_82.json')
+    @clear_session({'spanId': 82})
+    def test_82_get_models_roee_suites_all_runs_runId_xml(self, data_row):
+        runId, = data_row
+
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/xml (endp 82)
+        trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
+        resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/xml')
+        resp.assert_ok()
+        # resp.assert_status_code(200)
+
+    @json_dataset('data/dataset_83.json')
+    @clear_session({'spanId': 83})
+    def test_83_get_models_roee_suites_all_runs_runId_results(self, data_row):
+        runId, = data_row
+
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/results (endp 83)
+        trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
+        resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/results')
         resp.assert_ok()
         # resp.assert_status_code(200)
 

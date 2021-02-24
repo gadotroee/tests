@@ -45,7 +45,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 8 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "admin"
     ]
@@ -139,7 +139,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 1 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "admin"
     ]
@@ -195,7 +195,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "agents"
     ]
@@ -299,7 +299,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "agents"
     ]
@@ -422,7 +422,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 41 requests",
+    "summary": "Seen 47 requests",
     "tags": [
      "models"
     ]
@@ -1113,7 +1113,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 5 requests",
     "tags": [
      "models"
     ]
@@ -1470,7 +1470,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 172 requests",
+    "summary": "Seen 205 requests",
     "tags": [
      "models"
     ]
@@ -1519,7 +1519,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 7 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "models"
     ]
@@ -1552,7 +1552,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 8 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "models"
     ]
@@ -1650,7 +1650,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 201 requests",
+    "summary": "Seen 234 requests",
     "tags": [
      "models"
     ]
@@ -1758,7 +1758,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 16 requests",
+    "summary": "Seen 18 requests",
     "tags": [
      "models"
     ]
@@ -1803,17 +1803,61 @@
          },
          "suite": "all",
          "targetMapping": {
+          "TARGET_ADSERVICE_GOOGLE_COM": {
+           "type": "FQDN",
+           "value": "https://adservice.google.com"
+          },
+          "TARGET_API_IAM_INTERCOM_IO": {
+           "type": "FQDN",
+           "value": "https://api-iam.intercom.io"
+          },
           "TARGET_AUTH_STG_TESTR_IO": {
            "type": "FQDN",
            "value": "https://auth.stg.testr.io"
+          },
+          "TARGET_BAT_BING_COM": {
+           "type": "FQDN",
+           "value": "https://bat.bing.com"
+          },
+          "TARGET_HTTPBIN_ORG": {
+           "type": "FQDN",
+           "value": "http://httpbin.org"
+          },
+          "TARGET_IB_ADNXS_COM": {
+           "type": "FQDN",
+           "value": "https://ib.adnxs.com"
+          },
+          "TARGET_OGS_GOOGLE_COM": {
+           "type": "FQDN",
+           "value": "https://ogs.google.com"
+          },
+          "TARGET_STATS_G_DOUBLECLICK_NET": {
+           "type": "FQDN",
+           "value": "https://stats.g.doubleclick.net"
           },
           "TARGET_STG_TESTR_IO": {
            "type": "FQDN",
            "value": "https://stg.testr.io"
           },
+          "TARGET_TRCC_API_SERVICE_TRADMIN": {
+           "type": "FQDN",
+           "value": "http://trcc-api-service.tradmin"
+          },
           "TARGET_TRDEMO_STG_TESTR_IO": {
            "type": "FQDN",
            "value": "https://trdemo.stg.testr.io"
+          },
+          "TARGET_WIDGET_INTERCOM_IO": {
+           "type": "FQDN",
+           "value": "https://widget.intercom.io"
+          },
+          "TARGET_WWW_GOOGLE_ANALYTICS_COM": {
+           "type": "FQDN",
+           "value": "https://www.google-analytics.com"
+          },
+          "TARGET_WWW_GOOGLE_COM": {
+           "type": "FQDN",
+           "value": "https://www.google.com"
           },
           "TARGET_WWW_IL_KAYAK_COM": {
            "type": "FQDN",
@@ -1822,6 +1866,10 @@
           "TARGET_WWW_KAYAK_COM": {
            "type": "FQDN",
            "value": "https://www.kayak.com"
+          },
+          "TARGET__5142311_FLS_DOUBLECLICK_NET": {
+           "type": "FQDN",
+           "value": "https://5142311.fls.doubleclick.net"
           }
          }
         },
@@ -1937,7 +1985,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 2 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -1997,17 +2045,61 @@
           },
           "suite": "all",
           "targetMapping": {
+           "TARGET_ADSERVICE_GOOGLE_COM": {
+            "type": "FQDN",
+            "value": "https://adservice.google.com"
+           },
+           "TARGET_API_IAM_INTERCOM_IO": {
+            "type": "FQDN",
+            "value": "https://api-iam.intercom.io"
+           },
            "TARGET_AUTH_STG_TESTR_IO": {
             "type": "FQDN",
             "value": "https://auth.stg.testr.io"
+           },
+           "TARGET_BAT_BING_COM": {
+            "type": "FQDN",
+            "value": "https://bat.bing.com"
+           },
+           "TARGET_HTTPBIN_ORG": {
+            "type": "FQDN",
+            "value": "http://httpbin.org"
+           },
+           "TARGET_IB_ADNXS_COM": {
+            "type": "FQDN",
+            "value": "https://ib.adnxs.com"
+           },
+           "TARGET_OGS_GOOGLE_COM": {
+            "type": "FQDN",
+            "value": "https://ogs.google.com"
+           },
+           "TARGET_STATS_G_DOUBLECLICK_NET": {
+            "type": "FQDN",
+            "value": "https://stats.g.doubleclick.net"
            },
            "TARGET_STG_TESTR_IO": {
             "type": "FQDN",
             "value": "https://stg.testr.io"
            },
+           "TARGET_TRCC_API_SERVICE_TRADMIN": {
+            "type": "FQDN",
+            "value": "http://trcc-api-service.tradmin"
+           },
            "TARGET_TRDEMO_STG_TESTR_IO": {
             "type": "FQDN",
             "value": "https://trdemo.stg.testr.io"
+           },
+           "TARGET_WIDGET_INTERCOM_IO": {
+            "type": "FQDN",
+            "value": "https://widget.intercom.io"
+           },
+           "TARGET_WWW_GOOGLE_ANALYTICS_COM": {
+            "type": "FQDN",
+            "value": "https://www.google-analytics.com"
+           },
+           "TARGET_WWW_GOOGLE_COM": {
+            "type": "FQDN",
+            "value": "https://www.google.com"
            },
            "TARGET_WWW_IL_KAYAK_COM": {
             "type": "FQDN",
@@ -2016,6 +2108,10 @@
            "TARGET_WWW_KAYAK_COM": {
             "type": "FQDN",
             "value": "https://www.kayak.com"
+           },
+           "TARGET__5142311_FLS_DOUBLECLICK_NET": {
+            "type": "FQDN",
+            "value": "https://5142311.fls.doubleclick.net"
            }
           }
          },
@@ -2050,17 +2146,61 @@
           },
           "suite": "all",
           "targetMapping": {
+           "TARGET_ADSERVICE_GOOGLE_COM": {
+            "type": "FQDN",
+            "value": "https://adservice.google.com"
+           },
+           "TARGET_API_IAM_INTERCOM_IO": {
+            "type": "FQDN",
+            "value": "https://api-iam.intercom.io"
+           },
            "TARGET_AUTH_STG_TESTR_IO": {
             "type": "FQDN",
             "value": "https://auth.stg.testr.io"
+           },
+           "TARGET_BAT_BING_COM": {
+            "type": "FQDN",
+            "value": "https://bat.bing.com"
+           },
+           "TARGET_HTTPBIN_ORG": {
+            "type": "FQDN",
+            "value": "http://httpbin.org"
+           },
+           "TARGET_IB_ADNXS_COM": {
+            "type": "FQDN",
+            "value": "https://ib.adnxs.com"
+           },
+           "TARGET_OGS_GOOGLE_COM": {
+            "type": "FQDN",
+            "value": "https://ogs.google.com"
+           },
+           "TARGET_STATS_G_DOUBLECLICK_NET": {
+            "type": "FQDN",
+            "value": "https://stats.g.doubleclick.net"
            },
            "TARGET_STG_TESTR_IO": {
             "type": "FQDN",
             "value": "https://stg.testr.io"
            },
+           "TARGET_TRCC_API_SERVICE_TRADMIN": {
+            "type": "FQDN",
+            "value": "http://trcc-api-service.tradmin"
+           },
            "TARGET_TRDEMO_STG_TESTR_IO": {
             "type": "FQDN",
             "value": "https://trdemo.stg.testr.io"
+           },
+           "TARGET_WIDGET_INTERCOM_IO": {
+            "type": "FQDN",
+            "value": "https://widget.intercom.io"
+           },
+           "TARGET_WWW_GOOGLE_ANALYTICS_COM": {
+            "type": "FQDN",
+            "value": "https://www.google-analytics.com"
+           },
+           "TARGET_WWW_GOOGLE_COM": {
+            "type": "FQDN",
+            "value": "https://www.google.com"
            },
            "TARGET_WWW_IL_KAYAK_COM": {
             "type": "FQDN",
@@ -2069,6 +2209,10 @@
            "TARGET_WWW_KAYAK_COM": {
             "type": "FQDN",
             "value": "https://www.kayak.com"
+           },
+           "TARGET__5142311_FLS_DOUBLECLICK_NET": {
+            "type": "FQDN",
+            "value": "https://5142311.fls.doubleclick.net"
            }
           }
          }
@@ -2192,7 +2336,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 5 requests",
+    "summary": "Seen 9 requests",
     "tags": [
      "models"
     ]
@@ -4320,7 +4464,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 5 requests",
+    "summary": "Seen 14 requests",
     "tags": [
      "models"
     ]
@@ -4363,7 +4507,7 @@
      "201": {
       "content": {
        "application/json": {
-        "example": "edqgqeejzx",
+        "example": "cqyguqpusr",
         "schema": {
          "type": "string"
         }
@@ -4372,7 +4516,7 @@
       "description": "Created"
      }
     },
-    "summary": "Seen 1 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "models"
     ]
@@ -4415,7 +4559,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 201 requests",
+    "summary": "Seen 234 requests",
     "tags": [
      "models"
     ]
@@ -4989,7 +5133,9 @@
      "schema": {
       "enum": [
        "edqgqeejzx",
-       "unswqesizi"
+       "unswqesizi",
+       "lbunlvekkv",
+       "cqyguqpusr"
       ],
       "type": "string"
      },
@@ -5055,7 +5201,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 11 requests",
+    "summary": "Seen 33 requests",
     "tags": [
      "models"
     ]
@@ -5073,6 +5219,43 @@
       "description": "OK"
      }
     },
+    "summary": "Seen 3 requests",
+    "tags": [
+     "models"
+    ]
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "runId",
+     "required": true,
+     "schema": {
+      "enum": [
+       "edqgqeejzx",
+       "unswqesizi",
+       "lbunlvekkv",
+       "cqyguqpusr"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/models/roee/suites/all/runs/{runId}/log": {
+   "get": {
+    "operationId": "9a0e8181-df36-43ae-b58f-e3389efd5c5d",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "https://storage.googleapis.com/testr-test-results/roee-dev/trproxy/org/07e636fe-6118-4764-912b-97cfdb641a20/model/roee/all/cqyguqpusr/test_runner.log?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=730970532670-compute%40developer.gserviceaccount.com%2F20210224%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210224T063707Z&X-Goog-Expires=899&X-Goog-SignedHeaders=host&X-Goog-Signature=542db904e2f0c27c9d9ad893678d1b7a14c94bcb39e9923f9bcfd282d086346a61c6108b746fc24facdfb67cfa41dc980e7df8b20d9a3d21dbe63a70afaf52fcbd2c937f55c6efed0d50503bd8152d56bc63ec3e00e223d7f558cb763504260428bae2a9d9cbce70df12c31c17bfc9e9816db73515cceafda5972ad08f2f7d5c0fd34929f951bb2aea5f5416f82cd92504b2b34f6f778b0ed0aad04b778b4260cdb284b9d3218224ce58f8a2087064200fdeed7020436133eea956f02fccab3ce5198b03fd49c18d5cfeda7b5826f5df60a2517df9d91e0a94e60121b65db36a352a42202fe2f47f596fe6928cea41ca28eaa0389a3203f5e35e80658506e595"
+       }
+      },
+      "description": "OK"
+     }
+    },
     "summary": "Seen 1 requests",
     "tags": [
      "models"
@@ -5086,7 +5269,46 @@
      "schema": {
       "enum": [
        "edqgqeejzx",
-       "unswqesizi"
+       "unswqesizi",
+       "lbunlvekkv",
+       "cqyguqpusr"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/models/roee/suites/all/runs/{runId}/results": {
+   "get": {
+    "operationId": "66ee4d67-c9b8-4205-8fa9-bf690c3a7802",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "https://storage.googleapis.com/testr-test-results/roee-dev/trproxy/org/07e636fe-6118-4764-912b-97cfdb641a20/model/roee/all/lbunlvekkv/test_report.html?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=730970532670-compute%40developer.gserviceaccount.com%2F20210224%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210224T063610Z&X-Goog-Expires=899&X-Goog-SignedHeaders=host&X-Goog-Signature=2c648b67ab30307b80ab81dc48ea62ed12b2066378ae61698ec51bd9ad407464e17a3103b2e56ddc8b9d146c7c9d7fe9b80449ac40a2caa35bab7a0e76804a3683e738994a03f6596913d4239a8534e083e1c7719e743600f74e9dffa396568ca93150d275da9a9e3ab042f79f519f50a9d2e843866e584db805d4ec689204e1de90157669921c14da0f8030ede992e0679206f88f632aacc02ad30f0c7ec28efcb48001eba833653e2a50dac8bf90adf5b3177e8ee61c0178ebacae736298f08c4d8c26697f4731e6dd434a22aec598f42c5e7a24d073d0fcd7b606602b1cb32aa89c0ebe3215b7be20cc1d643fb26ac3a1a075c2ecf7fc7eea719a37b34c00"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "models"
+    ]
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "runId",
+     "required": true,
+     "schema": {
+      "enum": [
+       "edqgqeejzx",
+       "unswqesizi",
+       "lbunlvekkv",
+       "cqyguqpusr"
       ],
       "type": "string"
      },
@@ -5117,13 +5339,13 @@
      "200": {
       "content": {
        "text/html": {
-        "example": "https://storage.googleapis.com/testr-test-results/roee-dev/trproxy/org/07e636fe-6118-4764-912b-97cfdb641a20/model/roee/all/edqgqeejzx/rca_data.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=730970532670-compute%40developer.gserviceaccount.com%2F20210224%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210224T062704Z&X-Goog-Expires=899&X-Goog-SignedHeaders=host&X-Goog-Signature=955a26e2a8a172feb96eeac3b707946930fda91acb6b34b82ddfcf11bcb3f874bcef92082ddf095c1c7d4947973a8d64e227e39e32094e98ddc2483fca3d31baa1789476f0fa3e8489f6f6926852da5d950330b63aa1fc686a58825ea7b352f1d08809f797d66d3a2fa058d13ca62016ee3af45a6e49a3dd7bdd1bf9336b9bd87654dc00421996c74d2de25e11de9ed8732b6a6dfb7077ae2da998bc36454824977c34bebda82c41c51205c9e523e09e750725b4883eb70b008fe9f1f0b16ccdc05372cf3b6466628feda66418cf9f024644494f333738d183b259954902d5c652aeb476a612be65afa158f2fa3fcccd35ae46ec70eaf55f5257cc84f23957e2"
+        "example": "https://storage.googleapis.com/testr-test-results/roee-dev/trproxy/org/07e636fe-6118-4764-912b-97cfdb641a20/model/roee/all/cqyguqpusr/rca_data.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=730970532670-compute%40developer.gserviceaccount.com%2F20210224%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210224T063651Z&X-Goog-Expires=899&X-Goog-SignedHeaders=host&X-Goog-Signature=bcc8aefbe377521fa562436f4b56700c3da738a4bc8df394a2b77150787b7433e54e97be08190c435e25b9b6143e9ed54b1d33a23f50625e7ac04d1d1ed0fc2b449bb25bd9c4f756e510ea34272a9a26ba3709d62f808c76c6cb036308d941791b5e97f92807723c8f1d0fe0a05aa9fb7e38a22fd3dce49c5704ccf7363d8a394cb1f58db35c5b1b2a9c36ce3537a808e781ad1d88d5cbba384e1a092bed8ab21f58b3cd5e24c4c162f72b3032e90b87c3d0f216ce90caea93670addbeaf63e970d65177f93f97b188e7ba4a1c58dd74bab91827e2bcaa7b70821244627efca006dab15d763558a0bcb9f17ab21e168f68de29567d0b39a9159d1c1834f36f97"
        }
       },
       "description": "OK"
      }
     },
-    "summary": "Seen 4 requests",
+    "summary": "Seen 12 requests",
     "tags": [
      "models"
     ]
@@ -5136,7 +5358,46 @@
      "schema": {
       "enum": [
        "edqgqeejzx",
-       "unswqesizi"
+       "unswqesizi",
+       "lbunlvekkv",
+       "cqyguqpusr"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/models/roee/suites/all/runs/{runId}/xml": {
+   "get": {
+    "operationId": "2bfbe850-ff58-4d76-8be3-d53bcbaa059c",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "https://storage.googleapis.com/testr-test-results/roee-dev/trproxy/org/07e636fe-6118-4764-912b-97cfdb641a20/model/roee/all/cqyguqpusr/test_report.xml?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=730970532670-compute%40developer.gserviceaccount.com%2F20210224%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210224T063658Z&X-Goog-Expires=899&X-Goog-SignedHeaders=host&X-Goog-Signature=d5297b0b49b99aff73a5993383560245243438b5a3c1b4e26e39731d1209cca7c02a6f4d2396ed1c8c66b59e014edcd8ebf646e85c9f094559f3d39bbeba67fad15d609c9a815da5fe61d8febb8166e1cdb5f68523723045333e9ff804529d3cc1f353124e10cdedfcb9bfded9a1240f4a8c10de81d35c3c05e4a4c89307ff0e9f8febe795c6c19a0c32b3621ac2b8e1b59b957b5721144484e775754a4dc0fbafa6b38d145211876f4cd0d5ba4218472ca70678bf210b48ffc4be6041557193f2a166477409c3884e5b1ed3086e4016b3437ded8445be20916a47356a439e851cdea996d88b96fbf901e3e60cfa9c8aff466a0c979be0c0e6cf959b94f1ea23"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "models"
+    ]
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "runId",
+     "required": true,
+     "schema": {
+      "enum": [
+       "edqgqeejzx",
+       "unswqesizi",
+       "lbunlvekkv",
+       "cqyguqpusr"
       ],
       "type": "string"
      },
@@ -5240,7 +5501,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -5534,7 +5795,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -7151,7 +7412,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 1 requests",
+    "summary": "Seen 3 requests",
     "tags": [
      "models"
     ]
@@ -8891,7 +9152,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 3 requests",
+    "summary": "Seen 6 requests",
     "tags": [
      "models"
     ]
@@ -9004,7 +9265,7 @@
       "description": "OK"
      }
     },
-    "summary": "Seen 40 requests"
+    "summary": "Seen 46 requests"
    },
    "parameters": []
   },

@@ -147,7 +147,7 @@ services:
       status: 201
       headers:
         Content-Type: application/json
-      body: '"edqgqeejzx"'
+      body: '"cqyguqpusr"'
       useTemplating: false
     method: post
   - path: /models/roee/suites/all/runs/{{runId}}
@@ -250,6 +250,24 @@ services:
       headers:
         Content-Type: text/html
       body: '@mock-data/resp_70.html'
+      useTemplating: false
+  - path: /models/roee/suites/all/runs/{{runId}}/log
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_81.html'
+      useTemplating: false
+  - path: /models/roee/suites/all/runs/{{runId}}/xml
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_82.html'
+      useTemplating: false
+  - path: /models/roee/suites/all/runs/{{runId}}/results
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_83.html'
       useTemplating: false
 - name: http://trdemo.stg.testr.io
   port: 8003

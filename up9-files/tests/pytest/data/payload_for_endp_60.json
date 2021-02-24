@@ -1,5 +1,5 @@
 {
- "creationReason": "trafficNotPassedThreshold",
+ "creationReason": "{{creationReason}}",
  "maxEntryId": "{{maxEntryId}}",
  "revisionId": "10",
  "sourceRevisionId": "{{sourceRevisionId}}"
