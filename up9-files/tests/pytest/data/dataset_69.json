@@ -1,12 +1,17 @@
 {
  "parameters": [
   {
+   "name": "fileName",
+   "uuid": "bea022d5-867a-4546-bf23-abc37736920b"
+  },
+  {
    "name": "runId",
    "uuid": "dcfbb366-d9a3-47eb-83b4-eedfff3c07d9"
   }
  ],
  "rows": [
   {
+   "fileName": "rca_data.json",
    "runId": "edqgqeejzx"
   }
  ]

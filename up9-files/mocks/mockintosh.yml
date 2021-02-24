@@ -87,10 +87,10 @@ services:
          "canProcessNewTraffic": true,
          "continueNewTrafficProcessTimestamp": -1,
          "errorCount": 0,
-         "generatingSince": -1.0,
-         "lastMajorGeneration": 1613558659.196,
-         "lastSuccessfulGeneration": 1613559157.358,
-         "messageCount": {{random.int 54 468}},
+         "generatingSince": {{random.float -1.0 1614148173.6345184 2}},
+         "lastMajorGeneration": {{random.float 1613558659.196 1614148240.218 2}},
+         "lastSuccessfulGeneration": {{random.float 1613559157.358 1614148240.218 2}},
+         "messageCount": {{random.int 54 588}},
          "regenerationMark": false
         }
   - path: /models/roee/suites/all/{{param}}
@@ -187,7 +187,7 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '{"revisionId":"7"}'
+      body: '{"revisionId":"10"}'
       useTemplating: false
   - path: /models/roee/suites
     response:
@@ -200,6 +200,13 @@ services:
         Content-Type: application/json
       body: '@mock-data/resp_62.json'
       useTemplating: false
+  - path: /admin/imageVersion
+    response:
+      headers:
+        Content-Type: application/json
+      body: '{"sha":"sha256:9ebcd2153cda528363cb78e59ac57427f21411a2a540a60da1f7fd2fb256ad95"}'
+      useTemplating: false
+    method: post
   - path: /agents/{{agentId}}/injectorConfig
     response:
       headers:
@@ -210,7 +217,7 @@ services:
     response:
       headers:
         Content-Type: application/json
-      body: '@mock-data/resp_64.json'
+      body: '@mock-data/resp_65.json'
   - path: /models/roee/suites/all/runs/{{runId}}
     response:
       headers:
@@ -228,12 +235,12 @@ services:
     response:
       headers:
         Content-Type: application/zip
-      body: '@mock-data/resp_67.bin'
+      body: '@mock-data/resp_68.bin'
   - path: /models/roee/suites/all/runs/{{runId}}/uploadUrl
     response:
       headers:
         Content-Type: text/html
-      body: '@mock-data/resp_68.html'
+      body: '@mock-data/resp_69.html'
       useTemplating: false
 - name: http://trdemo.stg.testr.io
   port: 8003

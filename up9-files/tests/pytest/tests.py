@@ -418,35 +418,49 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
 
     @json_dataset('data/dataset_63.json')
     @clear_session({'spanId': 63})
-    def test_63_get_agents_agentId_injectorConfig(self, data_row):
-        agentId, = data_row
+    def test_63_post_admin_imageVersion(self, data_row):
+        imagePath, = data_row
 
-        # GET http://trcc-api-service.tradmin/agents/{agentId}/injectorConfig (endp 63)
+        # POST http://trcc-api-service.tradmin/admin/imageVersion (endp 63)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
-        resp = trcc_api_service_tradmin.get(f'/agents/{agentId}/injectorConfig')
+        with open('data/payload_for_endp_63.json', 'r') as json_payload_file:
+            json_payload = json.load(json_payload_file)
+        apply_into_json(json_payload, '$.imagePath', imagePath)
+        resp = trcc_api_service_tradmin.post('/admin/imageVersion', json=json_payload)
         resp.assert_ok()
         # resp.assert_status_code(200)
 
     @json_dataset('data/dataset_64.json')
     @clear_session({'spanId': 64})
-    def test_64_get_models_roee_suites_all_agents_agentId_profiles_cluster(self, data_row):
+    def test_64_get_agents_agentId_injectorConfig(self, data_row):
         agentId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/agents/{agentId}/profiles/cluster (endp 64)
+        # GET http://trcc-api-service.tradmin/agents/{agentId}/injectorConfig (endp 64)
+        trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
+        resp = trcc_api_service_tradmin.get(f'/agents/{agentId}/injectorConfig')
+        resp.assert_ok()
+        # resp.assert_status_code(200)
+
+    @json_dataset('data/dataset_65.json')
+    @clear_session({'spanId': 65})
+    def test_65_get_models_roee_suites_all_agents_agentId_profiles_cluster(self, data_row):
+        agentId, = data_row
+
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/agents/{agentId}/profiles/cluster (endp 65)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/agents/{agentId}/profiles/cluster')
         resp.assert_ok()
         # resp.assert_status_code(200)
         # resp.assert_jsonpath('$.name', expected_value='cluster')
 
-    @json_dataset('data/dataset_65.json')
-    @clear_session({'spanId': 65})
-    def test_65_post_models_roee_suites_all_runs_runId(self, data_row):
+    @json_dataset('data/dataset_66.json')
+    @clear_session({'spanId': 66})
+    def test_66_post_models_roee_suites_all_runs_runId(self, data_row):
         endTime, rcaDataFileName, runId, startTime, status = data_row
 
-        # POST http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId} (endp 65)
+        # POST http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId} (endp 66)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
-        with open('data/payload_for_endp_65.json', 'r') as json_payload_file:
+        with open('data/payload_for_endp_66.json', 'r') as json_payload_file:
             json_payload = json.load(json_payload_file)
         apply_into_json(json_payload, '$.endTime', endTime)
         apply_into_json(json_payload, '$.rcaDataFileName', rcaDataFileName)
@@ -457,32 +471,32 @@ class Tests_trcc_api_service_tradmin(unittest.TestCase):
         # resp.assert_status_code(200)
         # resp.assert_cssselect('p', expected_value='Ok')
 
-    @clear_session({'spanId': 66})
-    def test_66_get_admin_whoami(self):
-        # GET http://trcc-api-service.tradmin/admin/whoami (endp 66)
+    @clear_session({'spanId': 67})
+    def test_67_get_admin_whoami(self):
+        # GET http://trcc-api-service.tradmin/admin/whoami (endp 67)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get('/admin/whoami')
         resp.assert_ok()
         # resp.assert_status_code(200)
         # resp.assert_jsonpath('$.organizationName', expected_value='roee')
 
-    @json_dataset('data/dataset_67.json')
-    @clear_session({'spanId': 67})
-    def test_67_get_models_roee_suites_all_runs_runId_downloadTests(self, data_row):
+    @json_dataset('data/dataset_68.json')
+    @clear_session({'spanId': 68})
+    def test_68_get_models_roee_suites_all_runs_runId_downloadTests(self, data_row):
         runId, = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/downloadTests (endp 67)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/downloadTests (endp 68)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/downloadTests')
         resp.assert_ok()
         # resp.assert_status_code(200)
 
-    @json_dataset('data/dataset_68.json')
-    @clear_session({'spanId': 68})
-    def test_68_get_models_roee_suites_all_runs_runId_uploadUrl(self, data_row):
+    @json_dataset('data/dataset_69.json')
+    @clear_session({'spanId': 69})
+    def test_69_get_models_roee_suites_all_runs_runId_uploadUrl(self, data_row):
         fileName, runId = data_row
 
-        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/uploadUrl (endp 68)
+        # GET http://trcc-api-service.tradmin/models/roee/suites/all/runs/{runId}/uploadUrl (endp 69)
         trcc_api_service_tradmin = get_http_target('TARGET_TRCC_API_SERVICE_TRADMIN', authenticate)
         qstr = '?' + urlencode([('fileName', fileName)])
         resp = trcc_api_service_tradmin.get(f'/models/roee/suites/all/runs/{runId}/uploadUrl' + qstr)
