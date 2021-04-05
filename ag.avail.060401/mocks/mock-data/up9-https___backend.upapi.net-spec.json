@@ -1,0 +1,406 @@
+{
+ "info": {
+  "title": "https://backend.upapi.net",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/ae": {
+   "parameters": [],
+   "post": {
+    "operationId": "5ec2f357-b6c6-407e-bfb1-e3e8d2b5134f",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "cv",
+      "required": true,
+      "schema": {
+       "enum": [
+        "19d0d545-v2"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "nr",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "pid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "ciE6ZIqAd",
+        "ZQd2tw2QX",
+        "WCeUPlbE"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "seid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "uponit_970x90",
+        "uponit_300x250.2",
+        "uponit_300x250.3",
+        "uponit_300x600"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "upapi",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 13 requests"
+   }
+  },
+  "/as": {
+   "parameters": [],
+   "post": {
+    "operationId": "f5f71c5f-6017-4960-9a22-ef509cce5a5e",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "cv",
+      "required": true,
+      "schema": {
+       "enum": [
+        "19d0d545-v2"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "nr",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "pid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "ciE6ZIqAd",
+        "ZQd2tw2QX",
+        "WCeUPlbE"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "upapi",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 13 requests"
+   }
+  },
+  "/pv": {
+   "get": {
+    "operationId": "99177543-7cef-49c0-931f-0a96ab555798",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "aa",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "br",
+      "required": true,
+      "schema": {
+       "enum": [
+        "chrome"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "cv",
+      "required": true,
+      "schema": {
+       "enum": [
+        "19d0d545-v2"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "pid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "ciE6ZIqAd",
+        "ZQd2tw2QX",
+        "WCeUPlbE"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "r",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "rt",
+      "required": true,
+      "schema": {
+       "enum": [
+        "0"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "sid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "DP7rTVOPf"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "upapi",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "w",
+      "required": true,
+      "schema": {
+       "enum": [
+        "5693168230072320"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests"
+   },
+   "parameters": []
+  },
+  "/r": {
+   "parameters": [],
+   "post": {
+    "operationId": "426981a8-23d3-4471-8cb2-2d70221eadc3",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "nr",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "upapi",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests"
+   }
+  },
+  "/tc": {
+   "parameters": [],
+   "post": {
+    "operationId": "583197f1-a29f-4798-91d8-fcb05a67eff9",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "cv",
+      "required": true,
+      "schema": {
+       "enum": [
+        "19d0d545-v2"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "nr",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "pid",
+      "required": true,
+      "schema": {
+       "enum": [
+        "ciE6ZIqAd",
+        "ZQd2tw2QX"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "upapi",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "z",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests"
+   }
+  },
+  "/v": {
+   "parameters": [],
+   "post": {
+    "operationId": "a062861b-a61c-4bcf-b1ff-f32b4c0a34c0",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "nr",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "upapi",
+      "required": true,
+      "schema": {
+       "enum": [
+        "true"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2 requests"
+   }
+  }
+ },
+ "tags": []
+}

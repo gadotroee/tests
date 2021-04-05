@@ -1,0 +1,47 @@
+{
+ "info": {
+  "title": "https://pixel.onaudience.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "49684321-0ba2-421a-a661-004d66b7b8b6",
+    "parameters": [
+     {
+      "description": "Origin: GET https://trc.taboola.com/sg/neustar/{vg_id}/cm &rarr; cookie: t_gid",
+      "in": "query",
+      "name": "mapped",
+      "required": true,
+      "schema": {
+       "enum": [
+        "6cfacda0-1743-4cb8-aa2a-db13e34ca447-tuct5cf7e9a"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "partner",
+      "required": true,
+      "schema": {
+       "enum": [
+        "137085097"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

@@ -1,0 +1,28 @@
+{
+ "parameters": [
+  {
+   "name": "content_id",
+   "uuid": "6fc27906-bc81-4e8d-bfe0-4905f5d16112"
+  },
+  {
+   "name": "pid",
+   "uuid": "3013ed9b-b5c6-4d7d-b482-12101eeb88cd"
+  },
+  {
+   "name": "pid1",
+   "uuid": "05e5c4bf-54cd-443a-bce7-6813db058cba"
+  },
+  {
+   "name": "rurl",
+   "uuid": "64799b16-959e-4f67-b8e1-134cb2a6b002"
+  }
+ ],
+ "rows": [
+  {
+   "content_id": "160917",
+   "pid": "562107",
+   "pid1": "562107",
+   "rurl": "https://la-sync.taboola.com/sg/pulsepointrtb-network/1/rtb-h/?taboola_hm=%%VGUID%%"
+  }
+ ]
+}

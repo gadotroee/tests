@@ -1,0 +1,22 @@
+{
+ "parameters": [
+  {
+   "name": "param",
+   "uuid": "ad3c443b-332d-4b03-8bcb-6b00fa657b31"
+  },
+  {
+   "name": "param1",
+   "uuid": "74ef8b79-b920-4a46-b48f-2d72aa84f679"
+  }
+ ],
+ "rows": [
+  {
+   "param": "CdaMarketSchedualIframe_New",
+   "param1": "0,20770,362992,00.html"
+  },
+  {
+   "param": "CdaMarketSchedualIframe_New",
+   "param1": "0,20770,0,00.html"
+  }
+ ]
+}

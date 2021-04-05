@@ -1,0 +1,292 @@
+{
+ "info": {
+  "title": "https://www.ynet.co.il",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/Ext/Comp/Ticker/{param1}/{param2}": {
+   "get": {
+    "operationId": "c67ef2a8-4512-498b-b1b8-f351a79869d7",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "js",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": null
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2 requests"
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "param1",
+     "required": true,
+     "schema": {
+      "enum": [
+       "Dhtml_Flash_Ticker",
+       "JS_Ticker_Data"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    },
+    {
+     "in": "path",
+     "name": "param2",
+     "required": true,
+     "schema": {
+      "enum": [
+       "0,12114,L-184-253-150,00.html",
+       "0,13760,L-184,00.html"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/YediothPortal/Ext/Comp/Teaser/MarketSchedual_New/{param1}/{param2}": {
+   "get": {
+    "operationId": "15c8e868-55b8-46cf-a8d8-c1d88a122ca5",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": null
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2 requests"
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "param1",
+     "required": true,
+     "schema": {
+      "enum": [
+       "CdaMarketSchedualIframe_New"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    },
+    {
+     "in": "path",
+     "name": "param2",
+     "required": true,
+     "schema": {
+      "enum": [
+       "0,20770,362992,00.html",
+       "0,20770,0,00.html"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/digital/technews/article/{href}": {
+   "get": {
+    "operationId": "6006d597-ab23-4169-900d-6bd049955c42",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": null
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET https://www.ynet.co.il/home/{param} &rarr; html: article#F_Content div.block.B6 div.block.B6 div.block.B3 div.block.B3 div.element.B3.ghcite.noBottomPadding div div.cell.cshort.layout1 a[href] @href; url: /4",
+     "in": "path",
+     "name": "href",
+     "required": true,
+     "schema": {
+      "enum": [
+       "B1iBDKmTI"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/home/{param}": {
+   "get": {
+    "operationId": "c070ab52-da5c-4c88-a46f-55aa75786b65",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": null
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "param",
+     "required": true,
+     "schema": {
+      "enum": [
+       "0,7340,L-8,00.html"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/iphone/json/api/talkbacks/list/{href}/end_to_start/0": {
+   "get": {
+    "operationId": "03e35d53-eac6-4c1a-a145-5fe2e423d002",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2 requests"
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET https://www.ynet.co.il/home/{param} &rarr; html: article#F_Content div.block.B6 div.block.B6 div.block.B3 div.block.B3 div.element.B3.ghcite.noBottomPadding div div.cell.cshort.layout1 a[href] @href; url: /4",
+     "in": "path",
+     "name": "href",
+     "required": true,
+     "schema": {
+      "enum": [
+       "B1iBDKmTI",
+       "ry9p11e52U"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/sport/article/{location}": {
+   "get": {
+    "operationId": "44ff62af-8de3-4416-b214-3268aa5cfb0d",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "utm_medium",
+      "required": true,
+      "schema": {
+       "enum": [
+        "organic"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "utm_source",
+      "required": true,
+      "schema": {
+       "enum": [
+        "Taboola_internal"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": null
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET https://trc.taboola.com/{param1}/log/{param2}/click &rarr; header: location; url: /3",
+     "in": "path",
+     "name": "location",
+     "required": true,
+     "schema": {
+      "enum": [
+       "ry9p11e52U"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/ticker/flash/breakingnews.html": {
+   "get": {
+    "operationId": "fa403cc5-639b-4efd-9001-9527dbe1b89f",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "content_id",
+      "required": true,
+      "schema": {
+       "enum": [
+        "160917"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

@@ -1,0 +1,222 @@
+{
+ "parameters": [
+  {
+   "name": "adSize",
+   "uuid": "bc88ecbf-df32-4b10-b098-8d5a4d84ce54"
+  },
+  {
+   "name": "adUnit",
+   "uuid": "819306b8-5f74-4a9b-812a-67ef51995690"
+  },
+  {
+   "name": "adUnitCode",
+   "uuid": "a0b20b37-b8cf-49e0-8d08-6572e978e56a"
+  },
+  {
+   "name": "amount",
+   "uuid": "764932b3-7dc9-4188-8037-27bcbb7046e1"
+  },
+  {
+   "name": "auctionID",
+   "uuid": "ae3b5ed3-1ce2-4faf-9227-7da2dfb93d88"
+  },
+  {
+   "name": "bidderExternalID",
+   "uuid": "d794d66c-0f60-4ec2-a1f1-e6c1df72dcea"
+  },
+  {
+   "name": "cv",
+   "uuid": "bb39f743-1450-48fb-9071-db9c5cc7be05"
+  },
+  {
+   "name": "cv1",
+   "uuid": "a6e5d749-8ec2-450b-8caf-23e5e109d06d"
+  },
+  {
+   "name": "dfpAdUnit",
+   "uuid": "bb24387a-f289-4102-b1ba-5c25f1e4792c"
+  },
+  {
+   "name": "pid",
+   "uuid": "161d67c8-6e7e-4e67-b5d2-f58bca9b47e9"
+  },
+  {
+   "name": "pid1",
+   "uuid": "e9085370-42df-4c86-ba92-d8beb41fe3c8"
+  },
+  {
+   "name": "seid",
+   "uuid": "6d449480-0dfd-4232-97af-5a3ca8251b71"
+  },
+  {
+   "name": "timeout",
+   "uuid": "22d528b3-832f-4cb5-9be4-c39f176872a8"
+  },
+  {
+   "name": "websiteID",
+   "uuid": "b916276c-0931-427c-8d0d-432208f4e3b6"
+  }
+ ],
+ "rows": [
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "RxVCV5Acd",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "MWxCdVuU",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "QEgPnts3a",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "u0JGLd4s",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "Td5O2dto",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "L6d0vPN0",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "KOecOsBG",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "zbZq9fOZ",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "LPndpXgud",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  },
+  {
+   "adSize": "300x250",
+   "adUnit": "ads.ozen.right",
+   "adUnitCode": "uponit_300x250.2",
+   "amount": 1e-05,
+   "auctionID": "6wOdHWff",
+   "bidderExternalID": "5699879703674880",
+   "cv": "19d0d545-v2",
+   "cv1": "19d0d545-v2",
+   "dfpAdUnit": "uponit_300x250.2",
+   "pid": "ZQd2tw2QX",
+   "pid1": "ciE6ZIqAd",
+   "seid": "uponit_300x250.2",
+   "timeout": 3000,
+   "websiteID": "5693168230072320"
+  }
+ ]
+}

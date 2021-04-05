@@ -1,0 +1,33 @@
+{
+ "parameters": [
+  {
+   "name": "_r",
+   "uuid": "9dd67eda-26fc-4c34-bf08-6018f34523f2"
+  },
+  {
+   "name": "k",
+   "uuid": "4f4bcece-50e4-42e9-ba6c-250b24b9a005"
+  },
+  {
+   "name": "query",
+   "uuid": "932e7db0-9ed6-4b11-bb28-6f9e05b951fa"
+  }
+ ],
+ "rows": [
+  {
+   "_r": "2020445",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  },
+  {
+   "_r": "2020445",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "query": "{ \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-07T13:01:26.132Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  },
+  {
+   "_r": "1616153",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "query": "{ \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-15T09:33:27.779Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  }
+ ]
+}

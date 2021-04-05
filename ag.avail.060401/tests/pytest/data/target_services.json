@@ -1,5 +1,24 @@
 {
- "TARGET_API2_BRANCH_IO": "https://api2.branch.io",
  "TARGET_API_GOAVAIL_IO": "https://api.goavail.io",
- "TARGET_AVAILCARSHARING_COM": "https://availcarsharing.com"
+ "TARGET_API_PERMUTIVE_COM": "https://api.permutive.com",
+ "TARGET_AVAILCARSHARING_COM": "https://availcarsharing.com",
+ "TARGET_BACKEND_UPAPI_NET": "https://backend.upapi.net",
+ "TARGET_BH_CONTEXTWEB_COM": "https://bh.contextweb.com",
+ "TARGET_CDS_TABOOLA_COM": "https://cds.taboola.com",
+ "TARGET_DRIVEDRIFT_ZENDESK_COM": "https://drivedrift.zendesk.com",
+ "TARGET_EVENTS_BROWSIPROD_COM": "https://events.browsiprod.com",
+ "TARGET_LA_SYNC_TABOOLA_COM": "https://la-sync.taboola.com",
+ "TARGET_MATCH_TABOOLA_COM": "https://match.taboola.com",
+ "TARGET_MATCH_ZOROSRV_COM": "https://match.zorosrv.com",
+ "TARGET_NR_EVENTS_TABOOLA_COM": "https://nr-events.taboola.com",
+ "TARGET_PIXEL_ONAUDIENCE_COM": "https://pixel.onaudience.com",
+ "TARGET_PROFILE_GOAVAIL_IO": "https://profile.goavail.io",
+ "TARGET_RTB_MFADSRVR_COM": "https://rtb.mfadsrvr.com",
+ "TARGET_SB_SCORECARDRESEARCH_COM": "https://sb.scorecardresearch.com",
+ "TARGET_SERVER_EXPOSEBOX_COM": "https://server.exposebox.com",
+ "TARGET_TRC_EVENTS_TABOOLA_COM": "https://trc-events.taboola.com",
+ "TARGET_TRC_TABOOLA_COM": "https://trc.taboola.com",
+ "TARGET_UP9_ATLASSIAN_NET": "https://up9.atlassian.net",
+ "TARGET_WWW_YNET_CO_IL": "https://www.ynet.co.il",
+ "TARGET_Z_YNET_CO_IL": "https://z.ynet.co.il"
 }

@@ -1,0 +1,288 @@
+{
+ "parameters": [
+  {
+   "name": "aid",
+   "uuid": "c60b6238-a234-40cf-8a04-614595e4ed33"
+  },
+  {
+   "name": "bpvid",
+   "uuid": "795223c7-a66c-4e73-850c-6c155f89758b"
+  },
+  {
+   "name": "crs",
+   "uuid": "cc12f7a6-f686-459b-927c-6a74223aadd6"
+  },
+  {
+   "name": "d",
+   "uuid": "e09b2201-35fa-49bc-a420-a2bfbd101107"
+  },
+  {
+   "name": "et",
+   "uuid": "0c7e9719-12f9-47d7-8639-f0e6be46a453"
+  },
+  {
+   "name": "grs",
+   "uuid": "7d7b87ff-c9fc-4a3a-b5a1-3e63c6a163fc"
+  },
+  {
+   "name": "ie",
+   "uuid": "2402d056-fdaa-4630-aa61-d5893f90c0b2"
+  },
+  {
+   "name": "k",
+   "uuid": "4f4bcece-50e4-42e9-ba6c-250b24b9a005"
+  },
+  {
+   "name": "mch",
+   "uuid": "e682c8a2-d401-4071-b8c3-acd09b8ac179"
+  },
+  {
+   "name": "mcs",
+   "uuid": "cc54c842-d3a6-4ec9-96c9-51f761155e0a"
+  },
+  {
+   "name": "mcw",
+   "uuid": "a97ba637-c1c0-4494-9821-ba73f158f1ea"
+  },
+  {
+   "name": "mi",
+   "uuid": "b4b825c0-f10a-4dd2-8f1a-922ded51ac1d"
+  },
+  {
+   "name": "mv",
+   "uuid": "af7dce3b-64fa-43c2-89dc-544ed0bc9cba"
+  },
+  {
+   "name": "p",
+   "uuid": "acbd347b-b201-4eea-bb9c-a62589529cdb"
+  },
+  {
+   "name": "pl",
+   "uuid": "7f0eb448-3ccf-4560-aa7c-1e6fa52adfe6"
+  },
+  {
+   "name": "pvid",
+   "uuid": "865512f1-d8b6-4f2d-b44e-e2881208727b"
+  },
+  {
+   "name": "pw",
+   "uuid": "d5b3f036-0478-4e14-b783-7687abf8aa9d"
+  },
+  {
+   "name": "query",
+   "uuid": "932e7db0-9ed6-4b11-bb28-6f9e05b951fa"
+  },
+  {
+   "name": "res",
+   "uuid": "866a11a0-a177-49e8-863f-97b0270b54d8"
+  },
+  {
+   "name": "rsn",
+   "uuid": "b9a0d2f5-8a61-4daf-b812-54523ea78de0"
+  },
+  {
+   "name": "sf",
+   "uuid": "5a125102-0f73-4d4c-a6bd-55594295b239"
+  },
+  {
+   "name": "sid",
+   "uuid": "b180807b-e4c7-4791-9b26-fc430c1fd416"
+  },
+  {
+   "name": "sk",
+   "uuid": "c73fa2c1-9e18-4f0e-aa98-cf2c77a06e9a"
+  },
+  {
+   "name": "sl",
+   "uuid": "b670ce10-8d74-4b44-84a4-8c0309f511ef"
+  },
+  {
+   "name": "ua",
+   "uuid": "9ff017e0-76a4-4717-824a-4bbd11da7116"
+  },
+  {
+   "name": "uid",
+   "uuid": "36d97c1d-7f2b-43ff-ada8-8a33c71c7abc"
+  },
+  {
+   "name": "url",
+   "uuid": "01341e4c-8318-4df3-9be9-0d383ad81b4d"
+  }
+ ],
+ "rows": [
+  {
+   "aid": "ynethomepage_-1045206822_-1784564698",
+   "bpvid": "IsjSPkPivV",
+   "crs": -20,
+   "d": "Unknown Desktop|Emulator",
+   "et": "spot_engine_done",
+   "grs": -20,
+   "ie": true,
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "mch": 1681,
+   "mcs": 317,
+   "mcw": 490,
+   "mi": 6,
+   "mv": "desktop-1.39.3",
+   "p": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pl": 9496,
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }",
+   "res": "1920x1052",
+   "rsn": "dynamic_mc_No_Main_Content_Found",
+   "sf": 1,
+   "sid": "b75cdf01-9d3e-4813-9884-1a3d228b3698&true&false&DEFAULT&&desktop-1.39.3&false",
+   "sk": "ynet",
+   "sl": 1052,
+   "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+   "uid": "e2cb7ba3-a52c-43d8-b1de-fc6d072027f3",
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI"
+  },
+  {
+   "aid": "ynethomepage_-1045206822_-1784564698",
+   "bpvid": "IsjSPkPivV",
+   "crs": -20,
+   "d": "Unknown Desktop|Emulator",
+   "et": "initial_hit",
+   "grs": -20,
+   "ie": true,
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "mch": 1681,
+   "mcs": 317,
+   "mcw": 490,
+   "mi": 6,
+   "mv": "desktop-1.39.3",
+   "p": "9b50e09d-1120-4975-8060-c0b720fb166c",
+   "pl": 9496,
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }",
+   "res": "1920x1052",
+   "rsn": "dynamic_mc_No_Main_Content_Found",
+   "sf": 1,
+   "sid": "b75cdf01-9d3e-4813-9884-1a3d228b3698&true&false&DEFAULT&&desktop-1.39.3&false",
+   "sk": "ynet",
+   "sl": 1052,
+   "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+   "uid": "e2cb7ba3-a52c-43d8-b1de-fc6d072027f3",
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI"
+  },
+  {
+   "aid": "ynethomepage_-1045206822_-1784564698",
+   "bpvid": "IsjSPkPivV",
+   "crs": -20,
+   "d": "Unknown Desktop|Emulator",
+   "et": "engine_loaded",
+   "grs": -20,
+   "ie": true,
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "mch": 1681,
+   "mcs": 317,
+   "mcw": 490,
+   "mi": 6,
+   "mv": "desktop-1.39.3",
+   "p": "e6d7e2d5-c409-43a0-b652-72b8ec8e346a",
+   "pl": 9496,
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }",
+   "res": "1920x1052",
+   "rsn": "dynamic_mc_No_Main_Content_Found",
+   "sf": 1,
+   "sid": "b75cdf01-9d3e-4813-9884-1a3d228b3698&true&false&DEFAULT&&desktop-1.39.3&false",
+   "sk": "ynet",
+   "sl": 1052,
+   "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+   "uid": "e2cb7ba3-a52c-43d8-b1de-fc6d072027f3",
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI"
+  },
+  {
+   "aid": "ynethomepage_-1045206822_-1784564698",
+   "bpvid": "IsjSPkPivV",
+   "crs": -20,
+   "d": "Unknown Desktop|Emulator",
+   "et": "page_view",
+   "grs": -20,
+   "ie": true,
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "mch": 1681,
+   "mcs": 317,
+   "mcw": 490,
+   "mi": 6,
+   "mv": "desktop-1.39.3",
+   "p": "Z_yHxYAmru",
+   "pl": 9496,
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }",
+   "res": "1920x1052",
+   "rsn": "dynamic_mc_No_Main_Content_Found",
+   "sf": 1,
+   "sid": "b75cdf01-9d3e-4813-9884-1a3d228b3698&true&false&DEFAULT&&desktop-1.39.3&false",
+   "sk": "ynet",
+   "sl": 1052,
+   "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+   "uid": "e2cb7ba3-a52c-43d8-b1de-fc6d072027f3",
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI"
+  },
+  {
+   "aid": "ynet_941305661_-1375710685",
+   "bpvid": "Z_yHxYAmru",
+   "crs": -20,
+   "d": "Unknown Desktop|Emulator",
+   "et": "user_engaged",
+   "grs": -20,
+   "ie": true,
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "mch": -1,
+   "mcs": -1,
+   "mcw": 490,
+   "mi": 6,
+   "mv": "desktop-1.39.3",
+   "p": "IsjSPkPivV",
+   "pl": 4743,
+   "pvid": "9b50e09d-1120-4975-8060-c0b720fb166c",
+   "pw": 1905,
+   "query": "{ \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-07T13:01:26.132Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }",
+   "res": "1920x1052",
+   "rsn": "dynamic_mc_No_Main_Content_Found",
+   "sf": 1,
+   "sid": "b75cdf01-9d3e-4813-9884-1a3d228b3698&true&false&DEFAULT&&desktop-1.39.3&false",
+   "sk": "ynet",
+   "sl": 1052,
+   "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+   "uid": "e2cb7ba3-a52c-43d8-b1de-fc6d072027f3",
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fhome%2F0%2C7340%2CL-8%2C00.html"
+  },
+  {
+   "aid": "ynet_299697424_-1553925264",
+   "bpvid": "jzkMLQFhYS",
+   "crs": -20,
+   "d": "Unknown Desktop|Emulator",
+   "et": "ad_blocker",
+   "grs": -20,
+   "ie": true,
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "mch": 1819,
+   "mcs": 304,
+   "mcw": -1,
+   "mi": 0,
+   "mv": "0.201",
+   "p": "jzkMLQFhYS",
+   "pl": 4355,
+   "pvid": "e6d7e2d5-c409-43a0-b652-72b8ec8e346a",
+   "pw": 1920,
+   "query": "{ \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-15T09:33:27.779Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }",
+   "res": "1920x1080",
+   "rsn": "dynamic_mc_No_Main_Content_Found",
+   "sf": 0,
+   "sid": "",
+   "sk": "ynethomepage",
+   "sl": 1052,
+   "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
+   "uid": "e2cb7ba3-a52c-43d8-b1de-fc6d072027f3",
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fsport%2Farticle%2Fry9p11e52U"
+  }
+ ]
+}

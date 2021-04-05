@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "param",
+   "uuid": "a48d3322-16db-4d1b-8ea2-fa3290cf4314"
+  }
+ ],
+ "rows": [
+  {
+   "param": "2018"
+  }
+ ]
+}

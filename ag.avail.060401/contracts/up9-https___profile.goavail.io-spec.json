@@ -1,0 +1,77 @@
+{
+ "info": {
+  "title": "https://profile.goavail.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/api/v1/profile": {
+   "get": {
+    "operationId": "4710da53-3c77-4ca3-80c3-287d72e91c6d",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "profile"
+    ]
+   },
+   "parameters": []
+  },
+  "/api/v1/profile/cards": {
+   "get": {
+    "operationId": "1c7ddbfc-3587-4467-bdfb-6705a9c9fa99",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "profile"
+    ]
+   },
+   "parameters": []
+  },
+  "/api/v1/profile/credits": {
+   "get": {
+    "operationId": "4493fe95-6684-49fc-98ff-79a3c3d41245",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 4 requests",
+    "tags": [
+     "profile"
+    ]
+   },
+   "parameters": []
+  }
+ },
+ "tags": [
+  {
+   "name": "profile"
+  }
+ ]
+}

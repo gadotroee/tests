@@ -1,0 +1,189 @@
+{
+ "info": {
+  "title": "https://api.goavail.io",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/api/v1/bookings/prices-estimate": {
+   "parameters": [],
+   "post": {
+    "operationId": "d1e4e6dd-80ff-4e50-98e5-7b12b89f91c8",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 5 requests"
+   }
+  },
+  "/api/v1/locations": {
+   "get": {
+    "operationId": "714ca955-0c4a-4a3c-a983-c4f07de1e060",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "perPage",
+      "required": true,
+      "schema": {
+       "enum": [
+        "50"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "locations"
+    ]
+   },
+   "parameters": []
+  },
+  "/api/v1/locations/airports": {
+   "get": {
+    "operationId": "cfc65ef2-0dc2-4c82-a4f1-dfe58ba36c53",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2 requests",
+    "tags": [
+     "locations"
+    ]
+   },
+   "parameters": []
+  },
+  "/api/v1/locations/{locationId}/vehicle-categories/search": {
+   "parameters": [
+    {
+     "description": "Origin: GET https://api.goavail.io/api/v1/locations/airports &rarr; json: $.items.[*].locationId",
+     "in": "path",
+     "name": "locationId",
+     "required": true,
+     "schema": {
+      "enum": [
+       "5c51efe687fc207a0cff0490"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ],
+   "post": {
+    "operationId": "05bf4bec-5539-452f-a7af-1a510c94fae9",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "locations"
+    ]
+   }
+  },
+  "/api/v1/metadata/pricings/{pricePlanId}": {
+   "get": {
+    "operationId": "5ac8d0f4-b212-411a-83c9-683eed614aed",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET https://api.goavail.io/api/v1/locations/airports &rarr; json: $.items.[*].vehicleCategories.*.pricePlanId",
+     "in": "path",
+     "name": "pricePlanId",
+     "required": true,
+     "schema": {
+      "enum": [
+       "limit_150"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/api/v1/system-configs": {
+   "get": {
+    "operationId": "d69974a2-cd90-4141-acd4-ab2cf32c8ce2",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2 requests"
+   },
+   "parameters": []
+  },
+  "/api/v1/vehicles/metadata/categories": {
+   "get": {
+    "operationId": "bcde5693-331c-4dea-a85b-f01b19b38c30",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": [
+  {
+   "name": "locations"
+  }
+ ]
+}
