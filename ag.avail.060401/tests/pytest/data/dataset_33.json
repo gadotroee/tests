@@ -1,0 +1,22 @@
+{
+ "parameters": [
+  {
+   "name": "param",
+   "uuid": "2fc86784-abfb-4b60-bc17-7c2932c5e8eb"
+  },
+  {
+   "name": "param1",
+   "uuid": "8831a0e2-384b-421d-8587-376c109007be"
+  }
+ ],
+ "rows": [
+  {
+   "param": "Dhtml_Flash_Ticker",
+   "param1": "0,12114,L-184-253-150,00.html"
+  },
+  {
+   "param": "JS_Ticker_Data",
+   "param1": "0,13760,L-184,00.html"
+  }
+ ]
+}

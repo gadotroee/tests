@@ -1,0 +1,78 @@
+{
+ "parameters": [
+  {
+   "name": "c1",
+   "uuid": "d1a174cc-799d-46e7-8a06-c7b4355b6e04"
+  },
+  {
+   "name": "c2",
+   "uuid": "4121a146-c7c7-4494-9e24-7b3fa7470a5c"
+  },
+  {
+   "name": "c3",
+   "uuid": "8173eb2c-4c20-4402-bb03-388f54251cfc"
+  },
+  {
+   "name": "cv",
+   "uuid": "6dc5c1d3-bf7b-4c3d-a0b0-bfbd8f8982ae"
+  },
+  {
+   "name": "k",
+   "uuid": "4f4bcece-50e4-42e9-ba6c-250b24b9a005"
+  },
+  {
+   "name": "ns__t",
+   "uuid": "4db232a2-4ab6-4de2-849d-1f8dd0f2fae7"
+  },
+  {
+   "name": "ns_c",
+   "uuid": "cd38f053-7390-4604-9bfa-d23287a96622"
+  },
+  {
+   "name": "query",
+   "uuid": "932e7db0-9ed6-4b11-bb28-6f9e05b951fa"
+  }
+ ],
+ "rows": [
+  {
+   "c1": "7",
+   "c2": "13739933",
+   "c3": "20121515121",
+   "cv": "3.5",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "ns__t": "1592213591404",
+   "ns_c": "UTF-8",
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  },
+  {
+   "c1": "7",
+   "c2": "13739933",
+   "c3": "20121515121",
+   "cv": "3.5",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "ns__t": "1592213596857",
+   "ns_c": "UTF-8",
+   "query": "{ geoip { geo { continent country city province postal_code } isp { isp organization autonomous_system_number autonomous_system_organization }  ip_hash } \n      userTPD: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          tpd {\n            name\n            segments\n          }\n        }\n      }\n     \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-04T12:31:13.957Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  },
+  {
+   "c1": "7",
+   "c2": "13739933",
+   "c3": "20121515121",
+   "cv": "3.5",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "ns__t": "1592213615370",
+   "ns_c": "UTF-8",
+   "query": "{ \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-07T13:01:26.132Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  },
+  {
+   "c1": "7",
+   "c2": "13739933",
+   "c3": "145231918151513",
+   "cv": "3.5",
+   "k": "d05706a6-4182-4194-bde3-242581f05ac3",
+   "ns__t": "1592213647775",
+   "ns_c": "UTF-8",
+   "query": "{ \n      userIdentify: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        identity(aliases: [{id: \"6668078531575605903\", tag: \"appnexus\", priority: 2}]) {\n          identify {\n            id\n          }\n        }\n      }\n     \n      userEvents: user(user_id: \"27ebc408-946d-4f05-a9d3-d6a8786ae6ab\") {\n        events(from: \"2020-06-15T09:33:27.779Z\") {\n          id\n          name\n          time\n          session_id\n          view_id\n          properties\n        }\n      }\n     }"
+  }
+ ]
+}

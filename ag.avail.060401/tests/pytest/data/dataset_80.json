@@ -1,0 +1,18 @@
+{
+ "parameters": [
+  {
+   "name": "content_id",
+   "uuid": "6fc27906-bc81-4e8d-bfe0-4905f5d16112"
+  },
+  {
+   "name": "taboola_hm",
+   "uuid": "fe351f75-4820-4871-a340-7256362324c8"
+  }
+ ],
+ "rows": [
+  {
+   "content_id": "160917",
+   "taboola_hm": "f95d1783-a1de-45b8-b471-aebf5278e77d"
+  }
+ ]
+}

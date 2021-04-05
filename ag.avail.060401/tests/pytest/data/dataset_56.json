@@ -1,0 +1,96 @@
+{
+ "parameters": [
+  {
+   "name": "auctionID",
+   "uuid": "e5eb7dd2-e7ff-4cf4-a254-1e7602615e24"
+  },
+  {
+   "name": "cv",
+   "uuid": "96b73b90-c2a6-440e-88a0-a0acc7cdcf8e"
+  },
+  {
+   "name": "pid",
+   "uuid": "4c3ecf0b-df90-4065-bba8-d67d1864ecc8"
+  },
+  {
+   "name": "provider",
+   "uuid": "3f0db31e-5242-4c91-9005-987eeca807f7"
+  },
+  {
+   "name": "websiteID",
+   "uuid": "54457478-9c1e-465b-91e3-11a1ee1ce097"
+  }
+ ],
+ "rows": [
+  {
+   "auctionID": "RxVCV5Acd",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "MWxCdVuU",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "u0JGLd4s",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "QEgPnts3a",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "Td5O2dto",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "zbZq9fOZ",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "KOecOsBG",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "LPndpXgud",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "L6d0vPN0",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "34YAMIXpl",
+   "cv": "19d0d545-v2",
+   "pid": "ciE6ZIqAd",
+   "provider": "direct",
+   "websiteID": "5693168230072320"
+  }
+ ]
+}

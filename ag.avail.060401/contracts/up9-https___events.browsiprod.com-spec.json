@@ -1,0 +1,76 @@
+{
+ "info": {
+  "title": "https://events.browsiprod.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/events/demand": {
+   "parameters": [],
+   "post": {
+    "operationId": "94d51699-61f7-49c6-863e-5eb3003ad2b4",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "p",
+      "required": true,
+      "schema": {
+       "enum": [
+        "9b50e09d-1120-4975-8060-c0b720fb166c",
+        "fc49fbd0-0d34-4a52-be94-026216877f7b",
+        "e6d7e2d5-c409-43a0-b652-72b8ec8e346a"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "No Content"
+     }
+    },
+    "summary": "Seen 25 requests",
+    "tags": [
+     "events"
+    ]
+   }
+  },
+  "/events/supply": {
+   "parameters": [],
+   "post": {
+    "operationId": "8cefce29-c70b-4f27-860e-4678077cb834",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "p",
+      "required": true,
+      "schema": {
+       "enum": [
+        "Z_yHxYAmru",
+        "9b50e09d-1120-4975-8060-c0b720fb166c",
+        "IsjSPkPivV",
+        "fc49fbd0-0d34-4a52-be94-026216877f7b",
+        "jzkMLQFhYS"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "No Content"
+     }
+    },
+    "summary": "Seen 15 requests",
+    "tags": [
+     "events"
+    ]
+   }
+  }
+ },
+ "tags": [
+  {
+   "name": "events"
+  }
+ ]
+}

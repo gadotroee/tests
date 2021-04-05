@@ -1,0 +1,38 @@
+{
+ "parameters": [
+  {
+   "name": "page_dashboard",
+   "uuid": "e4997367-aa80-4152-910e-8d825b0ba2ab"
+  },
+  {
+   "name": "page_template",
+   "uuid": "3e755da7-b6ce-4910-a3e1-d8d86e7eaad3"
+  },
+  {
+   "name": "param",
+   "uuid": "8204302b-750a-4852-831f-e339da0633e5"
+  },
+  {
+   "name": "param1",
+   "uuid": "cb9a36cc-6b27-4a16-b517-6a4a22a25d8f"
+  },
+  {
+   "name": "ui",
+   "uuid": "eea72359-0ec9-4367-84ad-816a5f607eb3"
+  },
+  {
+   "name": "view_id",
+   "uuid": "e0f4177b-9456-4bbc-9ba5-7de6273329c5"
+  }
+ ],
+ "rows": [
+  {
+   "page_dashboard": "Homepage - Desktop",
+   "page_template": "Homepage - Desktop",
+   "param": "0,7340,L-8,00.html",
+   "param1": "ynet-ynet-",
+   "ui": "6cfacda0-1743-4cb8-aa2a-db13e34ca447-tuct5cf7e9a",
+   "view_id": "353629821056238181"
+  }
+ ]
+}

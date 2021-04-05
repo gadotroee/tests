@@ -1,0 +1,34 @@
+{
+ "parameters": [
+  {
+   "name": "auctionID",
+   "uuid": "86ab02df-2ad1-44ae-8217-971b8d7bfa12"
+  },
+  {
+   "name": "bidderExternalID",
+   "uuid": "dead5f48-2096-4626-a669-0d6f30b5c3d6"
+  },
+  {
+   "name": "spaceExternalID",
+   "uuid": "f618bb48-305c-4c1a-b708-45d19725ebbc"
+  },
+  {
+   "name": "websiteID",
+   "uuid": "504b8eab-7ad2-4933-8e5d-26f0c76aea28"
+  }
+ ],
+ "rows": [
+  {
+   "auctionID": "Td5O2dto",
+   "bidderExternalID": "5699879703674880",
+   "spaceExternalID": "5715056507486208",
+   "websiteID": "5693168230072320"
+  },
+  {
+   "auctionID": "zbZq9fOZ",
+   "bidderExternalID": "5641714253430784",
+   "spaceExternalID": "5668804893868032",
+   "websiteID": "5693168230072320"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "info": {
+  "title": "https://sb.scorecardresearch.com",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/b": {
+   "get": {
+    "operationId": "7bfc80ab-f4b7-4132-8f0c-7a09960520bb",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "c1",
+      "required": true,
+      "schema": {
+       "enum": [
+        "7"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "c2",
+      "required": true,
+      "schema": {
+       "enum": [
+        "13739933"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "c3",
+      "required": true,
+      "schema": {
+       "enum": [
+        "20121515121",
+        "145231918151513"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "description": "Origin: POST https://api.permutive.com/graphql &rarr; json: $.data.userEvents.events.[*].properties.desturl",
+      "in": "query",
+      "name": "c7",
+      "required": true,
+      "schema": {
+       "enum": [
+        "https://www.ynet.co.il/home/0,7340,L-8,00.html",
+        "https://www.ynet.co.il/digital/technews/article/B1iBDKmTI",
+        "https://www.ynet.co.il/sport/article/ry9p11e52U?utm_source=Taboola_internal&utm_medium=organic"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "description": "Origin: POST https://api.permutive.com/graphql &rarr; json: $.data.userEvents.events.[*].properties.utitle",
+      "in": "query",
+      "name": "c8",
+      "required": true,
+      "schema": {
+       "enum": [
+        "ynet - \u05d7\u05d3\u05e9\u05d5\u05ea, \u05db\u05dc\u05db\u05dc\u05d4, \u05e1\u05e4\u05d5\u05e8\u05d8, \u05d1\u05e8\u05d9\u05d0\u05d5\u05ea",
+        "\u05d4\u05d2\u05d9\u05e2 \u05d4\u05d6\u05de\u05df: \u05d4\u05d7\u05d9\u05d3\u05d5\u05e9\u05d9\u05dd \u05e9\u05d1\u05d3\u05e8\u05da \u05dc\u05d5\u05d5\u05d0\u05d8\u05e1\u05d0\u05e4",
+        "\u05e0\u05d4\u05d2\u05ea \u05d4\u05de\u05e8\u05d5\u05e6\u05d9\u05dd \u05e9\u05d4\u05e4\u05db\u05d4 \u05dc\u05db\u05d5\u05db\u05d1\u05ea \u05e4\u05d5\u05e8\u05e0\u05d5: \"\u05de\u05e8\u05d2\u05d9\u05e9\u05d4 \u05d1\u05e0\u05d5\u05d7\""
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "description": "Origin: POST https://api.permutive.com/graphql &rarr; json: $.data.userEvents.events.[*].properties.dest_url",
+      "in": "query",
+      "name": "c9",
+      "required": true,
+      "schema": {
+       "enum": [
+        "https://www.ynet.co.il/home/0,7340,L-8,00.html",
+        "",
+        "https://www.ynet.co.il/digital/technews/article/B1iBDKmTI"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "cv",
+      "required": true,
+      "schema": {
+       "enum": [
+        "3.5"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "ns__t",
+      "required": true,
+      "schema": {
+       "enum": [
+        "1592213591404",
+        "1592213596857",
+        "1592213615370",
+        "1592213647775"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "ns_c",
+      "required": true,
+      "schema": {
+       "enum": [
+        "UTF-8"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "No Content"
+     }
+    },
+    "summary": "Seen 4 requests"
+   },
+   "parameters": []
+  }
+ },
+ "tags": []
+}

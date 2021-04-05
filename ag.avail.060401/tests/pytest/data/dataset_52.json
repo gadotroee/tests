@@ -1,0 +1,383 @@
+{
+ "parameters": [
+  {
+   "name": "adix",
+   "uuid": "70f772dc-ee35-4120-b4b4-0a7c79695d05"
+  },
+  {
+   "name": "aid",
+   "uuid": "ca08ea54-1f06-4acb-beb9-e726cb4eb4bc"
+  },
+  {
+   "name": "au",
+   "uuid": "7cbadc0d-c8b1-4d06-ac8c-383341167ae7"
+  },
+  {
+   "name": "bpid",
+   "uuid": "736179bd-8968-472a-82e9-ced95220bb9a"
+  },
+  {
+   "name": "bpvid",
+   "uuid": "232b1187-aa5c-4adc-bb2d-435d591ebfe8"
+  },
+  {
+   "name": "d",
+   "uuid": "ca427a28-0706-435f-ab80-1df7b08bbe38"
+  },
+  {
+   "name": "et",
+   "uuid": "64a52e7f-2e22-4486-84c8-89247b2f6570"
+  },
+  {
+   "name": "f",
+   "uuid": "ba06716e-1e5c-4ada-b424-d3b7626442d6"
+  },
+  {
+   "name": "h",
+   "uuid": "18ae6c07-3885-43c4-846e-f32e447debf9"
+  },
+  {
+   "name": "ill",
+   "uuid": "3ee89c5c-c81a-40ac-a04f-6826158d2b27"
+  },
+  {
+   "name": "im",
+   "uuid": "c8cd4603-d068-4d45-82f5-affbc77d1f71"
+  },
+  {
+   "name": "isa",
+   "uuid": "0f8c68b1-1e40-44fd-a046-7749b481d058"
+  },
+  {
+   "name": "lid",
+   "uuid": "f2cb533b-f2d3-4793-ad32-03d1a5900640"
+  },
+  {
+   "name": "mv",
+   "uuid": "c1f3ba65-d1fa-4aa2-b070-d08de18249b9"
+  },
+  {
+   "name": "ol",
+   "uuid": "b2ce0a96-28b1-4f70-a572-d8eb4fe30b8d"
+  },
+  {
+   "name": "p",
+   "uuid": "90df797e-cf22-4dfb-a980-a6afb8df87e4"
+  },
+  {
+   "name": "param",
+   "uuid": "8204302b-750a-4852-831f-e339da0633e5"
+  },
+  {
+   "name": "piv",
+   "uuid": "929e383f-2cf7-4895-a706-5e96c6e83c87"
+  },
+  {
+   "name": "praw",
+   "uuid": "0b8281fb-7937-465c-8bc5-0e7cf5c94546"
+  },
+  {
+   "name": "pt",
+   "uuid": "dd322be6-5524-4adc-a024-b6d9e1b9d573"
+  },
+  {
+   "name": "pv",
+   "uuid": "800ccd5b-3912-4779-b047-d8534aeea3d7"
+  },
+  {
+   "name": "pvid",
+   "uuid": "a8a59450-801c-4215-aadc-0f5966a7f37e"
+  },
+  {
+   "name": "pw",
+   "uuid": "a775f5e8-8133-4463-9c82-8c6a00f1bb47"
+  },
+  {
+   "name": "r",
+   "uuid": "c48c5029-d098-487a-ad3c-5985c449daeb"
+  },
+  {
+   "name": "rc",
+   "uuid": "f37aecda-91c5-42bb-8477-9b363503fc1f"
+  },
+  {
+   "name": "res",
+   "uuid": "57ea135f-1c1e-42bb-a627-ee8d341716da"
+  },
+  {
+   "name": "saas",
+   "uuid": "01783609-0e76-4608-930f-30506f18328e"
+  },
+  {
+   "name": "sk",
+   "uuid": "edd03c46-7cc5-43ff-845b-3b218fa402ba"
+  },
+  {
+   "name": "ul",
+   "uuid": "4b7dab8c-1c6e-4e47-9090-027e46a0bbb6"
+  },
+  {
+   "name": "url",
+   "uuid": "251a9a03-932f-4293-90a8-ec87f65ad34d"
+  },
+  {
+   "name": "vpa",
+   "uuid": "b09249b0-41d7-45c9-b711-c730cc1b2d9e"
+  },
+  {
+   "name": "vps",
+   "uuid": "8a3bd7a1-28f9-4249-9967-a4bd59cab95a"
+  },
+  {
+   "name": "w",
+   "uuid": "c6a605a4-1727-46ef-b1d9-c3dab276ef4d"
+  }
+ ],
+ "rows": [
+  {
+   "adix": 0,
+   "aid": "ynet_941305661_-1375710685",
+   "au": "/6870/uponit/uponit_300x250.3",
+   "bpid": "Z_yHxYAmru",
+   "bpvid": "IsjSPkPivV",
+   "d": "Unknown Desktop|Emulator",
+   "et": "pap_matched",
+   "f": 1.02,
+   "h": -1,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 1605,
+   "p": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "param": "0,7340,L-8,00.html",
+   "piv": 100,
+   "praw": 0.5591483602378936,
+   "pt": "in-line,within main content",
+   "pv": "26222",
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "r": "",
+   "rc": 0,
+   "res": "1920x1080",
+   "saas": true,
+   "sk": "ynet",
+   "ul": 53,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI",
+   "vpa": 0.5814286581547304,
+   "vps": 0.6044466140309389,
+   "w": -1
+  },
+  {
+   "adix": 0,
+   "aid": "ynet_941305661_-1375710685",
+   "au": "/6870/uponit/uponit_300x250.3",
+   "bpid": "Z_yHxYAmru",
+   "bpvid": "IsjSPkPivV",
+   "d": "Unknown Desktop|Emulator",
+   "et": "found_publisher_ad",
+   "f": 1.02,
+   "h": -1,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 1605,
+   "p": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "param": "0,7340,L-8,00.html",
+   "piv": 100,
+   "praw": 0.5591483602378936,
+   "pt": "in-line,within main content",
+   "pv": "26222",
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "r": "",
+   "rc": 0,
+   "res": "1920x1080",
+   "saas": true,
+   "sk": "ynet",
+   "ul": 53,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI",
+   "vpa": 0.5814286581547304,
+   "vps": 0.6044466140309389,
+   "w": -1
+  },
+  {
+   "adix": 0,
+   "aid": "ynet_941305661_-1375710685",
+   "au": "/6870/uponit/uponit_300x250.3",
+   "bpid": "Z_yHxYAmru",
+   "bpvid": "IsjSPkPivV",
+   "d": "Unknown Desktop|Emulator",
+   "et": "viewed_publisher_ad",
+   "f": 1.02,
+   "h": -1,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 1605,
+   "p": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "param": "0,7340,L-8,00.html",
+   "piv": 100,
+   "praw": 0.5591483602378936,
+   "pt": "in-line,within main content",
+   "pv": "26222",
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "r": "",
+   "rc": 0,
+   "res": "1920x1080",
+   "saas": true,
+   "sk": "ynet",
+   "ul": 53,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI",
+   "vpa": 0.5814286581547304,
+   "vps": 0.6044466140309389,
+   "w": -1
+  },
+  {
+   "adix": 0,
+   "aid": "ynet_941305661_-1375710685",
+   "au": "/6870/uponit/uponit_300x250.2",
+   "bpid": "Z_yHxYAmru",
+   "bpvid": "IsjSPkPivV",
+   "d": "Unknown Desktop|Emulator",
+   "et": "spot_found",
+   "f": 2.79,
+   "h": -1,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 1605,
+   "p": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "param": "0,7340,L-8,00.html",
+   "piv": 100,
+   "praw": 0.5591483602378936,
+   "pt": "in-line,within main content",
+   "pv": "26222",
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "r": "https%3A%2F%2Fwww.ynet.co.il%2Fhome%2F0%2C7340%2CL-8%2C00.html",
+   "rc": 0,
+   "res": "1920x1080",
+   "saas": true,
+   "sk": "ynet",
+   "ul": 53,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI",
+   "vpa": 0.5814286581547304,
+   "vps": 0.6044466140309389,
+   "w": -1
+  },
+  {
+   "adix": 0,
+   "aid": "ynet_941305661_-1375710685",
+   "au": "/6870/uponit/uponit_970x90",
+   "bpid": "Z_yHxYAmru",
+   "bpvid": "IsjSPkPivV",
+   "d": "Unknown Desktop|Emulator",
+   "et": "ad_request",
+   "f": 1.32,
+   "h": -1,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 1605,
+   "p": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "param": "0,7340,L-8,00.html",
+   "piv": 100,
+   "praw": 0.5591483602378936,
+   "pt": "out of main content",
+   "pv": "26222",
+   "pvid": "fc49fbd0-0d34-4a52-be94-026216877f7b",
+   "pw": 1905,
+   "r": "https://www.ynet.co.il/home/0,7340,l-8,00.html",
+   "rc": 0,
+   "res": "1920x1080",
+   "saas": true,
+   "sk": "ynet",
+   "ul": 53,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI",
+   "vpa": 0.5814286581547304,
+   "vps": 0.6044466140309389,
+   "w": -1
+  },
+  {
+   "adix": 0,
+   "aid": "ynethomepage_-1045206822_-1784564698",
+   "au": "/6870/uponit/uponit_300x600",
+   "bpid": "IsjSPkPivV",
+   "bpvid": "Z_yHxYAmru",
+   "d": "Unknown Desktop|Emulator",
+   "et": "ad_matched",
+   "f": 2.88,
+   "h": 600,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 463,
+   "p": "9b50e09d-1120-4975-8060-c0b720fb166c",
+   "param": "0,7340,L-8,00.html",
+   "piv": 100,
+   "praw": 0.6350558802504662,
+   "pt": "left rail",
+   "pv": "26222",
+   "pvid": "9b50e09d-1120-4975-8060-c0b720fb166c",
+   "pw": 1905,
+   "r": "https://www.ynet.co.il/digital/technews/article/b1ibdkmti",
+   "rc": 0,
+   "res": "1920x1080",
+   "saas": true,
+   "sk": "ynet",
+   "ul": 53,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fhome%2F0%2C7340%2CL-8%2C00.html",
+   "vpa": 0.5448801338041256,
+   "vps": 0.3643891185282624,
+   "w": 160
+  },
+  {
+   "adix": -1,
+   "aid": "ynet_299697424_-1553925264",
+   "au": "Browsi_desktop/browsi.ynet.desktop.1stunit",
+   "bpid": "jzkMLQFhYS",
+   "bpvid": "jzkMLQFhYS",
+   "d": "Unknown Desktop|Emulator",
+   "et": "ad_request_blocked",
+   "f": 1,
+   "h": 250,
+   "ill": true,
+   "im": true,
+   "isa": true,
+   "lid": 4972792210,
+   "mv": "desktop-1.39.3",
+   "ol": 1745,
+   "p": "e6d7e2d5-c409-43a0-b652-72b8ec8e346a",
+   "param": "0,7340,L-8,00.html",
+   "piv": 94,
+   "praw": 0.7987632154678487,
+   "pt": "right rail,top",
+   "pv": "26222",
+   "pvid": "e6d7e2d5-c409-43a0-b652-72b8ec8e346a",
+   "pw": 1920,
+   "r": "https%3A%2F%2Fwww.ynet.co.il%2Fdigital%2Ftechnews%2Farticle%2FB1iBDKmTI",
+   "rc": 1,
+   "res": "1920x1052",
+   "saas": true,
+   "sk": "ynethomepage",
+   "ul": 0,
+   "url": "https%3A%2F%2Fwww.ynet.co.il%2Fsport%2Farticle%2Fry9p11e52U",
+   "vpa": 0.8867924528301887,
+   "vps": 0.6391063890840321,
+   "w": 300
+  }
+ ]
+}
