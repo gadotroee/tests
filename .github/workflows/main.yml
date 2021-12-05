@@ -19,7 +19,7 @@ jobs:
         if: always()
         with:
           status: ${{ job.status }}
-          notification_title: '*New ${GITHUB_REPOSITORY#*/} release* ${{ env.TAG_VALUE }} has {status_message}'
+          notification_title: '*New ${{ github.repository }} release* ${{ env.TAG_VALUE }} has {status_message}'
           message_format: '{emoji} *{workflow}* {status_message}. Tag: ${{ env.TAG_VALUE }} commit:<{commit_url}|{commit_sha}>, action: <{run_url}|action>'
           footer: 'Linked Repo <{repo_url}|{repo}>'
         env:
