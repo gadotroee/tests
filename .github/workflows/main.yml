@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+'
+
+jobs:
+  push-tag:
+    name: Tag image as stable
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Slack notification
+        uses: ravsamhq/notify-slack-action@v1
+        if: always()
+        with:
+          status: ${{ job.status }}
+          notification_title: '*New ${GITHUB_REPOSITORY#*/} release* ${{ env.TAG_VALUE }} has {status_message}'
+          message_format: '{emoji} *{workflow}* {status_message}. Tag: ${{ env.TAG_VALUE }} commit:<{commit_url}|{commit_sha}>, action: <{run_url}|action>'
+          footer: 'Linked Repo <{repo_url}|{repo}>'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}  
